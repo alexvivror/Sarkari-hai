@@ -134,11 +134,18 @@ function buildPosts(rssItems) {
     const items = await fetchRss();
     console.log(`Fetched ${items.length} items from RSS`);
 
-    const posts = buildPosts(items);
+    const fresh = buildPosts(items);
     const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
-    data.posts = posts;
+
+    // keep curated, hand-researched posts; merge fresh RSS posts without duplicates
+    const curated = (data.posts || []).filter((p) => p.curated);
+    const freshIds = new Set(fresh.map((p) => p.id));
+    const keptCurated = curated.filter((p) => !freshIds.has(p.id));
+    // cap: curated (max 6) + fresh (fill up to MAX_POSTS total)
+    const maxFresh = Math.max(12, MAX_POSTS - keptCurated.length);
+    data.posts = [...keptCurated.slice(0, 6), ...fresh.slice(0, maxFresh)];
     fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
-    console.log(`Updated data/posts.json with ${posts.length} posts`);
+    console.log(`Updated data/posts.json: ${keptCurated.length} curated + ${Math.min(maxFresh, fresh.length)} fresh = ${data.posts.length} posts`);
 
     // rebuild
     execSync("node build.js", { cwd: ROOT, stdio: "inherit" });
@@ -155,7 +162,7 @@ function buildPosts(rssItems) {
 
     const ssh = process.env.GIT_SSH_CMD || "ssh -i /opt/data/home/.ssh/id_ed25519 -o UserKnownHostsFile=/opt/data/.ssh/known_hosts";
     const stamp = new Date().toISOString().slice(0, 10);
-    execSync(`cd "${repoDir}" && git add -A && git commit -m "Daily update: latest sarkari notifications ${stamp}" --allow-empty`, {
+    execSync(`cd "${repoDir}" && git config user.email "alexvivror@gmail.com" && git config user.name "Piyush Kumar" && git add -A && git commit -m "Daily update: latest sarkari notifications ${stamp}" --allow-empty`, {
       env: { ...process.env, GIT_SSH_COMMAND: ssh },
       stdio: "inherit",
     });

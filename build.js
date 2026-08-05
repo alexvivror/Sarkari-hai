@@ -18,6 +18,7 @@ const BUILT_PRETTY = new Date().toLocaleDateString("en-GB", { day: "2-digit", mo
 
 /* copy static assets */
 const outDir = path.join(__dirname, "public");
+fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
 for (const asset of ["style.css", "search.js"]) {
   const src = path.join(__dirname, asset);
@@ -277,6 +278,23 @@ data.posts.forEach((p) => {
     .filter((x) => x.id !== p.id && (x.exam === p.exam || x.category === p.category))
     .slice(0, 4);
 
+  /* overview table — shows only fields present, in a readable order */
+  const ovFields = [
+    ["Organization", p.org],
+    ["Post Name", p.postName],
+    ["Total Vacancies", p.vacancies],
+    ["Pay Level / Salary", p.salary],
+    ["Application Mode", p.mode],
+    ["Application Start", p.applyStart],
+    ["Application End", p.applyEnd],
+    ["Exam Date", p.examDate],
+    ["Age Limit", p.ageLimit],
+    ["Qualification", p.qualification],
+    ["Application Fee", p.fee],
+    ["Selection Process", p.selection],
+    ["Official Website", p.official ? `<a href="${esc(p.official)}" target="_blank" rel="noopener">${esc(p.official)}</a>` : null],
+  ].filter(([k, v]) => v && v !== "—" && v !== "—");
+
   const body = `
 <main class="container page">
   <nav class="crumbs"><a href="./">Home</a> <span>›</span> <a href="./${cat.slug}.html">${esc(cat.label)}</a> <span>›</span> ${esc(p.title)}</nav>
@@ -285,22 +303,33 @@ data.posts.forEach((p) => {
       <span class="chip-sm ${p.category}">${esc(cat.label)}</span>
       <span class="chip-sm">${esc(exam.label)}</span>
       <span class="chip-sm">${esc(p.date)}</span>
+      ${p.verified ? '<span class="chip-sm" style="background:#f0fdf4;color:#15803d">✔ Officially Verified</span>' : ""}
     </div>
     <h1 class="page-h1">${esc(p.title)}</h1>
     <p class="page-desc">${esc(p.desc)}</p>
-    <table class="detail-table">
-      <tr><td><b>Application Start</b></td><td>${esc(p.applyStart)}</td></tr>
-      <tr><td><b>Application End</b></td><td>${esc(p.applyEnd)}</td></tr>
-      <tr><td><b>Exam Date</b></td><td>${esc(p.examDate)}</td></tr>
-    </table>
+
+    <div class="quick-stats">
+      ${p.vacancies ? `<div class="qs"><span class="material-symbols-outlined">groups</span><b>${esc(p.vacancies)}</b><small>Vacancies</small></div>` : ""}
+      ${p.applyEnd ? `<div class="qs"><span class="material-symbols-outlined">event</span><b>${esc(p.applyEnd)}</b><small>Last Date</small></div>` : ""}
+      ${p.ageLimit ? `<div class="qs"><span class="material-symbols-outlined">person</span><b>${esc(p.ageLimit)}</b><small>Age Limit</small></div>` : ""}
+      ${p.fee ? `<div class="qs"><span class="material-symbols-outlined">payments</span><b>${esc(p.fee)}</b><small>Application Fee</small></div>` : ""}
+    </div>
+
+    <h2 class="sub-h">Overview</h2>
+    <table class="detail-table">${ovFields.map(([k, v]) => `<tr><td><b>${k}</b></td><td>${v}</td></tr>`).join("")}</table>
+
     <div class="action-bar">
       <a class="act-btn primary big" href="${esc(p.links.apply)}" target="_blank" rel="noopener"><span class="material-symbols-outlined">launch</span> Apply Online</a>
-      <a class="act-btn big" href="${esc(p.links.notification)}"><span class="material-symbols-outlined">description</span> Download Notification</a>
-      <a class="act-btn ghost big" href="${esc(p.links.official)}" target="_blank" rel="noopener"><span class="material-symbols-outlined">language</span> Official Website</a>
+      ${p.links.notification && p.links.notification !== "#" ? `<a class="act-btn big" href="${esc(p.links.notification)}" target="_blank" rel="noopener"><span class="material-symbols-outlined">description</span> Download Notification</a>` : ""}
+      ${p.links.official ? `<a class="act-btn ghost big" href="${esc(p.links.official)}" target="_blank" rel="noopener"><span class="material-symbols-outlined">language</span> Official Website</a>` : ""}
     </div>
     <div class="ad-slot" data-ad="post"><span>Advertisement</span></div>
+
     <h2 class="sub-h">Post Details</h2>
     <ul class="detail-list">${p.details.map((d) => `<li><span class="material-symbols-outlined">check_circle</span> ${esc(d)}</li>`).join("")}</ul>
+
+    ${p.sections ? p.sections.map((s) => `<h2 class="sub-h">${esc(s.h2)}</h2><div class="content-block">${s.paras.map((x) => `<p>${esc(x)}</p>`).join("")}${s.list ? `<ul class="detail-list">${s.list.map((x) => `<li><span class="material-symbols-outlined">arrow_right</span> ${esc(x)}</li>`).join("")}</ul>` : ""}</div>`).join("") : ""}
+
     <h2 class="sub-h">Frequently Asked Questions</h2>
     ${p.faqs.map((f) => `<div class="faq-item"><h3>${esc(f.q)}</h3><p>${esc(f.a)}</p></div>`).join("")}
   </article>
@@ -314,8 +343,8 @@ data.posts.forEach((p) => {
   fs.writeFileSync(
     path.join(outDir, `${p.id}.html`),
     pageShell({
-      title: `${p.title} 2026 — ${SITE}`,
-      metaDesc: `${p.title} 2026: ${esc(p.desc)} Apply Start ${p.applyStart}, End ${p.applyEnd}. Official links on ${SITE}.`,
+      title: `${p.title}${/\b20\d\d\b/.test(p.title) ? "" : " 2026"} — ${SITE}`,
+      metaDesc: `${p.title}: ${esc(p.desc)} Apply Start ${p.applyStart}, End ${p.applyEnd}. Official links on ${SITE}.`,
       canonical: `${DOMAIN}/${p.id}.html`,
       body,
       schema: [

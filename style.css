@@ -298,6 +298,18 @@ body {
 .detail-table tr:last-child td { border-bottom: none; }
 .detail-table td:first-child { background: #f8fafc; width: 45%; color: var(--muted); }
 .action-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 6px; }
+.quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0; }
+.qs {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-align: center;
+}
+.qs .material-symbols-outlined { color: var(--primary); font-size: 1.4rem; display: block; margin-bottom: 2px; }
+.qs b { display: block; font-size: 1.02rem; color: #9a3412; }
+.qs small { color: #c2410c; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.content-block p { color: var(--muted); font-size: 0.93rem; margin-bottom: 10px; }
 .sub-h { font-size: 1.1rem; font-weight: 800; margin: 22px 0 10px; }
 .detail-list { list-style: none; margin-bottom: 8px; }
 .detail-list li {
