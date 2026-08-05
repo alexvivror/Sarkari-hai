@@ -10,8 +10,9 @@
 const path = require("path");
 const { execSync } = require("child_process");
 
-const { loadPosts, savePosts, dedupPosts, purgeClosed } = require("../services/content");
+const { loadPosts, savePosts, dedupPosts, purgeClosed, checkCompleteness, STANDARD_DOCUMENTS } = require("../services/content");
 const { fetchRss, buildVerifiedPosts, MAX_POSTS } = require("../services/fetch");
+const { extractPostDetails } = require("../services/extractor");
 const { norm, log, logErr } = require("../lib/utils");
 
 const ROOT = path.join(__dirname, "..", "..");

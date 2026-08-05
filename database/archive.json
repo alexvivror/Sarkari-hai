@@ -98,5 +98,85 @@
     },
     "archivedAt": "2026-08-05T23:37:45.001Z",
     "reason": "closed-after-final-result"
+  },
+  {
+    "id": "zz-test-closed",
+    "title": "ZZ Test Closed 2026 Final Result Declared",
+    "category": "latest-jobs",
+    "exam": "ssc",
+    "date": "2026-01-01",
+    "applyStart": "01 January 2026",
+    "applyEnd": "15 January 2026",
+    "examDate": "Final Result Declared",
+    "desc": "test",
+    "details": [],
+    "faqs": [],
+    "links": {
+      "apply": "https://ssc.gov.in",
+      "notification": "https://ssc.gov.in",
+      "official": "https://ssc.gov.in"
+    },
+    "archivedAt": "2026-08-05T23:41:36.988Z",
+    "reason": "closed-after-final-result"
+  },
+  {
+    "id": "zz-test-closed",
+    "title": "ZZ Test Closed 2026 Final Result Declared",
+    "category": "latest-jobs",
+    "exam": "ssc",
+    "date": "2026-01-01",
+    "applyStart": "01 January 2026",
+    "applyEnd": "15 January 2026",
+    "examDate": "Final Result Declared",
+    "desc": "test",
+    "details": [],
+    "faqs": [],
+    "links": {
+      "apply": "https://ssc.gov.in",
+      "notification": "https://ssc.gov.in",
+      "official": "https://ssc.gov.in"
+    },
+    "archivedAt": "2026-08-05T23:45:26.913Z",
+    "reason": "closed-after-final-result"
+  },
+  {
+    "id": "zz-test-closed",
+    "title": "ZZ Test Closed 2026 Final Result Declared",
+    "category": "latest-jobs",
+    "exam": "ssc",
+    "date": "2026-01-01",
+    "applyStart": "01 January 2026",
+    "applyEnd": "15 January 2026",
+    "examDate": "Final Result Declared",
+    "desc": "test",
+    "details": [],
+    "faqs": [],
+    "links": {
+      "apply": "https://ssc.gov.in",
+      "notification": "https://ssc.gov.in",
+      "official": "https://ssc.gov.in"
+    },
+    "archivedAt": "2026-08-05T23:48:37.685Z",
+    "reason": "closed-after-final-result"
+  },
+  {
+    "id": "zz-test-closed",
+    "title": "ZZ Test Closed 2026 Final Result Declared",
+    "category": "latest-jobs",
+    "exam": "ssc",
+    "date": "2026-01-01",
+    "applyStart": "01 January 2026",
+    "applyEnd": "15 January 2026",
+    "examDate": "Final Result Declared",
+    "desc": "test",
+    "details": [],
+    "faqs": [],
+    "links": {
+      "apply": "https://ssc.gov.in",
+      "notification": "https://ssc.gov.in",
+      "official": "https://ssc.gov.in"
+    },
+    "archivedAt": "2026-08-05T23:52:10.228Z",
+    "reason": "closed-after-final-result"
   }
 ]

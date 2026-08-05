@@ -54,6 +54,42 @@ function validatePost(p) {
   return problems;
 }
 
+/* REQUIRED fields — every published post must have ALL of these filled.
+   Nothing blank. Posts missing required fields are not publishable. */
+const REQUIRED_FIELDS = [
+  "title", "org", "postName", "vacancies", "salary", "mode",
+  "applyStart", "applyEnd", "examDate", "ageLimit", "qualification",
+  "fee", "selection", "documents", "desc", "official",
+];
+
+const BLANK = (v) => v === undefined || v === null || v === "" || v === "—";
+
+function missingFields(p) {
+  return REQUIRED_FIELDS.filter((f) => BLANK(p[f]));
+}
+
+/* completeness check — returns missing field list (empty = publishable) */
+function checkCompleteness(p) {
+  const missing = missingFields(p);
+  const problems = [];
+  if (missing.length) problems.push(`blank fields: ${missing.join(", ")}`);
+  if (!p.details || p.details.length === 0) problems.push("blank details list");
+  if (!p.faqs || p.faqs.length === 0) problems.push("blank FAQs");
+  if (!p.links || !isOfficial(p.links.apply)) problems.push("apply link not official");
+  return problems;
+}
+
+/* standard required documents for government job applications */
+const STANDARD_DOCUMENTS = [
+  "Recent passport-size photograph",
+  "Scanned signature",
+  "Photo ID proof (Aadhaar / PAN / Voter ID / Passport)",
+  "Educational qualification certificates & mark sheets",
+  "Category certificate (SC/ST/OBC/EWS), if applicable",
+  "Date of birth proof (10th certificate / birth certificate)",
+  "Experience / employment certificate (if required by the post)",
+];
+
 /* ---------- dedup ---------- */
 function dedupPosts(posts) {
   const seen = new Set();
@@ -100,5 +136,6 @@ function purgeClosed(data) {
 module.exports = {
   DB_DIR, DATA_FILE, ARCHIVE_FILE,
   loadPosts, savePosts, loadArchive, saveArchive,
-  validatePost, dedupPosts, purgeClosed,
+  validatePost, checkCompleteness, missingFields, STANDARD_DOCUMENTS,
+  dedupPosts, purgeClosed,
 };

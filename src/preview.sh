@@ -20,6 +20,9 @@ node tests/run.js || { echo "FAIL: tests failed — do NOT deploy"; exit 1; }
 echo "🔨 Building site..."
 node src/scripts/build.js || { echo "FAIL: build errored"; exit 1; }
 
+echo "📊 Running quality audit (every page ≥ 70/100)..."
+node src/scripts/audit.js || { echo "FAIL: quality audit below threshold — do NOT deploy"; exit 1; }
+
 echo "🚀 Starting preview server on :$PORT ..."
 PORT="$PORT" node src/server.js >/tmp/sarkari-preview.log 2>&1 &
 SRV_PID=$!
