@@ -6,24 +6,355 @@
     "hindi": "सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की"
   },
   "categories": [
-    { "slug": "latest-jobs", "label": "Latest Jobs", "hindi": "नवीनतम नौकरियां", "icon": "work", "desc": "Fresh government job notifications" },
-    { "slug": "results", "label": "Results", "hindi": "रिजल्ट", "icon": "fact_check", "desc": "Exam results declared" },
-    { "slug": "admit-card", "label": "Admit Card", "hindi": "एडमिट कार्ड", "icon": "badge", "desc": "Download hall tickets" },
-    { "slug": "answer-key", "label": "Answer Key", "hindi": "आंसर की", "icon": "quiz", "desc": "Official answer keys" },
-    { "slug": "syllabus", "label": "Syllabus", "hindi": "सिलेबस", "icon": "menu_book", "desc": "Exam patterns & syllabus" },
-    { "slug": "admission", "label": "Admission", "hindi": "प्रवेश", "icon": "school", "desc": "University & course admissions" }
+    {
+      "slug": "latest-jobs",
+      "label": "Latest Jobs",
+      "hindi": "नवीनतम नौकरियां",
+      "icon": "work",
+      "desc": "Fresh government job notifications"
+    },
+    {
+      "slug": "results",
+      "label": "Results",
+      "hindi": "रिजल्ट",
+      "icon": "fact_check",
+      "desc": "Exam results declared"
+    },
+    {
+      "slug": "admit-card",
+      "label": "Admit Card",
+      "hindi": "एडमिट कार्ड",
+      "icon": "badge",
+      "desc": "Download hall tickets"
+    },
+    {
+      "slug": "answer-key",
+      "label": "Answer Key",
+      "hindi": "आंसर की",
+      "icon": "quiz",
+      "desc": "Official answer keys"
+    },
+    {
+      "slug": "syllabus",
+      "label": "Syllabus",
+      "hindi": "सिलेबस",
+      "icon": "menu_book",
+      "desc": "Exam patterns & syllabus"
+    },
+    {
+      "slug": "admission",
+      "label": "Admission",
+      "hindi": "प्रवेश",
+      "icon": "school",
+      "desc": "University & course admissions"
+    }
   ],
   "exams": [
-    { "slug": "ssc", "label": "SSC", "icon": "account_balance" },
-    { "slug": "upsc", "label": "UPSC", "icon": "gavel" },
-    { "slug": "railway", "label": "Railway", "icon": "train" },
-    { "slug": "bank", "label": "Bank", "icon": "savings" },
-    { "slug": "police", "label": "Police", "icon": "local_police" },
-    { "slug": "defence", "label": "Defence", "icon": "shield" },
-    { "slug": "teaching", "label": "Teaching", "icon": "school" },
-    { "slug": "state", "label": "State Govt", "icon": "location_city" }
+    {
+      "slug": "ssc",
+      "label": "SSC",
+      "icon": "account_balance"
+    },
+    {
+      "slug": "upsc",
+      "label": "UPSC",
+      "icon": "gavel"
+    },
+    {
+      "slug": "railway",
+      "label": "Railway",
+      "icon": "train"
+    },
+    {
+      "slug": "bank",
+      "label": "Bank",
+      "icon": "savings"
+    },
+    {
+      "slug": "police",
+      "label": "Police",
+      "icon": "local_police"
+    },
+    {
+      "slug": "defence",
+      "label": "Defence",
+      "icon": "shield"
+    },
+    {
+      "slug": "teaching",
+      "label": "Teaching",
+      "icon": "school"
+    },
+    {
+      "slug": "state",
+      "label": "State Govt",
+      "icon": "location_city"
+    },
+    {
+      "slug": "aiims",
+      "label": "AIIMS",
+      "icon": "local_hospital"
+    },
+    {
+      "slug": "ntpc",
+      "label": "NTPC",
+      "icon": "bolt"
+    },
+    {
+      "slug": "isro",
+      "label": "ISRO",
+      "icon": "rocket_launch"
+    }
   ],
   "posts": [
+    {
+      "id": "ts-lawcet-2026",
+      "curated": true,
+      "title": "TS LAWCET 2026 Seat Allotment Result — Phase 1",
+      "category": "admission",
+      "exam": "state",
+      "date": "2026-07-28",
+      "org": "Telangana Council of Higher Education",
+      "postName": "TS LAWCET 2026 Phase-1 Allotment",
+      "mode": "Online",
+      "examDate": "Result Released",
+      "official": "https://lawcetadm.tgche.ac.in",
+      "verified": true,
+      "desc": "TS LAWCET 2026 Phase-1 seat allotment result released. Check your allotment at lawcetadm.tgche.ac.in and confirm admission.",
+      "details": [
+        "Phase-1 allotment released for 3-year & 5-year LLB",
+        "Check with hall ticket/application number",
+        "Report to allotted college on time"
+      ],
+      "faqs": [
+        {
+          "q": "How to check TS LAWCET allotment result?",
+          "a": "Visit lawcetadm.tgche.ac.in and log in with your credentials to view and download your seat allotment order."
+        }
+      ],
+      "links": {
+        "apply": "https://lawcetadm.tgche.ac.in",
+        "notification": "https://lawcetadm.tgche.ac.in",
+        "official": "https://lawcetadm.tgche.ac.in"
+      }
+    },
+    {
+      "id": "tn-mbamca-allotment-2026",
+      "curated": true,
+      "title": "TANCET MBA Provisional Allotment 2026",
+      "category": "admission",
+      "exam": "state",
+      "date": "2026-07-29",
+      "org": "Tamil Nadu Directorate of Technical Education",
+      "postName": "TANCET MBA 2026 Seat Allotment",
+      "mode": "Online",
+      "examDate": "Allotment Released",
+      "official": "https://tn-mbamca.com",
+      "verified": true,
+      "desc": "TANCET MBA 2026 provisional seat allotment released. Download your allotment order at tn-mbamca.com and complete admission formalities.",
+      "details": [
+        "Phase-1 provisional allotment released",
+        "Download allotment order PDF",
+        "Complete admission within deadline"
+      ],
+      "faqs": [
+        {
+          "q": "How to check TANCET MBA allotment?",
+          "a": "Visit tn-mbamca.com, log in with your application number and download the provisional allotment order."
+        }
+      ],
+      "links": {
+        "apply": "https://tn-mbamca.com",
+        "notification": "https://tn-mbamca.com",
+        "official": "https://tn-mbamca.com"
+      }
+    },
+    {
+      "id": "neet-ug-admit-2027",
+      "curated": true,
+      "title": "NEET UG 2027 Admit Card — Download Hall Ticket",
+      "category": "admit-card",
+      "exam": "state",
+      "date": "2026-07-30",
+      "org": "National Testing Agency (NTA)",
+      "postName": "NEET UG 2027 Admit Card",
+      "mode": "Online",
+      "examDate": "01 May 2027",
+      "official": "https://neet.nta.nic.in",
+      "verified": true,
+      "desc": "NEET UG 2027 admit card will be released by NTA on the official website. Download your hall ticket with application number and date of birth.",
+      "details": [
+        "Admit card release: few weeks before exam",
+        "Exam date: 01 May 2027",
+        "Carry printout + valid photo ID"
+      ],
+      "faqs": [
+        {
+          "q": "When will NEET 2027 admit card release?",
+          "a": "NTA typically releases the admit card 2-4 weeks before the exam on neet.nta.nic.in."
+        }
+      ],
+      "links": {
+        "apply": "https://neet.nta.nic.in",
+        "notification": "https://neet.nta.nic.in",
+        "official": "https://neet.nta.nic.in"
+      }
+    },
+    {
+      "id": "hprca-answer-key-2026",
+      "curated": true,
+      "title": "HPRCA Teacher Answer Key 2026 — Chemistry & Music",
+      "category": "answer-key",
+      "exam": "teaching",
+      "date": "2026-07-31",
+      "org": "Himachal Pradesh Staff Selection Commission (HPSSC)",
+      "postName": "Computer Teacher / Chemistry & Music Teacher Answer Key",
+      "mode": "Online",
+      "examDate": "Answer Key Released",
+      "official": "https://hprca.hp.gov.in",
+      "verified": true,
+      "desc": "HPRCA Teacher 2026 answer key released for Chemistry and Music teacher posts. Download the PDF and raise objections if needed.",
+      "details": [
+        "Chemistry and Music teacher answer keys released",
+        "Download from HPSSC website",
+        "Objection window as per notice"
+      ],
+      "faqs": [
+        {
+          "q": "Where can I download the HPRCA answer key?",
+          "a": "Download the answer key PDF from the official HPSSC website under the recruitment section."
+        }
+      ],
+      "links": {
+        "apply": "https://hprca.hp.gov.in",
+        "notification": "https://hprca.hp.gov.in",
+        "official": "https://hprca.hp.gov.in"
+      }
+    },
+    {
+      "id": "nhpc-apprentice-result-2026",
+      "curated": true,
+      "title": "NHPC Apprentice Result 2026 — Selected Candidates List",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-01",
+      "org": "NHPC Limited",
+      "postName": "Apprentice (Trade/Technician) Result",
+      "mode": "Online",
+      "examDate": "Result Declared",
+      "official": "https://www.nhpcindia.com",
+      "verified": true,
+      "desc": "NHPC Apprentice 2026 provisionally selected candidates list released. Download the PDF from the NHPC website.",
+      "details": [
+        "Provisional selected list published",
+        "Candidates to report for joining as per schedule",
+        "Check on NHPC careers page"
+      ],
+      "faqs": [
+        {
+          "q": "How to check NHPC Apprentice result?",
+          "a": "Download the provisionally selected candidates PDF from the NHPC careers section using the official link."
+        }
+      ],
+      "links": {
+        "apply": "https://www.nhpcindia.com",
+        "notification": "https://www.nhpcindia.com",
+        "official": "https://www.nhpcindia.com"
+      }
+    },
+    {
+      "id": "mumbai-university-result-2026",
+      "curated": true,
+      "title": "Mumbai University Result 2026 — M.Com & MSc",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-02",
+      "org": "University of Mumbai",
+      "postName": "M.Com & MSc Semester Results",
+      "mode": "Online",
+      "examDate": "Result Declared",
+      "official": "https://mumresults.in",
+      "verified": true,
+      "desc": "Mumbai University has declared M.Com and MSc results. Check your marks online at mumresults.in using your seat number.",
+      "details": [
+        "M.Com and MSc results released",
+        "Check with seat number",
+        "Download marksheet after result"
+      ],
+      "faqs": [
+        {
+          "q": "How to check Mumbai University result 2026?",
+          "a": "Visit mumresults.in, select your course and semester, enter your seat number and date of birth to view your result."
+        }
+      ],
+      "links": {
+        "apply": "https://mumresults.in",
+        "notification": "https://mumresults.in",
+        "official": "https://mumresults.in"
+      }
+    },
+    {
+      "id": "rssb-driver-result-2026",
+      "curated": true,
+      "title": "RSSB Driver Result 2026 — Trade Test Selected List",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "org": "Rajasthan Staff Selection Board (RSSB)",
+      "postName": "Driver Recruitment 2026 Trade Test Result",
+      "mode": "Online",
+      "examDate": "Result Declared",
+      "official": "https://rssb.rajasthan.gov.in",
+      "verified": true,
+      "desc": "RSSB Driver 2026 result declared — check the trade test selected candidates list PDF and download it for future reference.",
+      "details": [
+        "Trade test qualified candidates list released",
+        "Download PDF from RSSB website",
+        "Next stage: document verification"
+      ],
+      "faqs": [
+        {
+          "q": "How to check RSSB Driver result 2026?",
+          "a": "Visit rssb.rajasthan.gov.in and open the Driver recruitment result link to download the selected candidates PDF."
+        }
+      ],
+      "links": {
+        "apply": "https://rssb.rajasthan.gov.in",
+        "notification": "https://rssb.rajasthan.gov.in",
+        "official": "https://rssb.rajasthan.gov.in"
+      }
+    },
+    {
+      "id": "karnataka-pgcet-result-2026",
+      "curated": true,
+      "title": "Karnataka PGCET Result 2026 — Check Online",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "org": "Karnataka Examinations Authority (KEA)",
+      "postName": "PGCET 2026 Result (MBA, MCA, ME, MTech, MArch)",
+      "mode": "Online",
+      "examDate": "Result Declared",
+      "official": "https://cetonline.karnataka.gov.in",
+      "verified": true,
+      "desc": "Karnataka PGCET 2026 result has been declared by KEA. Check your score and rank card online at cetonline.karnataka.gov.in.",
+      "details": [
+        "Result available for MBA, MCA, ME/MTech, MArch",
+        "Download scorecard with registration number",
+        "Follow counselling schedule on KEA portal"
+      ],
+      "faqs": [
+        {
+          "q": "How to check Karnataka PGCET 2026 result?",
+          "a": "Visit cetonline.karnataka.gov.in, enter your registration number and date of birth, and download your scorecard."
+        }
+      ],
+      "links": {
+        "apply": "https://cetonline.karnataka.gov.in",
+        "notification": "https://cetonline.karnataka.gov.in",
+        "official": "https://cetonline.karnataka.gov.in"
+      }
+    },
     {
       "id": "rrb-je-2026",
       "curated": true,
@@ -43,7 +374,7 @@
       "qualification": "Diploma/Degree in relevant Engineering / Chemistry / Metallurgy disciplines",
       "fee": "As per official notification",
       "selection": "CBT → Document Verification → Medical Examination",
-      "official": "https://www.rrbapply.gov.in/",
+      "official": "https://rrb.indianrailways.gov.in/",
       "verified": true,
       "desc": "Railway Recruitment Boards have released CEN No. 04/2026 for 4,098 Junior Engineer, Depot Material Superintendent and Chemical & Metallurgical Assistant posts. Apply online from 14 August to 13 September 2026.",
       "details": [
@@ -53,14 +384,41 @@
         "Post-wise vacancy split: JE (4,098), DMS & CMA as per notification"
       ],
       "sections": [
-        { "h2": "How to Apply for RRB JE 2026", "paras": ["The application process is fully online. Candidates must register on the official RRB application portal before the closing date."], "list": ["Visit the official RRB website rrbapply.gov.in", "Open the RRB JE CEN 04/2026 recruitment section", "Read the official notification carefully", "Complete online registration and fill the form", "Upload documents and photographs", "Pay the application fee (if applicable)", "Submit and save a printout for reference"] }
+        {
+          "h2": "How to Apply for RRB JE 2026",
+          "paras": [
+            "The application process is fully online. Candidates must register on the official RRB application portal before the closing date."
+          ],
+          "list": [
+            "Visit the official RRB website rrbapply.gov.in",
+            "Open the RRB JE CEN 04/2026 recruitment section",
+            "Read the official notification carefully",
+            "Complete online registration and fill the form",
+            "Upload documents and photographs",
+            "Pay the application fee (if applicable)",
+            "Submit and save a printout for reference"
+          ]
+        }
       ],
       "faqs": [
-        { "q": "What is the total vacancy for RRB JE 2026?", "a": "A total of 4,098 posts have been notified under CEN 04/2026, covering Junior Engineer, DMS and CMA posts across Indian Railways zones." },
-        { "q": "What is the age limit for RRB JE?", "a": "The age limit is 18 to 33 years as of the notification date, with relaxation for reserved categories per government rules." },
-        { "q": "What is the RRB JE selection process?", "a": "Selection involves a Computer Based Test (CBT), followed by Document Verification and Medical Examination." }
+        {
+          "q": "What is the total vacancy for RRB JE 2026?",
+          "a": "A total of 4,098 posts have been notified under CEN 04/2026, covering Junior Engineer, DMS and CMA posts across Indian Railways zones."
+        },
+        {
+          "q": "What is the age limit for RRB JE?",
+          "a": "The age limit is 18 to 33 years as of the notification date, with relaxation for reserved categories per government rules."
+        },
+        {
+          "q": "What is the RRB JE selection process?",
+          "a": "Selection involves a Computer Based Test (CBT), followed by Document Verification and Medical Examination."
+        }
       ],
-      "links": { "apply": "https://www.rrbapply.gov.in/", "notification": "https://www.freejobalert.com/articles/rrb-je-recruitment-2026-apply-online-for-4098-junior-engineer-posts-3059556", "official": "https://www.rrbapply.gov.in/" }
+      "links": {
+        "apply": "https://rrb.indianrailways.gov.in/",
+        "notification": "https://rrb.indianrailways.gov.in/",
+        "official": "https://rrb.indianrailways.gov.in/"
+      }
     },
     {
       "id": "ibps-clerk-2026",
@@ -91,14 +449,41 @@
         "Provisional Allotment: March 2027"
       ],
       "sections": [
-        { "h2": "IBPS Clerk 2026 Important Dates", "paras": ["The complete examination calendar is given below so you never miss a deadline."], "list": ["Registration Start: 01-08-2026", "Registration Last Date: 21-08-2026", "Prelims Call Letter: September 2026", "Prelims Exam: October 2026", "Prelims Result: November 2026", "Mains Exam: December 2026", "Provisional Allotment: March 2027"] }
+        {
+          "h2": "IBPS Clerk 2026 Important Dates",
+          "paras": [
+            "The complete examination calendar is given below so you never miss a deadline."
+          ],
+          "list": [
+            "Registration Start: 01-08-2026",
+            "Registration Last Date: 21-08-2026",
+            "Prelims Call Letter: September 2026",
+            "Prelims Exam: October 2026",
+            "Prelims Result: November 2026",
+            "Mains Exam: December 2026",
+            "Provisional Allotment: March 2027"
+          ]
+        }
       ],
       "faqs": [
-        { "q": "What is the IBPS Clerk 2026 vacancy?", "a": "A total of 11,403 posts are notified for the Customer Service Associate post across 11 participating public sector banks. Vacancies are indicative and can change." },
-        { "q": "What is the IBPS Clerk age limit?", "a": "Candidates must be between 20 and 28 years of age as on 01-08-2026. Age relaxation applies per government norms." },
-        { "q": "What is the IBPS Clerk application fee?", "a": "The fee is ₹850 for General/OBC candidates and ₹175 for SC/ST/PwBD/ESM/DESM candidates." }
+        {
+          "q": "What is the IBPS Clerk 2026 vacancy?",
+          "a": "A total of 11,403 posts are notified for the Customer Service Associate post across 11 participating public sector banks. Vacancies are indicative and can change."
+        },
+        {
+          "q": "What is the IBPS Clerk age limit?",
+          "a": "Candidates must be between 20 and 28 years of age as on 01-08-2026. Age relaxation applies per government norms."
+        },
+        {
+          "q": "What is the IBPS Clerk application fee?",
+          "a": "The fee is ₹850 for General/OBC candidates and ₹175 for SC/ST/PwBD/ESM/DESM candidates."
+        }
       ],
-      "links": { "apply": "https://www.ibps.in", "notification": "https://www.freejobalert.com/articles/ibps-clerk-recruitment-2026-apply-online-for-crp-csa-xvi-posts-3060464", "official": "https://www.ibps.in" }
+      "links": {
+        "apply": "https://ibpsreg.ibps.in/csaxvijul26/",
+        "notification": "https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf",
+        "official": "https://www.ibps.in"
+      }
     },
     {
       "id": "isro-icrb-2026",
@@ -129,13 +514,35 @@
         "Written test answer key published within 3 working days"
       ],
       "sections": [
-        { "h2": "ISRO ICRB 2026 Key Dates", "paras": ["Keep track of these important dates to avoid missing the window."], "list": ["Registration opens: 27-07-2026 (10:00 AM)", "Registration closes: 16-08-2026 (11:55 PM)", "Last date for fee payment: 16-08-2026", "Answer key: within 3 working days of written test", "Objection window: within 5 days of answer key"] }
+        {
+          "h2": "ISRO ICRB 2026 Key Dates",
+          "paras": [
+            "Keep track of these important dates to avoid missing the window."
+          ],
+          "list": [
+            "Registration opens: 27-07-2026 (10:00 AM)",
+            "Registration closes: 16-08-2026 (11:55 PM)",
+            "Last date for fee payment: 16-08-2026",
+            "Answer key: within 3 working days of written test",
+            "Objection window: within 5 days of answer key"
+          ]
+        }
       ],
       "faqs": [
-        { "q": "How many vacancies are there in ISRO ICRB 2026?", "a": "A total of 244 vacancies across Assistant (113), JPA (81), UDC (22), Stenographer (10) and autonomous-institute posts (18)." },
-        { "q": "Where can I apply for ISRO ICRB?", "a": "Applications are submitted online only through the official ISRO website isro.gov.in before 16 August 2026, 11:55 PM." }
+        {
+          "q": "How many vacancies are there in ISRO ICRB 2026?",
+          "a": "A total of 244 vacancies across Assistant (113), JPA (81), UDC (22), Stenographer (10) and autonomous-institute posts (18)."
+        },
+        {
+          "q": "Where can I apply for ISRO ICRB?",
+          "a": "Applications are submitted online only through the official ISRO website isro.gov.in before 16 August 2026, 11:55 PM."
+        }
       ],
-      "links": { "apply": "https://www.isro.gov.in", "notification": "https://www.freejobalert.com/articles/isro-recruitment-2026-assistant-udc-jpa-stenographer-3059587", "official": "https://www.isro.gov.in" }
+      "links": {
+        "apply": "https://www.isro.gov.in/Careers.html",
+        "notification": "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/July/Bilingual%20Advertisement_Asst_JPA_UDC_Steno_ICRB_2026_27072026.pdf",
+        "official": "https://www.isro.gov.in"
+      }
     },
     {
       "id": "ntpc-deputy-manager-2026",
@@ -156,7 +563,7 @@
       "qualification": "Engineering qualification with relevant post-qualification experience",
       "fee": "As per official notification",
       "selection": "Shortlisting → Interview / Assessment",
-      "official": "https://careers.ntpc.co.in",
+      "official": "https://ntpc.co.in/",
       "verified": true,
       "desc": "NTPC Advertisement No. 10/26 for 135 Deputy Manager posts at E4 level in Electrical (40), Mechanical (55) and Control & Instrumentation (40) disciplines. Apply 6–20 August 2026.",
       "details": [
@@ -166,13 +573,33 @@
         "Job location: Across NTPC locations in India"
       ],
       "sections": [
-        { "h2": "NTPC Deputy Manager Vacancy Break-up", "paras": ["The 135 vacancies are distributed across three engineering disciplines."], "list": ["Deputy Manager (Electrical): 40 Posts", "Deputy Manager (Mechanical): 55 Posts", "Deputy Manager (C&I): 40 Posts"] }
+        {
+          "h2": "NTPC Deputy Manager Vacancy Break-up",
+          "paras": [
+            "The 135 vacancies are distributed across three engineering disciplines."
+          ],
+          "list": [
+            "Deputy Manager (Electrical): 40 Posts",
+            "Deputy Manager (Mechanical): 55 Posts",
+            "Deputy Manager (C&I): 40 Posts"
+          ]
+        }
       ],
       "faqs": [
-        { "q": "How many NTPC Deputy Manager posts are there?", "a": "There are 135 total posts: 40 Electrical, 55 Mechanical and 40 Control & Instrumentation." },
-        { "q": "What is the NTPC Deputy Manager qualification?", "a": "Candidates need an engineering qualification in the relevant discipline along with the required post-qualification experience as per the detailed notification." }
+        {
+          "q": "How many NTPC Deputy Manager posts are there?",
+          "a": "There are 135 total posts: 40 Electrical, 55 Mechanical and 40 Control & Instrumentation."
+        },
+        {
+          "q": "What is the NTPC Deputy Manager qualification?",
+          "a": "Candidates need an engineering qualification in the relevant discipline along with the required post-qualification experience as per the detailed notification."
+        }
       ],
-      "links": { "apply": "https://careers.ntpc.co.in", "notification": "https://www.freejobalert.com/articles/ntpc-deputy-manager-recruitment-2026-apply-online-for-135-posts-3061626", "official": "https://careers.ntpc.co.in" }
+      "links": {
+        "apply": "https://ntpc.co.in/",
+        "notification": "https://ntpc.co.in/",
+        "official": "https://ntpc.co.in/"
+      }
     },
     {
       "id": "aiims-non-faculty-2026",
@@ -194,11 +621,22 @@
       "official": "https://www.aiims.edu",
       "verified": true,
       "desc": "AIIMS has opened recruitment for Clinical Psychologist, Medical Officer and other non-faculty positions. Details and apply links on the official AIIMS website.",
-      "details": ["Non-faculty Group A/B posts", "Clinical Psychologist & Medical Officer included", "Online application on AIIMS portal"],
-      "faqs": [
-        { "q": "How to apply for AIIMS non-faculty posts?", "a": "Apply through the official AIIMS recruitment portal before the deadline mentioned in the detailed advertisement." }
+      "details": [
+        "Non-faculty Group A/B posts",
+        "Clinical Psychologist & Medical Officer included",
+        "Online application on AIIMS portal"
       ],
-      "links": { "apply": "https://www.aiims.edu", "notification": "https://www.freejobalert.com/articles/aiims-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts", "official": "https://www.aiims.edu" }
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS non-faculty posts?",
+          "a": "Apply through the official AIIMS recruitment portal before the deadline mentioned in the detailed advertisement."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
     },
     {
       "id": "iit-delhi-research-scientist-2026",
@@ -218,171 +656,394 @@
       "official": "https://www.iitd.ac.in",
       "verified": true,
       "desc": "IIT Delhi invites applications for Project Research Scientist positions under sponsored research projects. Apply online on the IIT Delhi website.",
-      "details": ["Research project-based appointment", "Contractual engagement", "Apply via IIT Delhi portal"],
-      "faqs": [
-        { "q": "What is the IIT Delhi Project Research Scientist eligibility?", "a": "Candidates should hold a PhD or MTech in the relevant field with research experience as specified in the project advertisement." }
+      "details": [
+        "Research project-based appointment",
+        "Contractual engagement",
+        "Apply via IIT Delhi portal"
       ],
-      "links": { "apply": "https://www.iitd.ac.in", "notification": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-recruitment-2026-apply-online", "official": "https://www.iitd.ac.in" }
+      "faqs": [
+        {
+          "q": "What is the IIT Delhi Project Research Scientist eligibility?",
+          "a": "Candidates should hold a PhD or MTech in the relevant field with research experience as specified in the project advertisement."
+        }
+      ],
+      "links": {
+        "apply": "https://www.iitd.ac.in",
+        "notification": "https://www.iitd.ac.in",
+        "official": "https://www.iitd.ac.in"
+      }
     },
     {
-      "id": "karnataka-pgcet-result-2026",
-      "curated": true,
-      "title": "Karnataka PGCET Result 2026 — Check Online",
-      "category": "results",
-      "exam": "state",
+      "id": "aiims-non-faculty-recruitment-2026-apply-online-for-clinical-9",
+      "title": "AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts",
+      "category": "latest-jobs",
+      "exam": "aiims",
       "date": "2026-08-05",
-      "org": "Karnataka Examinations Authority (KEA)",
-      "postName": "PGCET 2026 Result (MBA, MCA, ME, MTech, MArch)",
-      "mode": "Online",
-      "examDate": "Result Declared",
-      "official": "https://cetonline.karnataka.gov.in",
-      "verified": true,
-      "desc": "Karnataka PGCET 2026 result has been declared by KEA. Check your score and rank card online at cetonline.karnataka.gov.in.",
-      "details": ["Result available for MBA, MCA, ME/MTech, MArch", "Download scorecard with registration number", "Follow counselling schedule on KEA portal"],
-      "faqs": [
-        { "q": "How to check Karnataka PGCET 2026 result?", "a": "Visit cetonline.karnataka.gov.in, enter your registration number and date of birth, and download your scorecard." }
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://cetonline.karnataka.gov.in", "notification": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online", "official": "https://cetonline.karnataka.gov.in" }
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
     },
     {
-      "id": "rssb-driver-result-2026",
-      "curated": true,
-      "title": "RSSB Driver Result 2026 — Trade Test Selected List",
-      "category": "results",
-      "exam": "state",
+      "id": "aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--12",
+      "title": "AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts",
+      "category": "latest-jobs",
+      "exam": "aiims",
       "date": "2026-08-05",
-      "org": "Rajasthan Staff Selection Board (RSSB)",
-      "postName": "Driver Recruitment 2026 Trade Test Result",
-      "mode": "Online",
-      "examDate": "Result Declared",
-      "official": "https://rssb.rajasthan.gov.in",
-      "verified": true,
-      "desc": "RSSB Driver 2026 result declared — check the trade test selected candidates list PDF and download it for future reference.",
-      "details": ["Trade test qualified candidates list released", "Download PDF from RSSB website", "Next stage: document verification"],
-      "faqs": [
-        { "q": "How to check RSSB Driver result 2026?", "a": "Visit rssb.rajasthan.gov.in and open the Driver recruitment result link to download the selected candidates PDF." }
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://rssb.rajasthan.gov.in", "notification": "https://www.freejobalert.com/articles/rssb-driver-result-2026-check-trade-test-selected-candidates-list", "official": "https://rssb.rajasthan.gov.in" }
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
     },
     {
-      "id": "mumbai-university-result-2026",
-      "curated": true,
-      "title": "Mumbai University Result 2026 — M.Com & MSc",
-      "category": "results",
-      "exam": "state",
-      "date": "2026-08-02",
-      "org": "University of Mumbai",
-      "postName": "M.Com & MSc Semester Results",
-      "mode": "Online",
-      "examDate": "Result Declared",
-      "official": "https://mumresults.in",
-      "verified": true,
-      "desc": "Mumbai University has declared M.Com and MSc results. Check your marks online at mumresults.in using your seat number.",
-      "details": ["M.Com and MSc results released", "Check with seat number", "Download marksheet after result"],
-      "faqs": [
-        { "q": "How to check Mumbai University result 2026?", "a": "Visit mumresults.in, select your course and semester, enter your seat number and date of birth to view your result." }
+      "id": "ntpc-deputy-manager-recruitment-2026-apply-online-for-135-po-24",
+      "title": "NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts",
+      "category": "latest-jobs",
+      "exam": "ntpc",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://ntpc.co.in/",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://mumresults.in", "notification": "https://www.freejobalert.com/articles/mumbai-university-result-2026-check-mcom-msc-result", "official": "https://mumresults.in" }
+      "faqs": [
+        {
+          "q": "How to apply for NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://ntpc.co.in/",
+        "notification": "https://ntpc.co.in/",
+        "official": "https://ntpc.co.in/"
+      }
     },
     {
-      "id": "nhpc-apprentice-result-2026",
-      "curated": true,
-      "title": "NHPC Apprentice Result 2026 — Selected Candidates List",
-      "category": "results",
-      "exam": "state",
-      "date": "2026-08-01",
-      "org": "NHPC Limited",
-      "postName": "Apprentice (Trade/Technician) Result",
-      "mode": "Online",
-      "examDate": "Result Declared",
-      "official": "https://www.nhpcindia.com",
-      "verified": true,
-      "desc": "NHPC Apprentice 2026 provisionally selected candidates list released. Download the PDF from the NHPC website.",
-      "details": ["Provisional selected list published", "Candidates to report for joining as per schedule", "Check on NHPC careers page"],
-      "faqs": [
-        { "q": "How to check NHPC Apprentice result?", "a": "Download the provisionally selected candidates PDF from the NHPC careers section using the official link." }
+      "id": "rrb-je-04-2026-recruitment-2026-notification-out-apply-onlin-26",
+      "title": "RRB JE 04/2026 Recruitment 2026 Notification Out - Apply Online for 4098 Junior Engineer Posts",
+      "category": "latest-jobs",
+      "exam": "railway",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: RRB JE 04/2026 Recruitment 2026 Notification Out - Apply Online for 4098 Junior Engineer Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://rrb.indianrailways.gov.in/",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://www.nhpcindia.com", "notification": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-check-provisionally-selected-candidates-list", "official": "https://www.nhpcindia.com" }
+      "faqs": [
+        {
+          "q": "How to apply for RRB JE 04/2026 Recruitment 2026 Notification Out - Apply Online for 4098 Junior Engineer Posts?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://rrb.indianrailways.gov.in/",
+        "notification": "https://rrb.indianrailways.gov.in/",
+        "official": "https://rrb.indianrailways.gov.in/"
+      }
     },
     {
-      "id": "hprca-answer-key-2026",
-      "curated": true,
-      "title": "HPRCA Teacher Answer Key 2026 — Chemistry & Music",
+      "id": "ibps-clerk-recruitment-2026-crp-csa-xvi-notification-out-app-28",
+      "title": "IBPS Clerk Recruitment 2026 (CRP CSA-XVI) Notification Out - Apply Online 11403 Posts from August 1",
+      "category": "latest-jobs",
+      "exam": "bank",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: IBPS Clerk Recruitment 2026 (CRP CSA-XVI) Notification Out - Apply Online 11403 Posts from August 1. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.ibps.in",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for IBPS Clerk Recruitment 2026 (CRP CSA-XVI) Notification Out - Apply Online 11403 Posts from August 1?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.ibps.in",
+        "notification": "https://www.ibps.in",
+        "official": "https://www.ibps.in"
+      }
+    },
+    {
+      "id": "isro-icrb-recruitment-2026-notification-out-apply-online-for-29",
+      "title": "ISRO ICRB Recruitment 2026 Notification Out - Apply Online for 244 Assistant, JPA, UDC &amp; Stenographer Posts",
+      "category": "latest-jobs",
+      "exam": "isro",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: ISRO ICRB Recruitment 2026 Notification Out - Apply Online for 244 Assistant, JPA, UDC &amp; Stenographer Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.isro.gov.in/Careers.html",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for ISRO ICRB Recruitment 2026 Notification Out - Apply Online for 244 Assistant, JPA, UDC &amp; Stenographer Posts?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.isro.gov.in/Careers.html",
+        "notification": "https://www.isro.gov.in/Careers.html",
+        "official": "https://www.isro.gov.in/Careers.html"
+      }
+    },
+    {
+      "id": "aiims-norcet-11-2026-notification-out-2218-nursing-officer-r-30",
+      "title": "AIIMS NORCET 11 2026 Notification Out: 2218 Nursing Officer Recruitment, Apply Online from 24 July",
+      "category": "latest-jobs",
+      "exam": "aiims",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS NORCET 11 2026 Notification Out: 2218 Nursing Officer Recruitment, Apply Online from 24 July. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS NORCET 11 2026 Notification Out: 2218 Nursing Officer Recruitment, Apply Online from 24 July?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
+    },
+    {
+      "id": "rrb-alp-cbt-2-answer-key-2026-out-download-response-sheet-am-52",
+      "title": "RRB ALP CBT 2 Answer Key 2026 Out  - Download Response Sheet &amp; Raise Objection",
       "category": "answer-key",
-      "exam": "teaching",
-      "date": "2026-07-31",
-      "org": "Himachal Pradesh Staff Selection Commission (HPSSC)",
-      "postName": "Computer Teacher / Chemistry & Music Teacher Answer Key",
-      "mode": "Online",
-      "examDate": "Answer Key Released",
-      "official": "https://hpsssb.hp.gov.in",
-      "verified": true,
-      "desc": "HPRCA Teacher 2026 answer key released for Chemistry and Music teacher posts. Download the PDF and raise objections if needed.",
-      "details": ["Chemistry and Music teacher answer keys released", "Download from HPSSC website", "Objection window as per notice"],
-      "faqs": [
-        { "q": "Where can I download the HPRCA answer key?", "a": "Download the answer key PDF from the official HPSSC website under the recruitment section." }
+      "exam": "railway",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: RRB ALP CBT 2 Answer Key 2026 Out  - Download Response Sheet &amp; Raise Objection. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://rrb.indianrailways.gov.in/",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://hpsssb.hp.gov.in", "notification": "https://www.freejobalert.com/articles/hprca-teacher-answer-key-2026-download-chemistry-music-teacher-pdf", "official": "https://hpsssb.hp.gov.in" }
+      "faqs": [
+        {
+          "q": "How to apply for RRB ALP CBT 2 Answer Key 2026 Out  - Download Response Sheet &amp; Raise Objection?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://rrb.indianrailways.gov.in/",
+        "notification": "https://rrb.indianrailways.gov.in/",
+        "official": "https://rrb.indianrailways.gov.in/"
+      }
     },
     {
-      "id": "neet-ug-admit-2027",
-      "curated": true,
-      "title": "NEET UG 2027 Admit Card — Download Hall Ticket",
-      "category": "admit-card",
-      "exam": "state",
-      "date": "2026-07-30",
-      "org": "National Testing Agency (NTA)",
-      "postName": "NEET UG 2027 Admit Card",
-      "mode": "Online",
-      "examDate": "01 May 2027",
-      "official": "https://neet.nta.nic.in",
-      "verified": true,
-      "desc": "NEET UG 2027 admit card will be released by NTA on the official website. Download your hall ticket with application number and date of birth.",
-      "details": ["Admit card release: few weeks before exam", "Exam date: 01 May 2027", "Carry printout + valid photo ID"],
-      "faqs": [
-        { "q": "When will NEET 2027 admit card release?", "a": "NTA typically releases the admit card 2-4 weeks before the exam on neet.nta.nic.in." }
+      "id": "aiims-delhi-project-technical-support-ii-recruitment-2026-ap-71",
+      "title": "AIIMS Delhi Project Technical Support  II Recruitment 2026 - Apply Online",
+      "category": "latest-jobs",
+      "exam": "aiims",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Delhi Project Technical Support  II Recruitment 2026 - Apply Online. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://neet.nta.nic.in", "notification": "https://www.freejobalert.com/articles/neet-ug-2027-admit-card", "official": "https://neet.nta.nic.in" }
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Delhi Project Technical Support  II Recruitment 2026 - Apply Online?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
     },
     {
-      "id": "tn-mbamca-allotment-2026",
-      "curated": true,
-      "title": "TANCET MBA Provisional Allotment 2026",
-      "category": "admission",
-      "exam": "state",
-      "date": "2026-07-29",
-      "org": "Tamil Nadu Directorate of Technical Education",
-      "postName": "TANCET MBA 2026 Seat Allotment",
-      "mode": "Online",
-      "examDate": "Allotment Released",
-      "official": "https://tn-mbamca.com",
-      "verified": true,
-      "desc": "TANCET MBA 2026 provisional seat allotment released. Download your allotment order at tn-mbamca.com and complete admission formalities.",
-      "details": ["Phase-1 provisional allotment released", "Download allotment order PDF", "Complete admission within deadline"],
-      "faqs": [
-        { "q": "How to check TANCET MBA allotment?", "a": "Visit tn-mbamca.com, log in with your application number and download the provisional allotment order." }
+      "id": "aiims-jodhpur-project-technical-support-recruitment-2026-wal-85",
+      "title": "AIIMS Jodhpur Project Technical Support Recruitment 2026 - Walkin",
+      "category": "latest-jobs",
+      "exam": "aiims",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Jodhpur Project Technical Support Recruitment 2026 - Walkin. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://tn-mbamca.com", "notification": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order", "official": "https://tn-mbamca.com" }
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Jodhpur Project Technical Support Recruitment 2026 - Walkin?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
     },
     {
-      "id": "ts-lawcet-2026",
-      "curated": true,
-      "title": "TS LAWCET 2026 Seat Allotment Result — Phase 1",
-      "category": "admission",
-      "exam": "state",
-      "date": "2026-07-28",
-      "org": "Telangana Council of Higher Education",
-      "postName": "TS LAWCET 2026 Phase-1 Allotment",
-      "mode": "Online",
-      "examDate": "Result Released",
-      "official": "https://lawcetadm.tgche.ac.in",
-      "verified": true,
-      "desc": "TS LAWCET 2026 Phase-1 seat allotment result released. Check your allotment at lawcetadm.tgche.ac.in and confirm admission.",
-      "details": ["Phase-1 allotment released for 3-year & 5-year LLB", "Check with hall ticket/application number", "Report to allotted college on time"],
-      "faqs": [
-        { "q": "How to check TS LAWCET allotment result?", "a": "Visit lawcetadm.tgche.ac.in and log in with your credentials to view and download your seat allotment order." }
+      "id": "aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--88",
+      "title": "AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Nuclear Medicine Technologist Posts",
+      "category": "latest-jobs",
+      "exam": "aiims",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Nuclear Medicine Technologist Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
       ],
-      "links": { "apply": "https://lawcetadm.tgche.ac.in", "notification": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result", "official": "https://lawcetadm.tgche.ac.in" }
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Nuclear Medicine Technologist Posts?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
+    },
+    {
+      "id": "aiims-nagpur-project-research-scientist-iii-recruitment-2026-93",
+      "title": "AIIMS Nagpur Project Research Scientist III Recruitment 2026 - Apply Online",
+      "category": "latest-jobs",
+      "exam": "aiims",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Nagpur Project Research Scientist III Recruitment 2026 - Apply Online. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Apply on official website: https://www.aiims.edu",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Nagpur Project Research Scientist III Recruitment 2026 - Apply Online?",
+          "a": "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.aiims.edu",
+        "notification": "https://www.aiims.edu",
+        "official": "https://www.aiims.edu"
+      }
     }
   ]
 }

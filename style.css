@@ -161,6 +161,15 @@ body {
   font-weight: 700; font-size: 0.97rem; line-height: 1.4;
 }
 .post-title:hover { color: var(--primary-dark); }
+.official-tag {
+  display: inline-block;
+  background: #f0fdf4; color: #15803d;
+  border: 1px solid #bbf7d0;
+  font-size: 0.65rem; font-weight: 800;
+  padding: 2px 8px; border-radius: 6px;
+  margin-left: 8px; vertical-align: middle;
+  white-space: nowrap;
+}
 .post-meta { display: block; margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
 .chip-sm {
   display: inline-block;
@@ -241,6 +250,47 @@ body {
 .cat-box li a:hover { color: var(--primary-dark); }
 .cat-box .more { color: var(--accent); font-size: 0.8rem; font-weight: 700; text-decoration: none; }
 .cat-box .more:hover { text-decoration: underline; }
+
+/* ---------- app banner ---------- */
+.app-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  background: linear-gradient(90deg, #0f172a, #1e3a8a);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin: 18px 0;
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+}
+.app-info { display: flex; align-items: center; gap: 14px; }
+.app-icon {
+  font-size: 2.6rem !important;
+  color: var(--accent) !important;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 10px;
+}
+.app-info h3 { font-size: 1.05rem; font-weight: 800; }
+.app-info p { color: #cbd5e1; font-size: 0.82rem; }
+.app-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: #fff;
+  font-weight: 800; font-size: 0.9rem;
+  padding: 12px 20px; border-radius: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: filter 0.15s;
+}
+.app-btn:hover { filter: brightness(1.1); }
+
+/* ---------- 404 ---------- */
+.notfound { text-align: center; padding: 80px 20px; }
+.notfound .big-404 {
+  font-size: 5rem; font-weight: 900;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.notfound h1 { font-size: 1.5rem; margin-bottom: 8px; }
+.notfound p { color: var(--muted); margin-bottom: 20px; }
 
 /* ---------- side cards ---------- */
 .side-card h3 { display: flex; align-items: center; gap: 7px; font-size: 1rem; font-weight: 800; margin-bottom: 12px; }

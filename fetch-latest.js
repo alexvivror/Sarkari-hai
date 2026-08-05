@@ -12,6 +12,7 @@
 const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
+const { findOfficial } = require("./official.js");
 
 const ROOT = __dirname;
 const DATA_FILE = path.join(ROOT, "data", "posts.json");
@@ -58,6 +59,27 @@ function stripHtml(s) {
     .slice(0, 180);
 }
 
+/* parse "26 August 2026", "13 September 2026 (tentative)" → Date|null */
+function parseDateStr(s) {
+  if (!s || s === "—") return null;
+  const m = String(s).match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+  if (!m) return null;
+  const months = {
+    january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+    july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
+  };
+  const mon = months[String(m[2]).toLowerCase()];
+  if (mon === undefined) return null;
+  const dt = new Date(Number(m[3]), mon, Number(m[1]));
+  return isNaN(dt) ? null : dt;
+}
+
+/* final result declared? examDate text says so, or post is a result post */
+function isResultDeclared(p) {
+  const ed = String(p.examDate || "").toLowerCase();
+  return /declared|released|final result|result out|selected|provisional/.test(ed) || p.category === "results";
+}
+
 /* ---------------- fetch RSS ---------------- */
 async function fetchRss() {
   const res = await fetch(RSS_URL, {
@@ -96,14 +118,25 @@ function fmtDate(iso) {
 
 /* ---------------- build posts ---------------- */
 function buildPosts(rssItems) {
-  return rssItems.slice(0, MAX_POSTS).map((it, i) => {
-    const { category, exam } = classify(it.title);
+  const posts = [];
+  let skipped = 0;
+  for (let i = 0; i < rssItems.length && posts.length < MAX_POSTS; i++) {
+    const it = rssItems[i];
+    const { category } = classify(it.title);
     const d = fmtDate(it.pubDate);
-    return {
-      id: slugify(it.title) + (i > 0 ? "-" + i : ""),
+    const match = findOfficial(it.title);
+    // ONLY include posts where we can confidently link an official
+    // government domain — never guess or send users to unknown sites
+    if (!match || !match.cfg.apply) {
+      skipped++;
+      continue;
+    }
+    const officialUrl = match.cfg.apply;
+    posts.push({
+      id: slugify(it.title) + "-" + i,
       title: it.title,
       category,
-      exam,
+      exam: match.slug,
       date: d.sort,
       applyStart: d.pretty,
       applyEnd: "—",
@@ -111,20 +144,22 @@ function buildPosts(rssItems) {
       desc: it.desc || `Latest sarkari notification: ${it.title}. Apply before the deadline.`,
       details: [
         `Posted: ${d.pretty}`,
-        "Source: FreeJobAlert (official links on post page)",
+        `Apply on official website: ${officialUrl}`,
         "Verify details on the official website before applying",
       ],
       faqs: [
-        { q: `How to apply for ${it.title}?`, a: "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date." },
-        { q: "Where can I find the official notification?", a: "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process." },
+        { q: `How to apply for ${it.title}?`, a: "Click Apply Online on this page to open the official website. Read the eligibility criteria carefully and complete your application before the last date." },
+        { q: "Where can I find the official notification?", a: "The Apply Online button on this page links to the official government website with full details including eligibility, fees, and selection process." },
       ],
       links: {
-        apply: it.link,
-        notification: it.link,
-        official: it.link,
+        apply: officialUrl,
+        notification: officialUrl,
+        official: officialUrl,
       },
-    };
-  });
+    });
+  }
+  console.log(`  (${skipped} items skipped — no verified official domain)`);
+  return posts;
 }
 
 /* ---------------- main ---------------- */
@@ -141,11 +176,35 @@ function buildPosts(rssItems) {
     const curated = (data.posts || []).filter((p) => p.curated);
     const freshIds = new Set(fresh.map((p) => p.id));
     const keptCurated = curated.filter((p) => !freshIds.has(p.id));
-    // cap: curated (max 6) + fresh (fill up to MAX_POSTS total)
-    const maxFresh = Math.max(12, MAX_POSTS - keptCurated.length);
-    data.posts = [...keptCurated.slice(0, 6), ...fresh.slice(0, maxFresh)];
+    // also drop curated posts whose title matches a fresh post (avoid dupes)
+    const freshTitles = new Set(fresh.map((p) => p.title.toLowerCase().replace(/[^a-z0-9]+/g, "")));
+    const uniqueCurated = keptCurated.filter(
+      (p) => !freshTitles.has(p.title.toLowerCase().replace(/[^a-z0-9]+/g, ""))
+    );
+    // cap: keep ALL curated (hand-verified) + fresh up to MAX_POSTS total
+    const maxFresh = Math.max(12, MAX_POSTS - uniqueCurated.length);
+    let posts = [...uniqueCurated, ...fresh.slice(0, maxFresh)];
+
+    // AUTO-PURGE: delete closed vacancies after final result is declared.
+    // A vacancy post is removed when its apply window has closed (applyEnd in
+    // the past) AND the final result is out. Result/admit-card/answer-key
+    // posts stay — users still need those links.
+    const today = new Date();
+    const before = posts.length;
+    posts = posts.filter((p) => {
+      if (p.category !== "latest-jobs") return true; // keep results etc.
+      const end = parseDateStr(p.applyEnd);
+      if (!end) return true; // no close date → keep
+      if (end >= today) return true; // still open → keep
+      if (!isResultDeclared(p)) return true; // result not out yet → keep
+      console.log(`  PURGED (closed + result declared): ${p.id} — ${p.title.slice(0, 50)}`);
+      return false;
+    });
+    if (posts.length < before) console.log(`  Auto-purged ${before - posts.length} closed vacancy post(s)`);
+
+    data.posts = posts;
     fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
-    console.log(`Updated data/posts.json: ${keptCurated.length} curated + ${Math.min(maxFresh, fresh.length)} fresh = ${data.posts.length} posts`);
+    console.log(`Updated data/posts.json: ${uniqueCurated.length} curated + ${Math.min(maxFresh, fresh.length)} fresh = ${data.posts.length} posts`);
 
     // rebuild
     execSync("node build.js", { cwd: ROOT, stdio: "inherit" });

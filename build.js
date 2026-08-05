@@ -36,6 +36,11 @@ const byCat = Object.fromEntries(data.categories.map((c) => [c.slug, c]));
 const byExam = Object.fromEntries(data.exams.map((e) => [e.slug, e]));
 const byId = Object.fromEntries(data.posts.map((p) => [p.id, p]));
 
+/* is this URL a trusted government/verifiable official domain? */
+function isOfficial(url) {
+  return /\.gov\.in|\.nic\.in|\.ac\.in|\.edu|ibps\.in|ntpc\.co|isro\.gov|nhpcindia\.com|mumresults\.in|tn-mbamca\.com/i.test(url || "");
+}
+
 /* ---------- shared layout ---------- */
 function pageShell({ title, metaDesc, canonical, body, schema }) {
   return `<!DOCTYPE html>
@@ -85,6 +90,10 @@ function pageShell({ title, metaDesc, canonical, body, schema }) {
         <div>
           <h4>${SITE}</h4>
           <p>${data.site.tagline}. ${data.site.hindi}.</p>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./disclaimer.html">Disclaimer</a>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -101,7 +110,7 @@ function pageShell({ title, metaDesc, canonical, body, schema }) {
           <a href="#">YouTube</a>
         </div>
       </div>
-      <p class="footer-note">⚠️ This is a demo site. Verify all official information on government websites. ${SITE} © <span id="year"></span></p>
+      <p class="footer-note">⚠️ This site is for information only and is not a government website. Always verify on official government portals. ${SITE} © <span id="year"></span></p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
@@ -112,23 +121,25 @@ function pageShell({ title, metaDesc, canonical, body, schema }) {
 /* ---------- post row (the sarkari result table row) ---------- */
 function postRow(p) {
   const cat = byCat[p.category];
+  const off = isOfficial(p.links.apply);
   return `<tr class="post-row">
     <td class="post-name">
       <a href="./${p.id}.html" class="post-title">${esc(p.title)}</a>
+      ${off ? '<span class="official-tag" title="Links to official government website">✔ Official</span>' : ""}
       <span class="post-meta">
         <span class="chip-sm ${p.category}">${esc(cat ? cat.label : p.category)}</span>
         <span class="chip-sm">${esc(byExam[p.exam] ? byExam[p.exam].label : p.exam)}</span>
-        <span class="chip-sm">${esc(p.examDate)}</span>
+        <span class="chip-sm">${esc(p.examDate || "—")}</span>
       </span>
     </td>
     <td class="post-dates">
-      <span class="dates"><b>Start:</b> ${esc(p.applyStart)}</span>
-      <span class="dates"><b>End:</b> ${esc(p.applyEnd)}</span>
+      <span class="dates"><b>Start:</b> ${esc(p.applyStart || "—")}</span>
+      <span class="dates"><b>End:</b> ${esc(p.applyEnd || "—")}</span>
     </td>
     <td class="post-actions">
-      <a class="act-btn primary" href="${esc(p.links.apply)}" target="_blank" rel="noopener">Apply Online</a>
-      <a class="act-btn" href="${esc(p.links.notification)}">Notification</a>
-      <a class="act-btn ghost" href="${esc(p.links.official)}" target="_blank" rel="noopener">Official Site</a>
+      <a class="act-btn primary" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow">Apply Online</a>
+      <a class="act-btn" href="${esc(p.links.notification)}" rel="noopener nofollow">Notification</a>
+      <a class="act-btn ghost" href="${esc(p.links.official)}" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>`;
 }
@@ -158,6 +169,11 @@ const examChips = data.exams
   .map((e) => `<a class="chip" href="./exam-${e.slug}.html"><span class="material-symbols-outlined">${e.icon}</span>${esc(e.label)}</a>`)
   .join("\n");
 
+const trending = [
+  "SSC CGL 2026", "UPSC IAS 2026", "RRB NTPC", "IBPS Clerk", "NEET 2027",
+  "Delhi Police", "Agniveer Army", "CTET 2026", "JEE Main 2027", "CUET UG",
+].map((t) => `<a class="chip" href="./search.html?q=${encodeURIComponent(t)}">${esc(t)}</a>`).join("\n");
+
 const homeBody = `
 <main>
   <section class="ticker">
@@ -167,7 +183,16 @@ const homeBody = `
     </div>
   </section>
   <section class="container">
-    <div class="ad-slot" data-ad="leaderboard"><span>Advertisement</span></div>
+    <div class="app-banner">
+      <div class="app-info">
+        <span class="app-icon material-symbols-outlined">smartphone</span>
+        <div>
+          <h3>Get ${SITE} on your phone</h3>
+          <p>Instant job alerts, results &amp; admit cards — download the free app.</p>
+        </div>
+      </div>
+      <a class="app-btn" href="#"><span class="material-symbols-outlined">download</span> Download App</a>
+    </div>
   </section>
   <section class="container main-grid">
     <div class="content-col">
@@ -191,6 +216,10 @@ const homeBody = `
       <div class="card side-card">
         <h3><span class="material-symbols-outlined">school</span> Exams</h3>
         <div class="chips">${examChips}</div>
+      </div>
+      <div class="card side-card">
+        <h3><span class="material-symbols-outlined">trending_up</span> Trending Searches</h3>
+        <div class="chips">${trending}</div>
       </div>
       <div class="ad-slot" data-ad="sidebar"><span>Advertisement</span></div>
     </aside>
@@ -373,6 +402,103 @@ data.posts.forEach((p) => {
   );
 });
 
+/* ---------- static info pages (trust + AdSense approval) ---------- */
+const STATIC_PAGES = [
+  {
+    slug: "about",
+    title: "About Us",
+    meta: "About Sarkari Hai — a free platform for latest sarkari jobs, results, admit cards and answer keys.",
+    body: `
+  <main class="container page">
+    <nav class="crumbs"><a href="./">Home</a> <span>›</span> About</nav>
+    <h1 class="page-h1"><span class="material-symbols-outlined">info</span> About ${SITE}</h1>
+    <article class="card post-detail">
+      <p class="page-desc">${SITE} is a free information platform that helps job seekers across India find the latest government job notifications, exam results, admit cards, answer keys and syllabus — all in one place.</p>
+      <h2 class="sub-h">What we do</h2>
+      <ul class="detail-list">
+        <li><span class="material-symbols-outlined">check_circle</span> Publish latest sarkari job notifications as soon as they are released</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Provide exam results and admit card download links</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Share answer keys and syllabus for upcoming exams</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Link to official government websites for every application</li>
+      </ul>
+      <h2 class="sub-h">Our promise</h2>
+      <p class="page-desc">We only link to official government websites (.gov.in, .nic.in) for applications. We do not collect or store any personal information. The site is free for all users.</p>
+      <h2 class="sub-h">Contact</h2>
+      <p class="page-desc">Questions or suggestions? Visit our <a href="./contact.html" style="color:var(--primary);font-weight:700">Contact page</a>.</p>
+    </article>
+  </main>`,
+  },
+  {
+    slug: "contact",
+    title: "Contact Us",
+    meta: "Contact Sarkari Hai — send feedback, suggestions or report issues.",
+    body: `
+  <main class="container page">
+    <nav class="crumbs"><a href="./">Home</a> <span>›</span> Contact</nav>
+    <h1 class="page-h1"><span class="material-symbols-outlined">mail</span> Contact Us</h1>
+    <div class="card post-detail">
+      <p class="page-desc">Have a question, feedback, or found something incorrect? Reach out and we will fix it quickly.</p>
+      <p class="page-desc">For official information, always visit the government website listed on the relevant post page.</p>
+      <div class="quick-stats">
+        <div class="qs"><span class="material-symbols-outlined">alternate_email</span><b>Email</b><small>support@sarkari-hai.in</small></div>
+        <div class="qs"><span class="material-symbols-outlined">send</span><b>Telegram</b><small>@sarkarihai</small></div>
+      </div>
+    </div>
+  </main>`,
+  },
+  {
+    slug: "privacy",
+    title: "Privacy Policy",
+    meta: "Sarkari Hai privacy policy — we do not collect personal data. All tools run in your browser.",
+    body: `
+  <main class="container page">
+    <nav class="crumbs"><a href="./">Home</a> <span>›</span> Privacy Policy</nav>
+    <h1 class="page-h1"><span class="material-symbols-outlined">privacy_tip</span> Privacy Policy</h1>
+    <article class="card post-detail">
+      <h2 class="sub-h">Information we collect</h2>
+      <p class="page-desc">${SITE} does not collect, store, or share any personal information. We have no user accounts, no forms that store data, and no tracking of individual visitors.</p>
+      <h2 class="sub-h">Cookies and advertising</h2>
+      <p class="page-desc">We may show advertisements. Ad networks such as Google AdSense may use cookies to serve relevant ads. You can disable cookies in your browser settings at any time.</p>
+      <h2 class="sub-h">Third-party links</h2>
+      <p class="page-desc">We link to official government websites for applications and notifications. We are not responsible for the content or privacy practices of external sites. Always verify information on the official website.</p>
+      <h2 class="sub-h">Changes</h2>
+      <p class="page-desc">This policy may be updated occasionally. Continued use of the site means you accept the current policy.</p>
+    </article>
+  </main>`,
+  },
+  {
+    slug: "disclaimer",
+    title: "Disclaimer",
+    meta: "Sarkari Hai disclaimer — results and dates are for information; always verify on official government websites.",
+    body: `
+  <main class="container page">
+    <nav class="crumbs"><a href="./">Home</a> <span>›</span> Disclaimer</nav>
+    <h1 class="page-h1"><span class="material-symbols-outlined">warning</span> Disclaimer</h1>
+    <article class="card post-detail">
+      <h2 class="sub-h">Information only</h2>
+      <p class="page-desc">${SITE} publishes job notifications, results, admit card and answer key information for the convenience of job seekers. All information is provided "as is" for informational purposes only.</p>
+      <h2 class="sub-h">Always verify officially</h2>
+      <p class="page-desc">Before applying, verify all details — eligibility, dates, fees — on the official government website. ${SITE} is not a government website and is not affiliated with any government body.</p>
+      <h2 class="sub-h">No guarantee</h2>
+      <p class="page-desc">We strive for accuracy but cannot guarantee that all information is complete or error-free. We are not liable for any loss arising from the use of this information. Application and result decisions are made solely by the respective recruiting bodies.</p>
+    </article>
+  </main>`,
+  },
+];
+
+STATIC_PAGES.forEach((pg) => {
+  fs.writeFileSync(
+    path.join(outDir, `${pg.slug}.html`),
+    pageShell({
+      title: `${pg.title} — ${SITE}`,
+      metaDesc: pg.meta,
+      canonical: `${DOMAIN}/${pg.slug}.html`,
+      body: pg.body,
+      schema: [],
+    })
+  );
+});
+
 /* ---------- search page ---------- */
 const searchBody = `
 <main class="container page">
@@ -399,12 +525,31 @@ fs.writeFileSync(
   })
 );
 
+/* ---------- 404 page ---------- */
+fs.writeFileSync(
+  path.join(outDir, "404.html"),
+  pageShell({
+    title: `Page Not Found — ${SITE}`,
+    metaDesc: "Page not found. Browse the latest sarkari jobs, results and admit cards.",
+    canonical: `${DOMAIN}/404.html`,
+    body: `
+<main class="container notfound">
+  <div class="big-404">404</div>
+  <h1>Page not found</h1>
+  <p>The page you are looking for may have been removed or moved.</p>
+  <a class="app-btn" href="./"><span class="material-symbols-outlined">home</span> Back to Home</a>
+</main>`,
+    schema: [],
+  })
+);
+
 /* ---------- sitemap ---------- */
 const urls = [
   `${DOMAIN}/`,
   ...data.categories.map((c) => `${DOMAIN}/${c.slug}.html`),
   ...data.exams.map((e) => `${DOMAIN}/exam-${e.slug}.html`),
   ...data.posts.map((p) => `${DOMAIN}/${p.id}.html`),
+  ...STATIC_PAGES.map((pg) => `${DOMAIN}/${pg.slug}.html`),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
