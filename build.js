@@ -70,6 +70,7 @@ function pageShell({ title, metaDesc, canonical, body, schema }) {
       </a>
       <nav class="nav">
         <a href="./#latest">Latest</a>
+        <a href="./all-recruitment.html">All Posts</a>
         <a href="./latest-jobs.html">Jobs</a>
         <a href="./results.html">Results</a>
         <a href="./admit-card.html">Admit Card</a>
@@ -199,7 +200,7 @@ const homeBody = `
       <div class="card" id="latest">
         <h2 class="card-title"><span class="material-symbols-outlined">newspaper</span> Latest Jobs & Results <span class="updated-badge">Updated ${BUILT_PRETTY}</span></h2>
         ${postTable(latest.slice(0, 10))}
-        <p class="all-link"><a href="./latest-jobs.html">View all latest posts →</a></p>
+        <p class="all-link"><a href="./all-recruitment.html">View all ${latest.length} posts in one page →</a></p>
       </div>
       <div class="ad-slot" data-ad="infeed"><span>Advertisement</span></div>
       <div class="cat-grid">
@@ -525,6 +526,25 @@ fs.writeFileSync(
   })
 );
 
+/* ---------- all-recruitment page (single file with every post) ---------- */
+const allPosts = [...data.posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+fs.writeFileSync(
+  path.join(outDir, "all-recruitment.html"),
+  pageShell({
+    title: `All Recruitment Posts — ${SITE}`,
+    metaDesc: `All sarkari recruitment posts in one place: jobs, results, admit cards, answer keys, syllabus and admissions. ${allPosts.length} posts with official links.`,
+    canonical: `${DOMAIN}/all-recruitment.html`,
+    body: `
+<main class="container page">
+  <nav class="crumbs"><a href="./">Home</a> <span>›</span> All Recruitment Posts</nav>
+  <h1 class="page-h1"><span class="material-symbols-outlined">lists</span> All Recruitment Posts <small>${allPosts.length} total</small></h1>
+  <p class="page-desc">Every recruitment notification, result, admit card, answer key, syllabus and admission update — in one place. All apply links go to official government websites.</p>
+  ${postTable(allPosts)}
+</main>`,
+    schema: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: "All Recruitment Posts", url: `${DOMAIN}/all-recruitment.html` }],
+  })
+);
+
 /* ---------- 404 page ---------- */
 fs.writeFileSync(
   path.join(outDir, "404.html"),
@@ -546,6 +566,7 @@ fs.writeFileSync(
 /* ---------- sitemap ---------- */
 const urls = [
   `${DOMAIN}/`,
+  `${DOMAIN}/all-recruitment.html`,
   ...data.categories.map((c) => `${DOMAIN}/${c.slug}.html`),
   ...data.exams.map((e) => `${DOMAIN}/exam-${e.slug}.html`),
   ...data.posts.map((p) => `${DOMAIN}/${p.id}.html`),
