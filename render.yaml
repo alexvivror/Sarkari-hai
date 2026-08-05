@@ -1,0 +1,12 @@
+# Render.com Blueprint — Sarkari Hai
+services:
+  - type: web
+    name: sarkari-hai
+    runtime: node
+    plan: free
+    buildCommand: node build.js
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20

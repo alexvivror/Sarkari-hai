@@ -1,0 +1,406 @@
+{
+  "site": {
+    "name": "Sarkari Hai",
+    "domain": "https://alexvivror.github.io/Sarkari-hai",
+    "tagline": "Latest Sarkari Jobs, Results, Admit Cards & Answer Keys",
+    "hindi": "सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की"
+  },
+  "categories": [
+    { "slug": "latest-jobs", "label": "Latest Jobs", "hindi": "नवीनतम नौकरियां", "icon": "work", "desc": "Fresh government job notifications" },
+    { "slug": "results", "label": "Results", "hindi": "रिजल्ट", "icon": "fact_check", "desc": "Exam results declared" },
+    { "slug": "admit-card", "label": "Admit Card", "hindi": "एडमिट कार्ड", "icon": "badge", "desc": "Download hall tickets" },
+    { "slug": "answer-key", "label": "Answer Key", "hindi": "आंसर की", "icon": "quiz", "desc": "Official answer keys" },
+    { "slug": "syllabus", "label": "Syllabus", "hindi": "सिलेबस", "icon": "menu_book", "desc": "Exam patterns & syllabus" },
+    { "slug": "admission", "label": "Admission", "hindi": "प्रवेश", "icon": "school", "desc": "University & course admissions" }
+  ],
+  "exams": [
+    { "slug": "ssc", "label": "SSC", "icon": "account_balance" },
+    { "slug": "upsc", "label": "UPSC", "icon": "gavel" },
+    { "slug": "railway", "label": "Railway", "icon": "train" },
+    { "slug": "bank", "label": "Bank", "icon": "savings" },
+    { "slug": "police", "label": "Police", "icon": "local_police" },
+    { "slug": "defence", "label": "Defence", "icon": "shield" },
+    { "slug": "teaching", "label": "Teaching", "icon": "school" },
+    { "slug": "state", "label": "State Govt", "icon": "location_city" }
+  ],
+  "posts": [
+    {
+      "id": "ssc-cgl-2026",
+      "title": "SSC CGL 2026 Online Form",
+      "category": "latest-jobs",
+      "exam": "ssc",
+      "date": "2026-08-04",
+      "applyStart": "05 August 2026",
+      "applyEnd": "26 August 2026",
+      "examDate": "November 2026",
+      "desc": "Staff Selection Commission Combined Graduate Level Examination 2026. Total 17,727 posts of various ministries and departments.",
+      "details": ["Total Posts: 17,727", "Qualification: Bachelor's Degree", "Age Limit: 18-32 years", "Application Fee: ₹100 (SC/ST/Ex-SM: Nil)", "Selection: Tier-I, Tier-II, Tier-III, Tier-IV"],
+      "faqs": [
+        { "q": "What is the SSC CGL 2026 application fee?", "a": "The application fee is ₹100 for General/OBC candidates. SC, ST, PwD and Ex-Servicemen candidates are exempted from the fee." },
+        { "q": "What is the age limit for SSC CGL 2026?", "a": "The age limit is 18-32 years. Age relaxation is applicable as per government rules for reserved categories." }
+      ],
+      "links": {
+        "apply": "https://ssc.gov.in",
+        "notification": "#",
+        "official": "https://ssc.gov.in"
+      }
+    },
+    {
+      "id": "upsc-ias-2026",
+      "title": "UPSC IAS Pre 2026 Notification",
+      "category": "latest-jobs",
+      "exam": "upsc",
+      "date": "2026-08-03",
+      "applyStart": "05 August 2026",
+      "applyEnd": "25 August 2026",
+      "examDate": "31 May 2027",
+      "desc": "Union Public Service Commission Civil Services (Preliminary) Examination 2027. Gateway to IAS, IPS, IFS and other central services.",
+      "details": ["Posts: IAS, IPS, IFS & 24 other services", "Qualification: Bachelor's Degree", "Age Limit: 21-32 years (as on 01-08-2027)", "Attempts: 6 for General, more for reserved", "Selection: Prelims, Mains, Interview"],
+      "faqs": [
+        { "q": "How many attempts are allowed in UPSC CSE?", "a": "General category candidates get 6 attempts. OBC gets 9 and SC/ST candidates have no attempt limit." },
+        { "q": "What is the UPSC application fee?", "a": "The fee is ₹100 for General/OBC candidates. Female, SC, ST and PwD candidates are exempted." }
+      ],
+      "links": {
+        "apply": "https://upsc.gov.in",
+        "notification": "#",
+        "official": "https://upsc.gov.in"
+      }
+    },
+    {
+      "id": "rrb-ntpc-2026",
+      "title": "RRB NTPC 2026 Apply Online",
+      "category": "latest-jobs",
+      "exam": "railway",
+      "date": "2026-08-02",
+      "applyStart": "01 August 2026",
+      "applyEnd": "30 August 2026",
+      "examDate": "December 2026",
+      "desc": "Railway Recruitment Board Non-Technical Popular Categories 2026. Recruitment for Graduate and Undergraduate posts in Indian Railways.",
+      "details": ["Total Posts: 11,558", "Posts: Clerk, Station Master, TC, Goods Guard", "Qualification: 12th / Graduate", "Age Limit: 18-33 years", "Selection: CBT-1, CBT-2, Typing/Aptitude"],
+      "faqs": [
+        { "q": "What posts are covered in RRB NTPC?", "a": "NTPC covers Non-Technical Popular Categories like Clerk, Station Master, Train Controller, Goods Guard and Ticket Collector." },
+        { "q": "What is the RRB NTPC exam pattern?", "a": "The selection has two Computer Based Tests (CBT). CBT-1 is qualifying, CBT-2 determines the merit list." }
+      ],
+      "links": {
+        "apply": "https://rrbcdg.gov.in",
+        "notification": "#",
+        "official": "https://indianrailways.gov.in"
+      }
+    },
+    {
+      "id": "ibps-po-2026",
+      "title": "IBPS PO 2026 Notification",
+      "category": "latest-jobs",
+      "exam": "bank",
+      "date": "2026-08-01",
+      "applyStart": "01 August 2026",
+      "applyEnd": "21 August 2026",
+      "examDate": "October 2026",
+      "desc": "IBPS Probationary Officer 2026 recruitment for 41 public sector banks. CRP PO/MT-XVI.",
+      "details": ["Total Posts: 4,000+ (approx)", "Qualification: Bachelor's Degree", "Age Limit: 20-30 years", "Selection: Prelims, Mains, Interview", "Exam Mode: Online CBT"],
+      "faqs": [
+        { "q": "What is IBPS PO eligibility?", "a": "Candidates need a Bachelor's degree from a recognized university and must be between 20-30 years of age." },
+        { "q": "How many attempts are allowed for IBPS PO?", "a": "General candidates get 4 attempts, OBC 7, and SC/ST/PwD candidates have no attempt limit." }
+      ],
+      "links": {
+        "apply": "https://ibps.in",
+        "notification": "#",
+        "official": "https://ibps.in"
+      }
+    },
+    {
+      "id": "delhi-police-2026",
+      "title": "Delhi Police Constable 2026",
+      "category": "latest-jobs",
+      "exam": "police",
+      "date": "2026-07-30",
+      "applyStart": "28 July 2026",
+      "applyEnd": "18 August 2026",
+      "examDate": "September 2026",
+      "desc": "Delhi Police Constable (Executive) Recruitment 2026. Direct recruitment of constables in Delhi Police.",
+      "details": ["Total Posts: 7,547", "Qualification: 10th Pass", "Age Limit: 18-25 years", "Physical: Race, Long Jump, High Jump", "Selection: CBT, PET/PST, Medical"],
+      "faqs": [
+        { "q": "What is the minimum qualification for Delhi Police Constable?", "a": "Candidates must be 10th pass from a recognized board. Age should be between 18-25 years." },
+        { "q": "Is there a physical test?", "a": "Yes. Male candidates run 1600m in 6.5 minutes; females run 800m in 4.5 minutes, followed by long jump and high jump." }
+      ],
+      "links": {
+        "apply": "https://delhipolice.gov.in",
+        "notification": "#",
+        "official": "https://delhipolice.gov.in"
+      }
+    },
+    {
+      "id": "agniveer-2026",
+      "title": "Agniveer Army 2026 Apply",
+      "category": "latest-jobs",
+      "exam": "defence",
+      "date": "2026-07-28",
+      "applyStart": "25 July 2026",
+      "applyEnd": "15 August 2026",
+      "examDate": "September 2026",
+      "desc": "Indian Army Agniveer Recruitment Rally 2026 for Agniveer General Duty, Technical, Clerk and Tradesman posts.",
+      "details": ["Tenure: 4 years + 4 years", "Qualification: 8th/10th/12th/ITI", "Age Limit: 17.5-21 years", "Salary: ₹30,000/month + perks", "Selection: Rally, Written, Medical"],
+      "faqs": [
+        { "q": "What is the Agniveer age limit?", "a": "Candidates must be between 17.5 and 21 years of age on the date of enrolment." },
+        { "q": "What is the Agniveer salary?", "a": "Agniveers receive ₹30,000 per month in the first year, increasing annually, plus risk and hardship allowances." }
+      ],
+      "links": {
+        "apply": "https://joinindianarmy.nic.in",
+        "notification": "#",
+        "official": "https://joinindianarmy.nic.in"
+      }
+    },
+    {
+      "id": "ctet-2026",
+      "title": "CTET 2026 Registration",
+      "category": "latest-jobs",
+      "exam": "teaching",
+      "date": "2026-07-26",
+      "applyStart": "24 July 2026",
+      "applyEnd": "24 August 2026",
+      "examDate": "December 2026",
+      "desc": "Central Teacher Eligibility Test 2026 conducted by CBSE. Certificate valid for all central government schools (KVS, NVS, etc.).",
+      "details": ["Papers: Paper-I (Class 1-5), Paper-II (Class 6-8)", "Qualification: 12th + D.El.Ed / Graduate + B.Ed", "Age Limit: No age limit", "Valid: 7 years", "Mode: Online CBT"],
+      "faqs": [
+        { "q": "Is CTET certificate valid for life?", "a": "As per current rules the CTET certificate is valid for 7 years from the date of result declaration." },
+        { "q": "Can I apply for both CTET papers?", "a": "Yes, candidates can apply for both Paper-I and Paper-II if they meet the eligibility for both." }
+      ],
+      "links": {
+        "apply": "https://ctet.nic.in",
+        "notification": "#",
+        "official": "https://ctet.nic.in"
+      }
+    },
+    {
+      "id": "upsssc-2026",
+      "title": "UPSSSC PET 2026 Result",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Declared",
+      "desc": "UPSSSC Preliminary Eligibility Test 2026 result has been declared. Check your result and cutoff for UP government jobs.",
+      "details": ["Status: Result Declared", "Cutoff: Category-wise released", "Next: Main exam for shortlisted", "Check: Result with roll number"],
+      "faqs": [
+        { "q": "How to check UPSSSC PET 2026 result?", "a": "Visit the official UPSSSC website, enter your roll number and date of birth to download your result." },
+        { "q": "What is the PET cutoff?", "a": "Cutoffs are released category-wise after the result. General category cutoff is usually higher than reserved categories." }
+      ],
+      "links": {
+        "apply": "https://upsssc.gov.in",
+        "notification": "#",
+        "official": "https://upsssc.gov.in"
+      }
+    },
+    {
+      "id": "ssc-gd-result-2026",
+      "title": "SSC GD 2026 Result Declared",
+      "category": "results",
+      "exam": "ssc",
+      "date": "2026-08-04",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Declared",
+      "desc": "SSC GD Constable 2026 final result has been declared. Check your status and next steps for document verification.",
+      "details": ["Status: Final Result Declared", "Posts: Constable (CAPFs, SSF, Rifleman)", "Next: Document Verification", "Check: Result with roll number"],
+      "faqs": [
+        { "q": "How to check SSC GD result?", "a": "Visit ssc.gov.in, click on the SSC GD result link, enter your registration number and roll number." },
+        { "q": "What happens after SSC GD result?", "a": "Qualified candidates are called for document verification and medical examination." }
+      ],
+      "links": {
+        "apply": "https://ssc.gov.in",
+        "notification": "#",
+        "official": "https://ssc.gov.in"
+      }
+    },
+    {
+      "id": "rrb-group-d-2026",
+      "title": "RRB Group D 2026 Result",
+      "category": "results",
+      "exam": "railway",
+      "date": "2026-08-02",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Declared",
+      "desc": "RRB Group D Level-1 2026 result declared for 32,438 posts across Indian Railways zones.",
+      "details": ["Status: CBT Result Declared", "Total Posts: 32,438", "Next: PET (Physical Efficiency Test)", "Check: Result with roll number"],
+      "faqs": [
+        { "q": "What is the RRB Group D physical test?", "a": "Male candidates lift 35kg and run 1000m in 4 min 15 sec. Female candidates lift 20kg and run 1000m in 5 min 40 sec." },
+        { "q": "When is the PET scheduled?", "a": "PET dates are announced zone-wise after the CBT result. Check your zone website for the schedule." }
+      ],
+      "links": {
+        "apply": "https://rrbcdg.gov.in",
+        "notification": "#",
+        "official": "https://indianrailways.gov.in"
+      }
+    },
+    {
+      "id": "neet-ug-admit-2026",
+      "title": "NEET UG 2027 Admit Card",
+      "category": "admit-card",
+      "exam": "state",
+      "date": "2026-08-01",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "01 May 2027",
+      "desc": "NEET UG 2027 admit card will be released on the NTA website. Download hall ticket for the medical entrance exam.",
+      "details": ["Release: 4 weeks before exam", "Exam Date: 01 May 2027", "Check: Application number + DOB", "Carry: Printout + Photo ID"],
+      "faqs": [
+        { "q": "When will NEET 2027 admit card release?", "a": "The admit card is typically released 2-4 weeks before the exam date on the official NTA website." },
+        { "q": "What documents do I need with the admit card?", "a": "Carry a printed admit card along with a valid photo ID proof like Aadhaar, Passport or Driving License." }
+      ],
+      "links": {
+        "apply": "https://neet.nta.nic.in",
+        "notification": "#",
+        "official": "https://nta.ac.in"
+      }
+    },
+    {
+      "id": "ssc-cgl-admit-2026",
+      "title": "SSC CGL Tier-I Admit Card 2026",
+      "category": "admit-card",
+      "exam": "ssc",
+      "date": "2026-07-30",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "October 2026",
+      "desc": "SSC CGL Tier-I 2026 admit card released region-wise. Download your hall ticket from the SSC regional website.",
+      "details": ["Release: Region-wise", "Exam: Tier-I (CBT)", "Download: Region website", "Carry: Printout + Photo ID"],
+      "faqs": [
+        { "q": "How to download SSC CGL admit card?", "a": "Visit your SSC regional website, click on the admit card link, and enter your registration number and password." },
+        { "q": "What if my SSC CGL admit card is not available?", "a": "Admit cards are released region-wise. Wait for your region's release or contact the regional SSC office." }
+      ],
+      "links": {
+        "apply": "https://ssc.gov.in",
+        "notification": "#",
+        "official": "https://ssc.gov.in"
+      }
+    },
+    {
+      "id": "upsc-cse-answer-key-2026",
+      "title": "UPSC CSE Prelims 2026 Answer Key",
+      "category": "answer-key",
+      "exam": "upsc",
+      "date": "2026-07-28",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Released",
+      "desc": "UPSC Civil Services Prelims 2026 official answer key released. Challenge window open for objections.",
+      "details": ["Status: Answer Key Released", "Challenge: 7 days window", "Fee: ₹100 per question (refundable)", "Final: After challenge review"],
+      "faqs": [
+        { "q": "How to challenge the UPSC answer key?", "a": "Log in to the UPSC website, select the questions you want to challenge, pay the fee, and submit your objections with proof." },
+        { "q": "Is the UPSC answer key fee refundable?", "a": "Yes, the ₹100 fee per question is refunded if the challenge is accepted and the answer is changed." }
+      ],
+      "links": {
+        "apply": "https://upsc.gov.in",
+        "notification": "#",
+        "official": "https://upsc.gov.in"
+      }
+    },
+    {
+      "id": "rrb-answer-key-2026",
+      "title": "RRB ALP 2026 Answer Key",
+      "category": "answer-key",
+      "exam": "railway",
+      "date": "2026-07-26",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Released",
+      "desc": "RRB ALP (Assistant Loco Pilot) 2026 CBT-1 answer key released with response sheet. Raise objections before the deadline.",
+      "details": ["Status: Answer Key Released", "Response Sheet: Available", "Objection Fee: ₹50/question", "Final Key: After review"],
+      "faqs": [
+        { "q": "How to check RRB ALP answer key?", "a": "Download the answer key and your response sheet from the RRB website and compare your answers to calculate the score." },
+        { "q": "What is the objection fee?", "a": "Candidates can raise objections against any question by paying ₹50 per question. It is refunded if the objection is valid." }
+      ],
+      "links": {
+        "apply": "https://rrbcdg.gov.in",
+        "notification": "#",
+        "official": "https://indianrailways.gov.in"
+      }
+    },
+    {
+      "id": "ssc-syllabus-2026",
+      "title": "SSC CGL Syllabus & Exam Pattern",
+      "category": "syllabus",
+      "exam": "ssc",
+      "date": "2026-07-24",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Updated",
+      "desc": "Complete SSC CGL 2026 syllabus and exam pattern for Tier-I, Tier-II, Tier-III and Tier-IV with marking scheme.",
+      "details": ["Tier-I: 100 Qs, 200 marks, 60 min", "Tier-II: 3 papers (Maths, English, Stats)", "Tier-III: Descriptive (English/Hindi)", "Tier-IV: Skill Test / DEST", "Negative: 0.50 marks per wrong answer"],
+      "faqs": [
+        { "q": "How many sections in SSC CGL Tier-I?", "a": "Tier-I has 4 sections: General Intelligence, General Awareness, Quantitative Aptitude and English Comprehension." },
+        { "q": "Is there negative marking in SSC CGL?", "a": "Yes, 0.50 marks are deducted for each wrong answer in both Tier-I and Tier-II." }
+      ],
+      "links": {
+        "apply": "https://ssc.gov.in",
+        "notification": "#",
+        "official": "https://ssc.gov.in"
+      }
+    },
+    {
+      "id": "upsc-syllabus-2026",
+      "title": "UPSC IAS Syllabus 2026",
+      "category": "syllabus",
+      "exam": "upsc",
+      "date": "2026-07-22",
+      "applyStart": "—",
+      "applyEnd": "—",
+      "examDate": "Updated",
+      "desc": "Complete UPSC Civil Services syllabus: Prelims GS Paper 1 & 2, Mains 9 papers, and interview. Optional subject list.",
+      "details": ["Prelims: GS-1 + CSAT (qualifying)", "Mains: 9 papers (2 qualifying)", "Optional: 48 subjects available", "Interview: 275 marks", "Total: 2025 marks"],
+      "faqs": [
+        { "q": "How many papers in UPSC Mains?", "a": "There are 9 papers in Mains. Two are qualifying (English and Indian Language), the remaining 7 count toward merit." },
+        { "q": "What is the UPSC total marks?", "a": "Mains is 1750 marks and the interview is 275 marks, making a total of 2025 marks." }
+      ],
+      "links": {
+        "apply": "https://upsc.gov.in",
+        "notification": "#",
+        "official": "https://upsc.gov.in"
+      }
+    },
+    {
+      "id": "cuet-ug-2027",
+      "title": "CUET UG 2027 Registration",
+      "category": "admission",
+      "exam": "state",
+      "date": "2026-07-20",
+      "applyStart": "18 July 2026",
+      "applyEnd": "17 August 2026",
+      "examDate": "May 2027",
+      "desc": "Common University Entrance Test (CUET UG) 2027 for admission to 250+ central and state universities. Apply online.",
+      "details": ["Universities: 250+ central universities", "Subjects: Language + Domain + General", "Mode: Online CBT", "Qualification: 12th pass"],
+      "faqs": [
+        { "q": "Which universities accept CUET UG?", "a": "All central universities including DU, BHU, JNU, AMU and many state and private universities accept CUET UG scores." },
+        { "q": "How many subjects can I choose in CUET?", "a": "Candidates can choose up to 6 subjects: 2 languages, 3 domain subjects, and 1 general test." }
+      ],
+      "links": {
+        "apply": "https://cuet.nta.nic.in",
+        "notification": "#",
+        "official": "https://nta.ac.in"
+      }
+    },
+    {
+      "id": "jee-main-2027",
+      "title": "JEE Main 2027 Apply Online",
+      "category": "admission",
+      "exam": "state",
+      "date": "2026-07-18",
+      "applyStart": "15 July 2026",
+      "applyEnd": "15 August 2026",
+      "examDate": "January 2027",
+      "desc": "JEE Main 2027 Session-1 application form released by NTA for B.E./B.Tech and B.Arch admissions.",
+      "details": ["Papers: Paper-1 (BE/BTech), Paper-2 (BArch)", "Qualification: 12th with PCM", "Mode: Online CBT", "Used for: JEE Advanced eligibility"],
+      "faqs": [
+        { "q": "Who can apply for JEE Main 2027?", "a": "Candidates who passed 12th with Physics, Chemistry and Mathematics in 2025, 2026 or appearing in 2027 can apply." },
+        { "q": "Is JEE Main required for NITs and IIITs?", "a": "Yes, admission to NITs, IIITs and GFTIs is based on JEE Main rank, and top rankers qualify for JEE Advanced." }
+      ],
+      "links": {
+        "apply": "https://jeemain.nta.nic.in",
+        "notification": "#",
+        "official": "https://nta.ac.in"
+      }
+    }
+  ]
+}
