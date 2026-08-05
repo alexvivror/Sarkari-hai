@@ -184,6 +184,19 @@ const examChips = data.exams
   .map((e) => `<a class="chip" href="./exam-${e.slug}.html"><span class="material-symbols-outlined">${e.icon}</span>${esc(e.label)}</a>`)
   .join("\n");
 
+/* ---- free tools section (the traffic driver competitors use) ---- */
+const freeTools = [
+  { icon: "calculate", name: "Age Calculator", desc: "Exact age in days", href: "https://alexvivror.github.io/New/age-calculator.html" },
+  { icon: "percent", name: "Percentage Calculator", desc: "% of, % change", href: "https://alexvivror.github.io/New/percentage-calculator.html" },
+  { icon: "monitor_weight", name: "BMI Calculator", desc: "Body mass index", href: "https://alexvivror.github.io/New/bmi-calculator.html" },
+  { icon: "image", name: "Image Resizer", desc: "Resize photos", href: "https://alexvivror.github.io/New/" },
+  { icon: "description", name: "JPG to PDF", desc: "Convert files", href: "https://alexvivror.github.io/New/" },
+  { icon: "lock", name: "Password Generator", desc: "Strong passwords", href: "https://alexvivror.github.io/New/password-generator.html" },
+];
+const toolsHtml = freeTools
+  .map((t) => `<a class="tool-mini" href="${t.href}" target="_blank" rel="noopener"><span class="material-symbols-outlined">${t.icon}</span><div><b>${esc(t.name)}</b><small>${esc(t.desc)}</small></div></a>`)
+  .join("\n");
+
 const trending = [
   "SSC CGL 2026", "UPSC IAS 2026", "RRB NTPC", "IBPS Clerk", "NEET 2027",
   "Delhi Police", "Agniveer Army", "CTET 2026", "JEE Main 2027", "CUET UG",
@@ -207,6 +220,12 @@ const homeBody = `
         </div>
       </div>
       <a class="app-btn" href="#"><span class="material-symbols-outlined">download</span> Download App</a>
+    </div>
+  </section>
+  <section class="container tools-strip">
+    <h2 class="tools-strip-title"><span class="material-symbols-outlined">handyman</span> Free Tools <small>used by millions of job seekers</small></h2>
+    <div class="tools-grid">
+      ${toolsHtml}
     </div>
   </section>
   <section class="container main-grid">
