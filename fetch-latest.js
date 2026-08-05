@@ -215,9 +215,10 @@ function buildPosts(rssItems) {
       return;
     }
 
-    // copy generated public + data into repo working dir
+    // clean-sync generated files into repo working dir (removes stale pages)
     const repoDir = process.env.SARKARI_REPO || path.join(ROOT, "..", "Sarkari-hai");
-    execSync(`cp -r ${ROOT}/public/* "${repoDir}/" && cp ${DATA_FILE} "${repoDir}/data/"`, { stdio: "inherit" });
+    execSync(`bash ${ROOT}/deploy.sh "${repoDir}"`, { stdio: "inherit" });
+    execSync(`cp ${DATA_FILE} "${repoDir}/data/"`, { stdio: "inherit" });
 
     const ssh = process.env.GIT_SSH_CMD || "ssh -i /opt/data/home/.ssh/id_ed25519 -o UserKnownHostsFile=/opt/data/.ssh/known_hosts";
     const stamp = new Date().toISOString().slice(0, 10);
