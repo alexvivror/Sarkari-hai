@@ -176,17 +176,8 @@ function sidebar(examChips, trendingChips) {
 }
 
 /* ---------- app banner ---------- */
-function appBanner(SITE) {
-  return `
-  <section class="container">
-    <div class="app-banner">
-      <div class="app-info">
-        <span class="app-icon material-symbols-outlined">smartphone</span>
-        <div><h3>Get ${esc(SITE)} on your phone</h3><p>Instant job alerts, results &amp; admit cards — download the free app.</p></div>
-      </div>
-      <a class="app-btn" href="#"><span class="material-symbols-outlined">download</span> Download App</a>
-    </div>
-  </section>`;
+function appBanner() {
+  return "";
 }
 
 module.exports = { header, footer, postRow, postTable, catBoxes, freeTools, sidebar, appBanner };
