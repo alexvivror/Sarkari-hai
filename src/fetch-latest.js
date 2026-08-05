@@ -215,9 +215,11 @@ function buildPosts(rssItems) {
       return;
     }
 
-    // push ONLY the data change — CI (GitHub Actions) builds public/ from src/
+    // sync generated site to repo ROOT — GitHub Pages branch mode serves root
+    // (works without the "GitHub Actions" source setting; src/ + data/ stay as source)
     const repoDir = process.env.SARKARI_REPO || path.join(ROOT, "..", "..", "Sarkari-hai");
-    execSync(`cp ${DATA_FILE} "${repoDir}/data/"`, { stdio: "inherit" });
+    const publicDir = path.join(ROOT, "..", "public");
+    execSync(`cp -f ${publicDir}/* "${repoDir}/" && mkdir -p "${repoDir}/posts" && cp -f ${publicDir}/posts/* "${repoDir}/posts/" && cp ${DATA_FILE} "${repoDir}/data/"`, { stdio: "inherit" });
 
     const ssh = process.env.GIT_SSH_CMD || "ssh -i /opt/data/home/.ssh/id_ed25519 -o UserKnownHostsFile=/opt/data/.ssh/known_hosts";
     const stamp = new Date().toISOString().slice(0, 10);
