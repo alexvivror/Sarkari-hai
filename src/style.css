@@ -554,6 +554,55 @@ html.dark .filter-field select option { background: var(--surface); color: var(-
 .notfound h1 { font-size: clamp(1.2rem, 4vw, 1.5rem); margin: 12px 0 8px; }
 .notfound p { color: var(--muted); margin-bottom: 20px; }
 
+/* ============ EXAM ELIGIBILITY TOOLS ============ */
+.exam-tools { margin: 10px 0 40px; }
+.exam-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.etool { margin-bottom: 0; }
+.etool h3 {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 1rem; font-weight: 800; margin-bottom: 6px;
+}
+.etool h3 .material-symbols-outlined { color: var(--primary); font-size: 1.3rem; }
+.etool-desc { color: var(--muted); font-size: 0.8rem; margin-bottom: 12px; }
+.etool .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.etool .btn { margin-top: 4px; }
+.etool .result { margin-top: 10px; }
+
+/* ============ TOOL SUGGESTIONS (per-post) ============ */
+.sugg-card { margin-top: 20px; }
+.sugg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.sugg-item {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-decoration: none; color: var(--text);
+  transition: all 0.15s;
+}
+.sugg-item:hover { border-color: var(--primary); transform: translateY(-2px); background: var(--primary-soft); }
+.sugg-item .material-symbols-outlined {
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 9px;
+  padding: 7px;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+.sugg-item b { display: block; font-size: 0.86rem; }
+.sugg-item small { color: var(--muted); font-size: 0.72rem; line-height: 1.35; display: block; }
+html.dark .sugg-item { background: #182338; }
+html.dark .sugg-item:hover { background: #2a1a10; }
+
 /* ============ FOOTER ============ */
 .footer {
   background: var(--footer-bg); color: var(--footer-text);

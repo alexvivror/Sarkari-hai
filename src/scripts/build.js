@@ -12,7 +12,7 @@ const path = require("path");
 
 const { loadPosts } = require("../services/content");
 const { pageShell, websiteSchema, jobPostingSchema, faqSchema, breadcrumbSchema, sitemapXml, robotsTxt } = require("../services/seo");
-const { header, footer, postTable, catBoxes, freeTools, sidebar, appBanner } = require("../components/ui");
+const { header, footer, postTable, catBoxes, freeTools, examTools, sidebar, toolSuggestions, appBanner } = require("../components/ui");
 const { esc, prettyToday } = require("../lib/utils");
 
 const data = loadPosts();
@@ -78,6 +78,7 @@ const homeBody = `
     </div>
     ${sidebar(examChips, trending)}
   </section>
+  ${examTools()}
 </main>`;
 
 fs.writeFileSync(path.join(outDir, "index.html"), shell({
@@ -189,6 +190,7 @@ data.posts.forEach((p) => {
     <h2 class="sub-h">Frequently Asked Questions</h2>
     ${(p.faqs || []).map((f) => `<div class="faq-item"><h3>${esc(f.q)}</h3><p>${esc(f.a)}</p></div>`).join("")}
   </article>
+  ${toolSuggestions(p)}
   ${related.length ? `
   <section class="related">
     <h2 class="sub-h">Related Posts</h2>
