@@ -2,32 +2,53 @@
 
 **Latest Sarkari Jobs, Results, Admit Cards & Answer Keys** — a fast, modern competitor to sarkariresult.com.
 
-## Features
-
-- ✅ **Latest posts table** — post name + important dates + action links (Apply Online / Notification / Official Site)
-- ✅ **6 categories**: Latest Jobs, Results, Admit Card, Answer Key, Syllabus, Admission
-- ✅ **8 exam hubs**: SSC, UPSC, Railway, Bank, Police, Defence, Teaching, State Govt
-- ✅ **18 individual post pages** with full details + FAQs + JobPosting/FAQ schema
-- ✅ **Instant client-side search** (search.html?q=...)
-- ✅ **Hindi + English** labels
-- ✅ **AdSense-ready slots** (leaderboard, infeed, sidebar, post)
-- ✅ **sitemap.xml + robots.txt** for SEO
-- ✅ 100% static, mobile-first, loads instantly
-
-## How it works
+## 📁 Project Structure
 
 ```
-node build.js   # reads data/posts.json → generates ./public/ (all HTML)
-node server.js  # serves ./public (for Render)
+Sarkari-hai/
+├── src/                    # source code (everything you edit)
+│   ├── build.js            # static site generator → public/
+│   ├── fetch-latest.js     # daily updater (RSS → data/posts.json → push)
+│   ├── official.js         # verified official govt domain registry (STRICT)
+│   ├── server.js           # static server for Render / local preview
+│   ├── search.js           # client-side search (copied into build)
+│   ├── style.css           # all styles (responsive, mobile-first)
+│   └── deploy.sh           # clean sync public/ → repo (removes stale pages)
+├── data/
+│   └── posts.json          # all post content (curated + auto-fetched)
+├── public/                 # GENERATED output — never edit, gitignored
+│   ├── index.html          # homepage
+│   ├── all-recruitment.html # every post in one table
+│   ├── posts/              # one page per post
+│   ├── exam-*.html         # exam hubs (SSC, UPSC, Railway, ...)
+│   └── *.html              # category + info pages
+├── .github/workflows/      # GitHub Actions → build + deploy Pages
+├── render.yaml             # Render.com blueprint
+└── package.json
 ```
 
-Add a new post by appending to `data/posts.json` and re-running `node build.js`. All pages regenerate automatically.
+## 🔒 Official links only (by design)
 
-## Deploy
+- Every `apply` link comes from `src/official.js` — a **strict registry of verified government domains** (`.gov.in`, `.nic.in`, `.ac.in`, official org sites)
+- Posts whose official domain can't be confidently identified are **skipped**, never guessed
+- No aggregator links, no redirects through third parties
 
-- **GitHub Pages**: enable at repo Settings → Pages → Source: *GitHub Actions* → `https://alexvivror.github.io/Sarkari-hai/`
-- **Render**: create a Web Service from this repo (render.yaml auto-detected)
+## 🔄 How updates work
 
-## Disclaimer
+**Daily cron (8 AM IST)** runs `node src/fetch-latest.js`:
+1. Fetches latest 100 notifications from FreeJobAlert RSS
+2. Strict-matches official domains (skips unverifiable posts)
+3. Merges with hand-researched curated posts (no duplicates)
+4. **Auto-purges closed vacancies** whose final result is declared
+5. Regenerates site → pushes → GitHub Actions builds & deploys
 
-Demo data for demonstration. Always verify official details on government websites.
+## 🚀 Local dev
+
+```bash
+node src/build.js      # generate public/
+node src/server.js     # serve on :3000
+```
+
+## ⚠️ Disclaimer
+
+Information only — not a government website. Always verify on official portals.

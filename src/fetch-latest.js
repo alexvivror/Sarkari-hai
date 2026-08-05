@@ -15,7 +15,7 @@ const { execSync } = require("child_process");
 const { findOfficial } = require("./official.js");
 
 const ROOT = __dirname;
-const DATA_FILE = path.join(ROOT, "data", "posts.json");
+const DATA_FILE = path.join(ROOT, "..", "data", "posts.json");
 const RSS_URL = "https://www.freejobalert.com/feed/";
 const MAX_POSTS = 24; // keep latest N real posts
 const NO_PUSH = process.argv.includes("--no-push");
@@ -215,9 +215,8 @@ function buildPosts(rssItems) {
       return;
     }
 
-    // clean-sync generated files into repo working dir (removes stale pages)
-    const repoDir = process.env.SARKARI_REPO || path.join(ROOT, "..", "Sarkari-hai");
-    execSync(`bash ${ROOT}/deploy.sh "${repoDir}"`, { stdio: "inherit" });
+    // push ONLY the data change — CI (GitHub Actions) builds public/ from src/
+    const repoDir = process.env.SARKARI_REPO || path.join(ROOT, "..", "..", "Sarkari-hai");
     execSync(`cp ${DATA_FILE} "${repoDir}/data/"`, { stdio: "inherit" });
 
     const ssh = process.env.GIT_SSH_CMD || "ssh -i /opt/data/home/.ssh/id_ed25519 -o UserKnownHostsFile=/opt/data/.ssh/known_hosts";

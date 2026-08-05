@@ -35,7 +35,7 @@
       `<p class="page-desc">${hits.length} result${hits.length > 1 ? "s" : ""} for "${esc(text)}"</p>` +
       hits
         .map(
-          (p) => `<a class="search-result" href="./${p.id}.html">
+          (p) => `<a class="search-result" href="./posts/${p.id}.html">
             <b>${esc(p.title)}</b>
             <small>${esc(p.cat)} · ${esc(p.exam)} · ${esc(p.examDate)}</small>
           </a>`

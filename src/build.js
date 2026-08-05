@@ -10,16 +10,19 @@
 const fs = require("fs");
 const path = require("path");
 
-const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "posts.json"), "utf8"));
+const data = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "posts.json"), "utf8"));
 const SITE = data.site.name;
 const DOMAIN = data.site.domain;
 const BUILT = new Date().toISOString().slice(0, 10);
 const BUILT_PRETTY = new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
 
 /* copy static assets */
-const outDir = path.join(__dirname, "public");
+const outDir = path.join(__dirname, "..", "public");
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
+/* posts live in their own folder so the root stays clean */
+const postsDir = path.join(outDir, "posts");
+fs.mkdirSync(postsDir, { recursive: true });
 for (const asset of ["style.css", "search.js"]) {
   const src = path.join(__dirname, asset);
   if (fs.existsSync(src)) fs.copyFileSync(src, path.join(outDir, asset));
@@ -114,7 +117,18 @@ function pageShell({ title, metaDesc, canonical, body, schema }) {
       <p class="footer-note">⚠️ This site is for information only and is not a government website. Always verify on official government portals. ${SITE} © <span id="year"></span></p>
     </div>
   </footer>
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  <button class="back-top" id="backTop" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
+  <script>
+    document.getElementById("year").textContent=new Date().getFullYear();
+    (function(){
+      var bt=document.getElementById("backTop");
+      if(bt){
+        var on=function(){bt.classList.toggle("show",(window.scrollY||document.documentElement.scrollTop)>400);};
+        window.addEventListener("scroll",on,{passive:true});on();
+        bt.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});
+      }
+    })();
+  </script>
 </body>
 </html>`;
 }
@@ -125,7 +139,7 @@ function postRow(p) {
   const off = isOfficial(p.links.apply);
   return `<tr class="post-row">
     <td class="post-name">
-      <a href="./${p.id}.html" class="post-title">${esc(p.title)}</a>
+      <a href="./posts/${p.id}.html" class="post-title">${esc(p.title)}</a>
       ${off ? '<span class="official-tag" title="Links to official government website">✔ Official</span>' : ""}
       <span class="post-meta">
         <span class="chip-sm ${p.category}">${esc(cat ? cat.label : p.category)}</span>
@@ -160,7 +174,7 @@ const catBoxes = data.categories
     const items = data.posts.filter((p) => p.category === c.slug).slice(0, 5);
     return `<div class="cat-box">
       <h3><span class="material-symbols-outlined">${c.icon}</span> ${esc(c.label)} <small>${esc(c.hindi)}</small></h3>
-      <ul>${items.map((p) => `<li><a href="./${p.id}.html">${esc(p.title)}</a></li>`).join("")}</ul>
+      <ul>${items.map((p) => `<li><a href="./posts/${p.id}.html">${esc(p.title)}</a></li>`).join("")}</ul>
       <a class="more" href="./${c.slug}.html">View All →</a>
     </div>`;
   })
@@ -366,16 +380,16 @@ data.posts.forEach((p) => {
   ${related.length ? `
   <section class="related">
     <h2 class="sub-h">Related Posts</h2>
-    <div class="mini-list">${related.map((r) => `<a class="mini" href="./${r.id}.html"><span class="material-symbols-outlined">${byCat[r.category].icon}</span><div><b>${esc(r.title)}</b><small>${esc(r.examDate)}</small></div></a>`).join("")}</div>
+    <div class="mini-list">${related.map((r) => `<a class="mini" href="./posts/${r.id}.html"><span class="material-symbols-outlined">${byCat[r.category].icon}</span><div><b>${esc(r.title)}</b><small>${esc(r.examDate)}</small></div></a>`).join("")}</div>
   </section>` : ""}
 </main>`;
 
   fs.writeFileSync(
-    path.join(outDir, `${p.id}.html`),
+    path.join(postsDir, `${p.id}.html`),
     pageShell({
       title: `${p.title}${/\b20\d\d\b/.test(p.title) ? "" : " 2026"} — ${SITE}`,
       metaDesc: `${p.title}: ${esc(p.desc)} Apply Start ${p.applyStart}, End ${p.applyEnd}. Official links on ${SITE}.`,
-      canonical: `${DOMAIN}/${p.id}.html`,
+      canonical: `${DOMAIN}/posts/${p.id}.html`,
       body,
       schema: [
         {
@@ -383,7 +397,7 @@ data.posts.forEach((p) => {
           "@type": "JobPosting",
           title: p.title,
           datePosted: p.date,
-          url: `${DOMAIN}/${p.id}.html`,
+          url: `${DOMAIN}/posts/${p.id}.html`,
           description: p.desc,
           employmentType: "FULL_TIME",
           hiringOrganization: { "@type": "Organization", name: `${exam.label} Recruitment` },
@@ -569,7 +583,7 @@ const urls = [
   `${DOMAIN}/all-recruitment.html`,
   ...data.categories.map((c) => `${DOMAIN}/${c.slug}.html`),
   ...data.exams.map((e) => `${DOMAIN}/exam-${e.slug}.html`),
-  ...data.posts.map((p) => `${DOMAIN}/${p.id}.html`),
+  ...data.posts.map((p) => `${DOMAIN}/posts/${p.id}.html`),
   ...STATIC_PAGES.map((pg) => `${DOMAIN}/${pg.slug}.html`),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

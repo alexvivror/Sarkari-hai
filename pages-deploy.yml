@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 20
       - name: Build static site
-        run: node build.js
+        run: node src/build.js
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,5 @@
+# Generated output — built by CI (GitHub Actions) / Render
+public/
+node_modules/
+*.log
+.DS_Store

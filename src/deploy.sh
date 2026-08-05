@@ -8,7 +8,7 @@
 set -euo pipefail
 
 REPO_DIR="${1:?usage: bash deploy.sh <repo-dir>}"
-SRC_DIR="$(cd "$(dirname "$0")" && pwd)/public"
+SRC_DIR="$(cd "$(dirname "$0")/.." && pwd)/public"
 
 [ -d "$REPO_DIR/.git" ] || { echo "ERROR: $REPO_DIR is not a git repo"; exit 1; }
 
