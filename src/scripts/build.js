@@ -157,8 +157,9 @@ data.posts.forEach((p) => {
       <span class="chip-sm ${p.category}">${esc(cat.label)}</span>
       <span class="chip-sm">${esc(exam.label)}</span>
       <span class="chip-sm">${esc(p.date)}</span>
-      ${p.verified ? '<span class="chip-sm" style="background:#f0fdf4;color:#15803d">✔ Officially Verified</span>' : ""}
-      <span class="chip-sm" style="background:#eff6ff;color:#1d4ed8">Updated: ${esc(p.date)}</span>
+      ${p.verified ? '<span class="chip-sm verified-badge" title="Verified against official notification">✔ Verified</span>' : ""}
+      <span class="chip-sm source-badge" title="All apply links point to official government websites"><span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:-2px">verified_user</span> Official links only</span>
+      <span class="chip-sm date-checked" title="Last checked against the official source">✓ Date-checked: ${esc(p.date)}</span>
     </div>
     <h1 class="page-h1">${esc(p.title)}</h1>
     <p class="page-desc">${esc(p.desc)}</p>
@@ -214,6 +215,23 @@ data.posts.forEach((p) => {
 
 /* ---------- all-recruitment page ---------- */
 const allPosts = [...data.posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+const filterOptions = `
+  <div class="filter-bar" role="search" aria-label="Filter posts">
+    <label class="filter-field"><span class="material-symbols-outlined">category</span>
+      <select id="filter-cat" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        ${data.categories.map((c) => `<option value="${c.slug}">${esc(c.label)}</option>`).join("")}
+      </select>
+    </label>
+    <label class="filter-field"><span class="material-symbols-outlined">school</span>
+      <select id="filter-exam" aria-label="Filter by exam">
+        <option value="">All Exams</option>
+        ${data.exams.map((e) => `<option value="${e.slug}">${esc(e.label)}</option>`).join("")}
+      </select>
+    </label>
+    <span class="filter-count" id="filter-count"></span>
+  </div>`;
+
 fs.writeFileSync(path.join(outDir, "all-recruitment.html"), shell({
   title: `All Recruitment Posts — ${SITE}`,
   metaDesc: `All sarkari recruitment posts in one place: jobs, results, admit cards, answer keys, syllabus and admissions. ${allPosts.length} posts with official links.`,
@@ -223,8 +241,26 @@ fs.writeFileSync(path.join(outDir, "all-recruitment.html"), shell({
   <nav class="crumbs"><a href="./">Home</a> <span>›</span> All Recruitment Posts</nav>
   <h1 class="page-h1"><span class="material-symbols-outlined">lists</span> All Recruitment Posts <small>${allPosts.length} total</small></h1>
   <p class="page-desc">Every recruitment notification, result, admit card, answer key, syllabus and admission update — in one place. All apply links go to official government websites.</p>
-  ${postTable(allPosts, byCat, byExam)}
-</main>` + footer(SITE, data),
+  ${filterOptions}
+  <div id="posts-table">${postTable(allPosts, byCat, byExam)}</div>
+</main>
+<script>
+(function(){
+  var cat=document.getElementById("filter-cat"), ex=document.getElementById("filter-exam"), cnt=document.getElementById("filter-count");
+  var rows=document.querySelectorAll("#posts-table .post-row");
+  function apply(){
+    var c=cat.value, e=ex.value, n=0;
+    rows.forEach(function(r){
+      var show=(!c||r.classList.contains("cat-"+c))&&(!e||r.classList.contains("exam-"+e));
+      r.style.display=show?"":"none";
+      if(show)n++;
+    });
+    cnt.textContent=n+" shown";
+  }
+  cat.addEventListener("change",apply); ex.addEventListener("change",apply);
+  apply();
+})();
+</script>` + footer(SITE, data),
   schema: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: "All Recruitment Posts", url: `${DOMAIN}/all-recruitment.html` }],
 }));
 

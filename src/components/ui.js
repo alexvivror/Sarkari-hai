@@ -95,7 +95,7 @@ function postRow(p, byCat, byExam) {
   const cat = byCat[p.category];
   const off = isOfficial(p.links?.apply);
   const days = daysRemaining(p.applyEnd);
-  return `<tr class="post-row">
+  return `<tr class="post-row cat-${p.category} exam-${p.exam}">
     <td class="post-name">
       <a href="./posts/${p.id}.html" class="post-title">${esc(p.title)}</a>
       ${off ? '<span class="official-tag" title="Links to official government website">✔ Official</span>' : ""}

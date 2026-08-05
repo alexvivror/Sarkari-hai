@@ -41,9 +41,25 @@
   <nav class="crumbs"><a href="./">Home</a> <span>›</span> All Recruitment Posts</nav>
   <h1 class="page-h1"><span class="material-symbols-outlined">lists</span> All Recruitment Posts <small>26 total</small></h1>
   <p class="page-desc">Every recruitment notification, result, admit card, answer key, syllabus and admission update — in one place. All apply links go to official government websites.</p>
-  <div class="table-wrap"><table class="post-table">
+  
+  <div class="filter-bar" role="search" aria-label="Filter posts">
+    <label class="filter-field"><span class="material-symbols-outlined">category</span>
+      <select id="filter-cat" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        <option value="latest-jobs">Latest Jobs</option><option value="results">Results</option><option value="admit-card">Admit Card</option><option value="answer-key">Answer Key</option><option value="syllabus">Syllabus</option><option value="admission">Admission</option>
+      </select>
+    </label>
+    <label class="filter-field"><span class="material-symbols-outlined">school</span>
+      <select id="filter-exam" aria-label="Filter by exam">
+        <option value="">All Exams</option>
+        <option value="ssc">SSC</option><option value="upsc">UPSC</option><option value="railway">Railway</option><option value="bank">Bank</option><option value="police">Police</option><option value="defence">Defence</option><option value="teaching">Teaching</option><option value="state">State Govt</option><option value="aiims">AIIMS</option><option value="ntpc">NTPC</option><option value="isro">ISRO</option>
+      </select>
+    </label>
+    <span class="filter-count" id="filter-count"></span>
+  </div>
+  <div id="posts-table"><div class="table-wrap"><table class="post-table">
     <thead><tr><th>Post Name</th><th>Important Dates</th><th>Links</th></tr></thead>
-    <tbody><tr class="post-row">
+    <tbody><tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-nagpur-project-research-scientist-iii-recruitment-2026-93.html" class="post-title">AIIMS Nagpur Project Research Scientist III Recruitment 2026 - Apply Online</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -64,7 +80,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--88.html" class="post-title">AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Nuclear Medicine Technologist Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -85,7 +101,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-jodhpur-project-technical-support-recruitment-2026-wal-85.html" class="post-title">AIIMS Jodhpur Project Technical Support Recruitment 2026 - Walkin</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -106,7 +122,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-delhi-project-technical-support-ii-recruitment-2026-ap-71.html" class="post-title">AIIMS Delhi Project Technical Support  II Recruitment 2026 - Apply Online</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -127,7 +143,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-answer-key exam-railway">
     <td class="post-name">
       <a href="./posts/rrb-alp-cbt-2-answer-key-2026-out-download-response-sheet-am-52.html" class="post-title">RRB ALP CBT 2 Answer Key 2026 Out  - Download Response Sheet &amp;amp; Raise Objection</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -148,7 +164,7 @@
       <a class="act-btn ghost" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-norcet-11-2026-notification-out-2218-nursing-officer-r-30.html" class="post-title">AIIMS NORCET 11 2026 Notification Out: 2218 Nursing Officer Recruitment, Apply Online from 24 July</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -169,7 +185,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-isro">
     <td class="post-name">
       <a href="./posts/isro-icrb-recruitment-2026-notification-out-apply-online-for-29.html" class="post-title">ISRO ICRB Recruitment 2026 Notification Out - Apply Online for 244 Assistant, JPA, UDC &amp;amp; Stenographer Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -190,7 +206,7 @@
       <a class="act-btn ghost" href="https://www.isro.gov.in/Careers.html" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-bank">
     <td class="post-name">
       <a href="./posts/ibps-clerk-recruitment-2026-crp-csa-xvi-notification-out-app-28.html" class="post-title">IBPS Clerk Recruitment 2026 (CRP CSA-XVI) Notification Out - Apply Online 11403 Posts from August 1</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -211,7 +227,7 @@
       <a class="act-btn ghost" href="https://www.ibps.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-railway">
     <td class="post-name">
       <a href="./posts/rrb-je-04-2026-recruitment-2026-notification-out-apply-onlin-26.html" class="post-title">RRB JE 04/2026 Recruitment 2026 Notification Out - Apply Online for 4098 Junior Engineer Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -232,7 +248,7 @@
       <a class="act-btn ghost" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-ntpc">
     <td class="post-name">
       <a href="./posts/ntpc-deputy-manager-recruitment-2026-apply-online-for-135-po-24.html" class="post-title">NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -253,7 +269,7 @@
       <a class="act-btn ghost" href="https://ntpc.co.in/" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--12.html" class="post-title">AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -274,7 +290,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-aiims">
     <td class="post-name">
       <a href="./posts/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-9.html" class="post-title">AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -295,7 +311,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-state">
     <td class="post-name">
       <a href="./posts/ntpc-deputy-manager-2026.html" class="post-title">NTPC Deputy Manager 2026 — 135 Posts (Electrical, Mechanical, C&amp;I)</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -316,7 +332,7 @@
       <a class="act-btn ghost" href="https://ntpc.co.in/" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-railway">
     <td class="post-name">
       <a href="./posts/rrb-je-2026.html" class="post-title">RRB JE 04/2026 Recruitment — 4098 Junior Engineer Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -337,7 +353,7 @@
       <a class="act-btn ghost" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-results exam-state">
     <td class="post-name">
       <a href="./posts/karnataka-pgcet-result-2026.html" class="post-title">Karnataka PGCET Result 2026 — Check Online</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -358,7 +374,7 @@
       <a class="act-btn ghost" href="https://cetonline.karnataka.gov.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-results exam-state">
     <td class="post-name">
       <a href="./posts/rssb-driver-result-2026.html" class="post-title">RSSB Driver Result 2026 — Trade Test Selected List</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -379,7 +395,7 @@
       <a class="act-btn ghost" href="https://rssb.rajasthan.gov.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-state">
     <td class="post-name">
       <a href="./posts/aiims-non-faculty-2026.html" class="post-title">AIIMS Non-Faculty Recruitment 2026 — Clinical Psychologist, MO &amp; More</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -400,7 +416,7 @@
       <a class="act-btn ghost" href="https://www.aiims.edu" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-bank">
     <td class="post-name">
       <a href="./posts/ibps-clerk-2026.html" class="post-title">IBPS Clerk 2026 (CRP Clerk-XVI) — 11,403 Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -421,7 +437,7 @@
       <a class="act-btn ghost" href="https://www.ibps.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-state">
     <td class="post-name">
       <a href="./posts/iit-delhi-research-scientist-2026.html" class="post-title">IIT Delhi Project Research Scientist Recruitment 2026</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -442,7 +458,7 @@
       <a class="act-btn ghost" href="https://www.iitd.ac.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-latest-jobs exam-defence">
     <td class="post-name">
       <a href="./posts/isro-icrb-2026.html" class="post-title">ISRO ICRB Recruitment 2026 — 244 Assistant, JPA, UDC &amp; Stenographer</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -463,7 +479,7 @@
       <a class="act-btn ghost" href="https://www.isro.gov.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-results exam-state">
     <td class="post-name">
       <a href="./posts/mumbai-university-result-2026.html" class="post-title">Mumbai University Result 2026 — M.Com &amp; MSc</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -484,7 +500,7 @@
       <a class="act-btn ghost" href="https://mumresults.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-results exam-state">
     <td class="post-name">
       <a href="./posts/nhpc-apprentice-result-2026.html" class="post-title">NHPC Apprentice Result 2026 — Selected Candidates List</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -505,7 +521,7 @@
       <a class="act-btn ghost" href="https://www.nhpcindia.com" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-answer-key exam-teaching">
     <td class="post-name">
       <a href="./posts/hprca-answer-key-2026.html" class="post-title">HPRCA Teacher Answer Key 2026 — Chemistry &amp; Music</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -526,7 +542,7 @@
       <a class="act-btn ghost" href="https://hprca.hp.gov.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-admit-card exam-state">
     <td class="post-name">
       <a href="./posts/neet-ug-admit-2027.html" class="post-title">NEET UG 2027 Admit Card — Download Hall Ticket</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -547,7 +563,7 @@
       <a class="act-btn ghost" href="https://neet.nta.nic.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-admission exam-state">
     <td class="post-name">
       <a href="./posts/tn-mbamca-allotment-2026.html" class="post-title">TANCET MBA Provisional Allotment 2026</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -568,7 +584,7 @@
       <a class="act-btn ghost" href="https://tn-mbamca.com" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr>
-<tr class="post-row">
+<tr class="post-row cat-admission exam-state">
     <td class="post-name">
       <a href="./posts/ts-lawcet-2026.html" class="post-title">TS LAWCET 2026 Seat Allotment Result — Phase 1</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
@@ -589,8 +605,25 @@
       <a class="act-btn ghost" href="https://lawcetadm.tgche.ac.in" target="_blank" rel="noopener nofollow">Official Site</a>
     </td>
   </tr></tbody>
-  </table></div>
+  </table></div></div>
 </main>
+<script>
+(function(){
+  var cat=document.getElementById("filter-cat"), ex=document.getElementById("filter-exam"), cnt=document.getElementById("filter-count");
+  var rows=document.querySelectorAll("#posts-table .post-row");
+  function apply(){
+    var c=cat.value, e=ex.value, n=0;
+    rows.forEach(function(r){
+      var show=(!c||r.classList.contains("cat-"+c))&&(!e||r.classList.contains("exam-"+e));
+      r.style.display=show?"":"none";
+      if(show)n++;
+    });
+    cnt.textContent=n+" shown";
+  }
+  cat.addEventListener("change",apply); ex.addEventListener("change",apply);
+  apply();
+})();
+</script>
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
