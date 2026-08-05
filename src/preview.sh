@@ -13,8 +13,12 @@ set -uo pipefail
 cd "$(dirname "$0")/.."   # project root
 
 PORT="${PORT:-3210}"
+
+echo "🧪 Running automated tests (QA gate)..."
+node tests/run.js || { echo "FAIL: tests failed — do NOT deploy"; exit 1; }
+
 echo "🔨 Building site..."
-node src/build.js || { echo "FAIL: build errored"; exit 1; }
+node src/scripts/build.js || { echo "FAIL: build errored"; exit 1; }
 
 echo "🚀 Starting preview server on :$PORT ..."
 PORT="$PORT" node src/server.js >/tmp/sarkari-preview.log 2>&1 &

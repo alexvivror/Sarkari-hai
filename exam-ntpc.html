@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NTPC 2026 Jobs, Results & Admit Cards — Sarkari Hai</title>
+  <title>NTPC 2026 Jobs, Results &amp; Admit Cards — Sarkari Hai</title>
   <meta name="description" content="Latest NTPC 2026 recruitment, results, admit cards and answer keys with official links on Sarkari Hai.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://alexvivror.github.io/Sarkari-hai/exam-ntpc.html">
-  <meta property="og:title" content="NTPC 2026 Jobs, Results & Admit Cards — Sarkari Hai">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sarkari Hai">
+  <meta property="og:title" content="NTPC 2026 Jobs, Results &amp; Admit Cards — Sarkari Hai">
   <meta property="og:description" content="Latest NTPC 2026 recruitment, results, admit cards and answer keys with official links on Sarkari Hai.">
+  <meta property="og:url" content="https://alexvivror.github.io/Sarkari-hai/exam-ntpc.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NTPC 2026 Jobs, Results &amp; Admit Cards — Sarkari Hai">
+  <meta name="twitter:description" content="Latest NTPC 2026 recruitment, results, admit cards and answer keys with official links on Sarkari Hai.">
+  <meta name="theme-color" content="#f97316">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,29 +24,19 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"NTPC 2026","url":"https://alexvivror.github.io/Sarkari-hai/exam-ntpc.html"}</script>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="./" class="brand">
-        <span class="brand-mark">स</span>
-        <span>Sarkari Hai</span>
-      </a>
-      <nav class="nav">
-        <a href="./#latest">Latest</a>
-        <a href="./all-recruitment.html">All Posts</a>
-        <a href="./latest-jobs.html">Jobs</a>
-        <a href="./results.html">Results</a>
-        <a href="./admit-card.html">Admit Card</a>
-      </nav>
-    </div>
-    <div class="container">
-      <form class="searchbar" action="./search.html" method="get" role="search">
-        <span class="material-symbols-outlined">search</span>
-        <input type="search" name="q" placeholder="Search jobs, results, admit cards..." aria-label="Search">
-        <button type="submit" class="search-btn">Search</button>
-      </form>
-    </div>
-  </header>
   
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="brand"><span class="brand-mark">स</span><span>Sarkari Hai</span></a>
+      <nav class="nav"><a href="./#latest" >Latest</a><a href="./all-recruitment.html" >All Posts</a><a href="./latest-jobs.html" >Jobs</a><a href="./results.html" >Results</a><a href="./admit-card.html" >Admit Card</a></nav>
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="material-symbols-outlined" id="darkIcon">dark_mode</span></button>
+    </div>
+    <form class="searchbar" action="./search.html" method="get" role="search">
+      <span class="material-symbols-outlined">search</span>
+      <input type="search" name="q" placeholder="Search jobs, results, admit cards..." aria-label="Search">
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+  </header>
 <main class="container page">
   <nav class="crumbs"><a href="./">Home</a> <span>›</span> NTPC</nav>
   <h1 class="page-h1"><span class="material-symbols-outlined">bolt</span> NTPC Jobs & Results</h1>
@@ -50,6 +47,7 @@
     <td class="post-name">
       <a href="./posts/ntpc-deputy-manager-recruitment-2026-apply-online-for-135-po-24.html" class="post-title">NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts</a>
       <span class="official-tag" title="Links to official government website">✔ Official</span>
+      
       <span class="post-meta">
         <span class="chip-sm latest-jobs">Latest Jobs</span>
         <span class="chip-sm">NTPC</span>
@@ -73,7 +71,7 @@
       <div class="footer-grid">
         <div>
           <h4>Sarkari Hai</h4>
-          <p>Latest Sarkari Jobs, Results, Admit Cards & Answer Keys. सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की.</p>
+          <p>Latest Sarkari Jobs, Results, Admit Cards &amp; Answer Keys. सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की.</p>
           <a href="./about.html">About Us</a>
           <a href="./contact.html">Contact</a>
           <a href="./privacy.html">Privacy Policy</a>
@@ -106,6 +104,19 @@
         var on=function(){bt.classList.toggle("show",(window.scrollY||document.documentElement.scrollTop)>400);};
         window.addEventListener("scroll",on,{passive:true});on();
         bt.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});
+      }
+      // dark mode toggle (remembers choice)
+      var dt=document.getElementById("darkToggle"), di=document.getElementById("darkIcon");
+      if(dt){
+        var apply=function(dark){
+          document.documentElement.classList.toggle("dark",dark);
+          if(di) di.textContent=dark?"light_mode":"dark_mode";
+          try{localStorage.setItem("sh-dark",dark?"1":"0");}catch(e){}
+        };
+        var saved=null;try{saved=localStorage.getItem("sh-dark");}catch(e){}
+        if(saved!==null) apply(saved==="1");
+        else apply(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches);
+        dt.addEventListener("click",function(){apply(!document.documentElement.classList.contains("dark"));});
       }
     })();
   </script>

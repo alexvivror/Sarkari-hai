@@ -4,9 +4,12 @@
   "description": "Sarkari Hai — Latest sarkari jobs, results, admit cards & answer keys (static site generator)",
   "main": "server.js",
   "scripts": {
-    "build": "node src/build.js",
+    "build": "node src/scripts/build.js",
     "start": "node src/server.js",
-    "update": "node src/fetch-latest.js"
+    "update": "node src/cron/daily.js",
+    "hourly": "node src/cron/hourly.js",
+    "test": "node tests/run.js",
+    "preview": "bash src/preview.sh"
   },
   "engines": {
     "node": ">=18"

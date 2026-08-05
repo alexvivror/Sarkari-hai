@@ -7,8 +7,15 @@
   <meta name="description" content="Sarkari Hai privacy policy — we do not collect personal data. All tools run in your browser.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://alexvivror.github.io/Sarkari-hai/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sarkari Hai">
   <meta property="og:title" content="Privacy Policy — Sarkari Hai">
   <meta property="og:description" content="Sarkari Hai privacy policy — we do not collect personal data. All tools run in your browser.">
+  <meta property="og:url" content="https://alexvivror.github.io/Sarkari-hai/privacy.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy — Sarkari Hai">
+  <meta name="twitter:description" content="Sarkari Hai privacy policy — we do not collect personal data. All tools run in your browser.">
+  <meta name="theme-color" content="#f97316">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,49 +24,32 @@
   
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="./" class="brand">
-        <span class="brand-mark">स</span>
-        <span>Sarkari Hai</span>
-      </a>
-      <nav class="nav">
-        <a href="./#latest">Latest</a>
-        <a href="./all-recruitment.html">All Posts</a>
-        <a href="./latest-jobs.html">Jobs</a>
-        <a href="./results.html">Results</a>
-        <a href="./admit-card.html">Admit Card</a>
-      </nav>
-    </div>
-    <div class="container">
-      <form class="searchbar" action="./search.html" method="get" role="search">
-        <span class="material-symbols-outlined">search</span>
-        <input type="search" name="q" placeholder="Search jobs, results, admit cards..." aria-label="Search">
-        <button type="submit" class="search-btn">Search</button>
-      </form>
-    </div>
-  </header>
   
-  <main class="container page">
-    <nav class="crumbs"><a href="./">Home</a> <span>›</span> Privacy Policy</nav>
-    <h1 class="page-h1"><span class="material-symbols-outlined">privacy_tip</span> Privacy Policy</h1>
-    <article class="card post-detail">
-      <h2 class="sub-h">Information we collect</h2>
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="brand"><span class="brand-mark">स</span><span>Sarkari Hai</span></a>
+      <nav class="nav"><a href="./#latest" >Latest</a><a href="./all-recruitment.html" >All Posts</a><a href="./latest-jobs.html" >Jobs</a><a href="./results.html" >Results</a><a href="./admit-card.html" >Admit Card</a></nav>
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="material-symbols-outlined" id="darkIcon">dark_mode</span></button>
+    </div>
+    <form class="searchbar" action="./search.html" method="get" role="search">
+      <span class="material-symbols-outlined">search</span>
+      <input type="search" name="q" placeholder="Search jobs, results, admit cards..." aria-label="Search">
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+  </header><main class="container page"><nav class="crumbs"><a href="./">Home</a> <span>›</span> Privacy Policy</nav><h1 class="page-h1"><span class="material-symbols-outlined">info</span> Privacy Policy</h1><article class="card post-detail"><h2 class="sub-h">Information we collect</h2>
       <p class="page-desc">Sarkari Hai does not collect, store, or share any personal information. We have no user accounts, no forms that store data, and no tracking of individual visitors.</p>
       <h2 class="sub-h">Cookies and advertising</h2>
       <p class="page-desc">We may show advertisements. Ad networks such as Google AdSense may use cookies to serve relevant ads. You can disable cookies in your browser settings at any time.</p>
       <h2 class="sub-h">Third-party links</h2>
       <p class="page-desc">We link to official government websites for applications and notifications. We are not responsible for the content or privacy practices of external sites. Always verify information on the official website.</p>
       <h2 class="sub-h">Changes</h2>
-      <p class="page-desc">This policy may be updated occasionally. Continued use of the site means you accept the current policy.</p>
-    </article>
-  </main>
+      <p class="page-desc">This policy may be updated occasionally. Continued use of the site means you accept the current policy.</p></article></main>
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <h4>Sarkari Hai</h4>
-          <p>Latest Sarkari Jobs, Results, Admit Cards & Answer Keys. सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की.</p>
+          <p>Latest Sarkari Jobs, Results, Admit Cards &amp; Answer Keys. सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की.</p>
           <a href="./about.html">About Us</a>
           <a href="./contact.html">Contact</a>
           <a href="./privacy.html">Privacy Policy</a>
@@ -92,6 +82,19 @@
         var on=function(){bt.classList.toggle("show",(window.scrollY||document.documentElement.scrollTop)>400);};
         window.addEventListener("scroll",on,{passive:true});on();
         bt.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});
+      }
+      // dark mode toggle (remembers choice)
+      var dt=document.getElementById("darkToggle"), di=document.getElementById("darkIcon");
+      if(dt){
+        var apply=function(dark){
+          document.documentElement.classList.toggle("dark",dark);
+          if(di) di.textContent=dark?"light_mode":"dark_mode";
+          try{localStorage.setItem("sh-dark",dark?"1":"0");}catch(e){}
+        };
+        var saved=null;try{saved=localStorage.getItem("sh-dark");}catch(e){}
+        if(saved!==null) apply(saved==="1");
+        else apply(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches);
+        dt.addEventListener("click",function(){apply(!document.documentElement.classList.contains("dark"));});
       }
     })();
   </script>

@@ -4,7 +4,7 @@ services:
     name: sarkari-hai
     runtime: node
     plan: free
-    buildCommand: node src/build.js
+    buildCommand: node src/scripts/build.js
     startCommand: node src/server.js
     healthCheckPath: /
     envVars:

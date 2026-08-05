@@ -1,8 +1,6 @@
 /* ============================================================
-   Sarkari Hai — official government domain registry (STRICT)
-   Every apply link must be a verified official domain.
-   Posts are only auto-matched when the title contains an
-   unmistakable exam identifier — otherwise they are skipped.
+   services/official.js — verified official government domain
+   registry (STRICT matching — never guess a domain)
    ============================================================ */
 "use strict";
 
@@ -11,8 +9,7 @@ const OFFICIAL = {
     name: "Staff Selection Commission",
     apply: "https://ssc.gov.in",
     official: "https://ssc.gov.in",
-    // strict: exam body + known exam names
-    patterns: [/\bssc\b.*\b(cgl|chsl|mts|cpo|stenographer|gd|je|selection post)\b/i, /\bsarkari result\b/i],
+    patterns: [/\bssc\b.*\b(cgl|chsl|mts|cpo|stenographer|gd|je|selection post)\b/i],
   },
   upsc: {
     name: "UPSC",
@@ -82,10 +79,7 @@ const OFFICIAL = {
   },
 };
 
-/* ---------- strict matcher ---------- */
-/* Returns the single best official entry, or null.
-   Order matters: first entry whose pattern matches wins.
-   No fuzzy scoring — a match is a match, no match = skip. */
+/* strict matcher — first entry whose pattern matches wins; no match = null */
 function findOfficial(text) {
   for (const [slug, cfg] of Object.entries(OFFICIAL)) {
     for (const re of cfg.patterns) {
