@@ -388,7 +388,7 @@ data.posts.forEach((p) => {
     path.join(postsDir, `${p.id}.html`),
     pageShell({
       title: `${p.title}${/\b20\d\d\b/.test(p.title) ? "" : " 2026"} — ${SITE}`,
-      metaDesc: `${p.title}: ${esc(p.desc)} Apply Start ${p.applyStart}, End ${p.applyEnd}. Official links on ${SITE}.`,
+      metaDesc: `${p.title}: ${esc(p.desc)}${p.applyStart && p.applyStart !== "—" ? ` Apply start ${p.applyStart}` : ""}${p.applyEnd && p.applyEnd !== "—" ? `, end ${p.applyEnd}` : ""}. Official links on ${SITE}.`,
       canonical: `${DOMAIN}/posts/${p.id}.html`,
       body,
       schema: [
