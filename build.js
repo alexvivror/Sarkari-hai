@@ -13,6 +13,8 @@ const path = require("path");
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "posts.json"), "utf8"));
 const SITE = data.site.name;
 const DOMAIN = data.site.domain;
+const BUILT = new Date().toISOString().slice(0, 10);
+const BUILT_PRETTY = new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
 
 /* copy static assets */
 const outDir = path.join(__dirname, "public");
@@ -169,7 +171,7 @@ const homeBody = `
   <section class="container main-grid">
     <div class="content-col">
       <div class="card" id="latest">
-        <h2 class="card-title"><span class="material-symbols-outlined">newspaper</span> Latest Jobs & Results</h2>
+        <h2 class="card-title"><span class="material-symbols-outlined">newspaper</span> Latest Jobs & Results <span class="updated-badge">Updated ${BUILT_PRETTY}</span></h2>
         ${postTable(latest.slice(0, 10))}
         <p class="all-link"><a href="./latest-jobs.html">View all latest posts →</a></p>
       </div>

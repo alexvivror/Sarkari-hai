@@ -6,400 +6,834 @@
     "hindi": "सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की"
   },
   "categories": [
-    { "slug": "latest-jobs", "label": "Latest Jobs", "hindi": "नवीनतम नौकरियां", "icon": "work", "desc": "Fresh government job notifications" },
-    { "slug": "results", "label": "Results", "hindi": "रिजल्ट", "icon": "fact_check", "desc": "Exam results declared" },
-    { "slug": "admit-card", "label": "Admit Card", "hindi": "एडमिट कार्ड", "icon": "badge", "desc": "Download hall tickets" },
-    { "slug": "answer-key", "label": "Answer Key", "hindi": "आंसर की", "icon": "quiz", "desc": "Official answer keys" },
-    { "slug": "syllabus", "label": "Syllabus", "hindi": "सिलेबस", "icon": "menu_book", "desc": "Exam patterns & syllabus" },
-    { "slug": "admission", "label": "Admission", "hindi": "प्रवेश", "icon": "school", "desc": "University & course admissions" }
+    {
+      "slug": "latest-jobs",
+      "label": "Latest Jobs",
+      "hindi": "नवीनतम नौकरियां",
+      "icon": "work",
+      "desc": "Fresh government job notifications"
+    },
+    {
+      "slug": "results",
+      "label": "Results",
+      "hindi": "रिजल्ट",
+      "icon": "fact_check",
+      "desc": "Exam results declared"
+    },
+    {
+      "slug": "admit-card",
+      "label": "Admit Card",
+      "hindi": "एडमिट कार्ड",
+      "icon": "badge",
+      "desc": "Download hall tickets"
+    },
+    {
+      "slug": "answer-key",
+      "label": "Answer Key",
+      "hindi": "आंसर की",
+      "icon": "quiz",
+      "desc": "Official answer keys"
+    },
+    {
+      "slug": "syllabus",
+      "label": "Syllabus",
+      "hindi": "सिलेबस",
+      "icon": "menu_book",
+      "desc": "Exam patterns & syllabus"
+    },
+    {
+      "slug": "admission",
+      "label": "Admission",
+      "hindi": "प्रवेश",
+      "icon": "school",
+      "desc": "University & course admissions"
+    }
   ],
   "exams": [
-    { "slug": "ssc", "label": "SSC", "icon": "account_balance" },
-    { "slug": "upsc", "label": "UPSC", "icon": "gavel" },
-    { "slug": "railway", "label": "Railway", "icon": "train" },
-    { "slug": "bank", "label": "Bank", "icon": "savings" },
-    { "slug": "police", "label": "Police", "icon": "local_police" },
-    { "slug": "defence", "label": "Defence", "icon": "shield" },
-    { "slug": "teaching", "label": "Teaching", "icon": "school" },
-    { "slug": "state", "label": "State Govt", "icon": "location_city" }
+    {
+      "slug": "ssc",
+      "label": "SSC",
+      "icon": "account_balance"
+    },
+    {
+      "slug": "upsc",
+      "label": "UPSC",
+      "icon": "gavel"
+    },
+    {
+      "slug": "railway",
+      "label": "Railway",
+      "icon": "train"
+    },
+    {
+      "slug": "bank",
+      "label": "Bank",
+      "icon": "savings"
+    },
+    {
+      "slug": "police",
+      "label": "Police",
+      "icon": "local_police"
+    },
+    {
+      "slug": "defence",
+      "label": "Defence",
+      "icon": "shield"
+    },
+    {
+      "slug": "teaching",
+      "label": "Teaching",
+      "icon": "school"
+    },
+    {
+      "slug": "state",
+      "label": "State Govt",
+      "icon": "location_city"
+    }
   ],
   "posts": [
     {
-      "id": "ssc-cgl-2026",
-      "title": "SSC CGL 2026 Online Form",
-      "category": "latest-jobs",
-      "exam": "ssc",
-      "date": "2026-08-04",
-      "applyStart": "05 August 2026",
-      "applyEnd": "26 August 2026",
-      "examDate": "November 2026",
-      "desc": "Staff Selection Commission Combined Graduate Level Examination 2026. Total 17,727 posts of various ministries and departments.",
-      "details": ["Total Posts: 17,727", "Qualification: Bachelor's Degree", "Age Limit: 18-32 years", "Application Fee: ₹100 (SC/ST/Ex-SM: Nil)", "Selection: Tier-I, Tier-II, Tier-III, Tier-IV"],
-      "faqs": [
-        { "q": "What is the SSC CGL 2026 application fee?", "a": "The application fee is ₹100 for General/OBC candidates. SC, ST, PwD and Ex-Servicemen candidates are exempted from the fee." },
-        { "q": "What is the age limit for SSC CGL 2026?", "a": "The age limit is 18-32 years. Age relaxation is applicable as per government rules for reserved categories." }
-      ],
-      "links": {
-        "apply": "https://ssc.gov.in",
-        "notification": "#",
-        "official": "https://ssc.gov.in"
-      }
-    },
-    {
-      "id": "upsc-ias-2026",
-      "title": "UPSC IAS Pre 2026 Notification",
-      "category": "latest-jobs",
-      "exam": "upsc",
-      "date": "2026-08-03",
-      "applyStart": "05 August 2026",
-      "applyEnd": "25 August 2026",
-      "examDate": "31 May 2027",
-      "desc": "Union Public Service Commission Civil Services (Preliminary) Examination 2027. Gateway to IAS, IPS, IFS and other central services.",
-      "details": ["Posts: IAS, IPS, IFS & 24 other services", "Qualification: Bachelor's Degree", "Age Limit: 21-32 years (as on 01-08-2027)", "Attempts: 6 for General, more for reserved", "Selection: Prelims, Mains, Interview"],
-      "faqs": [
-        { "q": "How many attempts are allowed in UPSC CSE?", "a": "General category candidates get 6 attempts. OBC gets 9 and SC/ST candidates have no attempt limit." },
-        { "q": "What is the UPSC application fee?", "a": "The fee is ₹100 for General/OBC candidates. Female, SC, ST and PwD candidates are exempted." }
-      ],
-      "links": {
-        "apply": "https://upsc.gov.in",
-        "notification": "#",
-        "official": "https://upsc.gov.in"
-      }
-    },
-    {
-      "id": "rrb-ntpc-2026",
-      "title": "RRB NTPC 2026 Apply Online",
-      "category": "latest-jobs",
-      "exam": "railway",
-      "date": "2026-08-02",
-      "applyStart": "01 August 2026",
-      "applyEnd": "30 August 2026",
-      "examDate": "December 2026",
-      "desc": "Railway Recruitment Board Non-Technical Popular Categories 2026. Recruitment for Graduate and Undergraduate posts in Indian Railways.",
-      "details": ["Total Posts: 11,558", "Posts: Clerk, Station Master, TC, Goods Guard", "Qualification: 12th / Graduate", "Age Limit: 18-33 years", "Selection: CBT-1, CBT-2, Typing/Aptitude"],
-      "faqs": [
-        { "q": "What posts are covered in RRB NTPC?", "a": "NTPC covers Non-Technical Popular Categories like Clerk, Station Master, Train Controller, Goods Guard and Ticket Collector." },
-        { "q": "What is the RRB NTPC exam pattern?", "a": "The selection has two Computer Based Tests (CBT). CBT-1 is qualifying, CBT-2 determines the merit list." }
-      ],
-      "links": {
-        "apply": "https://rrbcdg.gov.in",
-        "notification": "#",
-        "official": "https://indianrailways.gov.in"
-      }
-    },
-    {
-      "id": "ibps-po-2026",
-      "title": "IBPS PO 2026 Notification",
-      "category": "latest-jobs",
-      "exam": "bank",
-      "date": "2026-08-01",
-      "applyStart": "01 August 2026",
-      "applyEnd": "21 August 2026",
-      "examDate": "October 2026",
-      "desc": "IBPS Probationary Officer 2026 recruitment for 41 public sector banks. CRP PO/MT-XVI.",
-      "details": ["Total Posts: 4,000+ (approx)", "Qualification: Bachelor's Degree", "Age Limit: 20-30 years", "Selection: Prelims, Mains, Interview", "Exam Mode: Online CBT"],
-      "faqs": [
-        { "q": "What is IBPS PO eligibility?", "a": "Candidates need a Bachelor's degree from a recognized university and must be between 20-30 years of age." },
-        { "q": "How many attempts are allowed for IBPS PO?", "a": "General candidates get 4 attempts, OBC 7, and SC/ST/PwD candidates have no attempt limit." }
-      ],
-      "links": {
-        "apply": "https://ibps.in",
-        "notification": "#",
-        "official": "https://ibps.in"
-      }
-    },
-    {
-      "id": "delhi-police-2026",
-      "title": "Delhi Police Constable 2026",
-      "category": "latest-jobs",
-      "exam": "police",
-      "date": "2026-07-30",
-      "applyStart": "28 July 2026",
-      "applyEnd": "18 August 2026",
-      "examDate": "September 2026",
-      "desc": "Delhi Police Constable (Executive) Recruitment 2026. Direct recruitment of constables in Delhi Police.",
-      "details": ["Total Posts: 7,547", "Qualification: 10th Pass", "Age Limit: 18-25 years", "Physical: Race, Long Jump, High Jump", "Selection: CBT, PET/PST, Medical"],
-      "faqs": [
-        { "q": "What is the minimum qualification for Delhi Police Constable?", "a": "Candidates must be 10th pass from a recognized board. Age should be between 18-25 years." },
-        { "q": "Is there a physical test?", "a": "Yes. Male candidates run 1600m in 6.5 minutes; females run 800m in 4.5 minutes, followed by long jump and high jump." }
-      ],
-      "links": {
-        "apply": "https://delhipolice.gov.in",
-        "notification": "#",
-        "official": "https://delhipolice.gov.in"
-      }
-    },
-    {
-      "id": "agniveer-2026",
-      "title": "Agniveer Army 2026 Apply",
-      "category": "latest-jobs",
-      "exam": "defence",
-      "date": "2026-07-28",
-      "applyStart": "25 July 2026",
-      "applyEnd": "15 August 2026",
-      "examDate": "September 2026",
-      "desc": "Indian Army Agniveer Recruitment Rally 2026 for Agniveer General Duty, Technical, Clerk and Tradesman posts.",
-      "details": ["Tenure: 4 years + 4 years", "Qualification: 8th/10th/12th/ITI", "Age Limit: 17.5-21 years", "Salary: ₹30,000/month + perks", "Selection: Rally, Written, Medical"],
-      "faqs": [
-        { "q": "What is the Agniveer age limit?", "a": "Candidates must be between 17.5 and 21 years of age on the date of enrolment." },
-        { "q": "What is the Agniveer salary?", "a": "Agniveers receive ₹30,000 per month in the first year, increasing annually, plus risk and hardship allowances." }
-      ],
-      "links": {
-        "apply": "https://joinindianarmy.nic.in",
-        "notification": "#",
-        "official": "https://joinindianarmy.nic.in"
-      }
-    },
-    {
-      "id": "ctet-2026",
-      "title": "CTET 2026 Registration",
-      "category": "latest-jobs",
-      "exam": "teaching",
-      "date": "2026-07-26",
-      "applyStart": "24 July 2026",
-      "applyEnd": "24 August 2026",
-      "examDate": "December 2026",
-      "desc": "Central Teacher Eligibility Test 2026 conducted by CBSE. Certificate valid for all central government schools (KVS, NVS, etc.).",
-      "details": ["Papers: Paper-I (Class 1-5), Paper-II (Class 6-8)", "Qualification: 12th + D.El.Ed / Graduate + B.Ed", "Age Limit: No age limit", "Valid: 7 years", "Mode: Online CBT"],
-      "faqs": [
-        { "q": "Is CTET certificate valid for life?", "a": "As per current rules the CTET certificate is valid for 7 years from the date of result declaration." },
-        { "q": "Can I apply for both CTET papers?", "a": "Yes, candidates can apply for both Paper-I and Paper-II if they meet the eligibility for both." }
-      ],
-      "links": {
-        "apply": "https://ctet.nic.in",
-        "notification": "#",
-        "official": "https://ctet.nic.in"
-      }
-    },
-    {
-      "id": "upsssc-2026",
-      "title": "UPSSSC PET 2026 Result",
+      "id": "rssb-driver-result-2026-out-check-trade-test-selected-candid",
+      "title": "RSSB Driver Result 2026 Out - Check Trade Test Selected Candidates List PDF Download",
       "category": "results",
       "exam": "state",
       "date": "2026-08-05",
-      "applyStart": "—",
+      "applyStart": "05 August 2026",
       "applyEnd": "—",
-      "examDate": "Declared",
-      "desc": "UPSSSC Preliminary Eligibility Test 2026 result has been declared. Check your result and cutoff for UP government jobs.",
-      "details": ["Status: Result Declared", "Cutoff: Category-wise released", "Next: Main exam for shortlisted", "Check: Result with roll number"],
+      "examDate": "—",
+      "desc": "Latest sarkari notification: RSSB Driver Result 2026 Out - Check Trade Test Selected Candidates List PDF Download. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
       "faqs": [
-        { "q": "How to check UPSSSC PET 2026 result?", "a": "Visit the official UPSSSC website, enter your roll number and date of birth to download your result." },
-        { "q": "What is the PET cutoff?", "a": "Cutoffs are released category-wise after the result. General category cutoff is usually higher than reserved categories." }
+        {
+          "q": "How to apply for RSSB Driver Result 2026 Out - Check Trade Test Selected Candidates List PDF Download?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
       ],
       "links": {
-        "apply": "https://upsssc.gov.in",
-        "notification": "#",
-        "official": "https://upsssc.gov.in"
+        "apply": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664",
+        "notification": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664",
+        "official": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664"
       }
     },
     {
-      "id": "ssc-gd-result-2026",
-      "title": "SSC GD 2026 Result Declared",
-      "category": "results",
-      "exam": "ssc",
-      "date": "2026-08-04",
-      "applyStart": "—",
-      "applyEnd": "—",
-      "examDate": "Declared",
-      "desc": "SSC GD Constable 2026 final result has been declared. Check your status and next steps for document verification.",
-      "details": ["Status: Final Result Declared", "Posts: Constable (CAPFs, SSF, Rifleman)", "Next: Document Verification", "Check: Result with roll number"],
-      "faqs": [
-        { "q": "How to check SSC GD result?", "a": "Visit ssc.gov.in, click on the SSC GD result link, enter your registration number and roll number." },
-        { "q": "What happens after SSC GD result?", "a": "Qualified candidates are called for document verification and medical examination." }
-      ],
-      "links": {
-        "apply": "https://ssc.gov.in",
-        "notification": "#",
-        "official": "https://ssc.gov.in"
-      }
-    },
-    {
-      "id": "rrb-group-d-2026",
-      "title": "RRB Group D 2026 Result",
-      "category": "results",
-      "exam": "railway",
-      "date": "2026-08-02",
-      "applyStart": "—",
-      "applyEnd": "—",
-      "examDate": "Declared",
-      "desc": "RRB Group D Level-1 2026 result declared for 32,438 posts across Indian Railways zones.",
-      "details": ["Status: CBT Result Declared", "Total Posts: 32,438", "Next: PET (Physical Efficiency Test)", "Check: Result with roll number"],
-      "faqs": [
-        { "q": "What is the RRB Group D physical test?", "a": "Male candidates lift 35kg and run 1000m in 4 min 15 sec. Female candidates lift 20kg and run 1000m in 5 min 40 sec." },
-        { "q": "When is the PET scheduled?", "a": "PET dates are announced zone-wise after the CBT result. Check your zone website for the schedule." }
-      ],
-      "links": {
-        "apply": "https://rrbcdg.gov.in",
-        "notification": "#",
-        "official": "https://indianrailways.gov.in"
-      }
-    },
-    {
-      "id": "neet-ug-admit-2026",
-      "title": "NEET UG 2027 Admit Card",
-      "category": "admit-card",
+      "id": "iit-delhi-project-research-scientist-recruitment-2026-apply--1",
+      "title": "IIT Delhi Project Research Scientist  Recruitment 2026 - Apply Online",
+      "category": "latest-jobs",
       "exam": "state",
-      "date": "2026-08-01",
-      "applyStart": "—",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
       "applyEnd": "—",
-      "examDate": "01 May 2027",
-      "desc": "NEET UG 2027 admit card will be released on the NTA website. Download hall ticket for the medical entrance exam.",
-      "details": ["Release: 4 weeks before exam", "Exam Date: 01 May 2027", "Check: Application number + DOB", "Carry: Printout + Photo ID"],
+      "examDate": "—",
+      "desc": "Latest sarkari notification: IIT Delhi Project Research Scientist  Recruitment 2026 - Apply Online. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
       "faqs": [
-        { "q": "When will NEET 2027 admit card release?", "a": "The admit card is typically released 2-4 weeks before the exam date on the official NTA website." },
-        { "q": "What documents do I need with the admit card?", "a": "Carry a printed admit card along with a valid photo ID proof like Aadhaar, Passport or Driving License." }
+        {
+          "q": "How to apply for IIT Delhi Project Research Scientist  Recruitment 2026 - Apply Online?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
       ],
       "links": {
-        "apply": "https://neet.nta.nic.in",
-        "notification": "#",
-        "official": "https://nta.ac.in"
+        "apply": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663",
+        "notification": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663",
+        "official": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663"
       }
     },
     {
-      "id": "ssc-cgl-admit-2026",
-      "title": "SSC CGL Tier-I Admit Card 2026",
-      "category": "admit-card",
-      "exam": "ssc",
-      "date": "2026-07-30",
-      "applyStart": "—",
+      "id": "nhm-mizoram-recruitment-2026-apply-offline-for-medical-offic-2",
+      "title": "NHM Mizoram Recruitment 2026 - Apply Offline for Medical Officer, Staff Nurse, and More Posts",
+      "category": "latest-jobs",
+      "exam": "bank",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
       "applyEnd": "—",
-      "examDate": "October 2026",
-      "desc": "SSC CGL Tier-I 2026 admit card released region-wise. Download your hall ticket from the SSC regional website.",
-      "details": ["Release: Region-wise", "Exam: Tier-I (CBT)", "Download: Region website", "Carry: Printout + Photo ID"],
+      "examDate": "—",
+      "desc": "Latest sarkari notification: NHM Mizoram Recruitment 2026 - Apply Offline for Medical Officer, Staff Nurse, and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
       "faqs": [
-        { "q": "How to download SSC CGL admit card?", "a": "Visit your SSC regional website, click on the admit card link, and enter your registration number and password." },
-        { "q": "What if my SSC CGL admit card is not available?", "a": "Admit cards are released region-wise. Wait for your region's release or contact the regional SSC office." }
+        {
+          "q": "How to apply for NHM Mizoram Recruitment 2026 - Apply Offline for Medical Officer, Staff Nurse, and More Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
       ],
       "links": {
-        "apply": "https://ssc.gov.in",
-        "notification": "#",
-        "official": "https://ssc.gov.in"
+        "apply": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661",
+        "notification": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661",
+        "official": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661"
       }
     },
     {
-      "id": "upsc-cse-answer-key-2026",
-      "title": "UPSC CSE Prelims 2026 Answer Key",
-      "category": "answer-key",
-      "exam": "upsc",
-      "date": "2026-07-28",
-      "applyStart": "—",
+      "id": "manuu-guest-faculty-recruitment-2026-walkin-3",
+      "title": "MANUU Guest Faculty Recruitment 2026 - Walkin",
+      "category": "latest-jobs",
+      "exam": "teaching",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
       "applyEnd": "—",
-      "examDate": "Released",
-      "desc": "UPSC Civil Services Prelims 2026 official answer key released. Challenge window open for objections.",
-      "details": ["Status: Answer Key Released", "Challenge: 7 days window", "Fee: ₹100 per question (refundable)", "Final: After challenge review"],
+      "examDate": "—",
+      "desc": "Latest sarkari notification: MANUU Guest Faculty Recruitment 2026 - Walkin. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
       "faqs": [
-        { "q": "How to challenge the UPSC answer key?", "a": "Log in to the UPSC website, select the questions you want to challenge, pay the fee, and submit your objections with proof." },
-        { "q": "Is the UPSC answer key fee refundable?", "a": "Yes, the ₹100 fee per question is refunded if the challenge is accepted and the answer is changed." }
+        {
+          "q": "How to apply for MANUU Guest Faculty Recruitment 2026 - Walkin?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
       ],
       "links": {
-        "apply": "https://upsc.gov.in",
-        "notification": "#",
-        "official": "https://upsc.gov.in"
+        "apply": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659",
+        "notification": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659",
+        "official": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659"
       }
     },
     {
-      "id": "rrb-answer-key-2026",
-      "title": "RRB ALP 2026 Answer Key",
-      "category": "answer-key",
-      "exam": "railway",
-      "date": "2026-07-26",
-      "applyStart": "—",
-      "applyEnd": "—",
-      "examDate": "Released",
-      "desc": "RRB ALP (Assistant Loco Pilot) 2026 CBT-1 answer key released with response sheet. Raise objections before the deadline.",
-      "details": ["Status: Answer Key Released", "Response Sheet: Available", "Objection Fee: ₹50/question", "Final Key: After review"],
-      "faqs": [
-        { "q": "How to check RRB ALP answer key?", "a": "Download the answer key and your response sheet from the RRB website and compare your answers to calculate the score." },
-        { "q": "What is the objection fee?", "a": "Candidates can raise objections against any question by paying ₹50 per question. It is refunded if the objection is valid." }
-      ],
-      "links": {
-        "apply": "https://rrbcdg.gov.in",
-        "notification": "#",
-        "official": "https://indianrailways.gov.in"
-      }
-    },
-    {
-      "id": "ssc-syllabus-2026",
-      "title": "SSC CGL Syllabus & Exam Pattern",
-      "category": "syllabus",
-      "exam": "ssc",
-      "date": "2026-07-24",
-      "applyStart": "—",
-      "applyEnd": "—",
-      "examDate": "Updated",
-      "desc": "Complete SSC CGL 2026 syllabus and exam pattern for Tier-I, Tier-II, Tier-III and Tier-IV with marking scheme.",
-      "details": ["Tier-I: 100 Qs, 200 marks, 60 min", "Tier-II: 3 papers (Maths, English, Stats)", "Tier-III: Descriptive (English/Hindi)", "Tier-IV: Skill Test / DEST", "Negative: 0.50 marks per wrong answer"],
-      "faqs": [
-        { "q": "How many sections in SSC CGL Tier-I?", "a": "Tier-I has 4 sections: General Intelligence, General Awareness, Quantitative Aptitude and English Comprehension." },
-        { "q": "Is there negative marking in SSC CGL?", "a": "Yes, 0.50 marks are deducted for each wrong answer in both Tier-I and Tier-II." }
-      ],
-      "links": {
-        "apply": "https://ssc.gov.in",
-        "notification": "#",
-        "official": "https://ssc.gov.in"
-      }
-    },
-    {
-      "id": "upsc-syllabus-2026",
-      "title": "UPSC IAS Syllabus 2026",
-      "category": "syllabus",
-      "exam": "upsc",
-      "date": "2026-07-22",
-      "applyStart": "—",
-      "applyEnd": "—",
-      "examDate": "Updated",
-      "desc": "Complete UPSC Civil Services syllabus: Prelims GS Paper 1 & 2, Mains 9 papers, and interview. Optional subject list.",
-      "details": ["Prelims: GS-1 + CSAT (qualifying)", "Mains: 9 papers (2 qualifying)", "Optional: 48 subjects available", "Interview: 275 marks", "Total: 2025 marks"],
-      "faqs": [
-        { "q": "How many papers in UPSC Mains?", "a": "There are 9 papers in Mains. Two are qualifying (English and Indian Language), the remaining 7 count toward merit." },
-        { "q": "What is the UPSC total marks?", "a": "Mains is 1750 marks and the interview is 275 marks, making a total of 2025 marks." }
-      ],
-      "links": {
-        "apply": "https://upsc.gov.in",
-        "notification": "#",
-        "official": "https://upsc.gov.in"
-      }
-    },
-    {
-      "id": "cuet-ug-2027",
-      "title": "CUET UG 2027 Registration",
+      "id": "tancet-mba-provisional-allotment-2026-download-seat-allotmen-4",
+      "title": "TANCET MBA Provisional Allotment 2026 - Download Seat Allotment Order at tn-mbamca.com",
       "category": "admission",
       "exam": "state",
-      "date": "2026-07-20",
-      "applyStart": "18 July 2026",
-      "applyEnd": "17 August 2026",
-      "examDate": "May 2027",
-      "desc": "Common University Entrance Test (CUET UG) 2027 for admission to 250+ central and state universities. Apply online.",
-      "details": ["Universities: 250+ central universities", "Subjects: Language + Domain + General", "Mode: Online CBT", "Qualification: 12th pass"],
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: TANCET MBA Provisional Allotment 2026 - Download Seat Allotment Order at tn-mbamca.com. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
       "faqs": [
-        { "q": "Which universities accept CUET UG?", "a": "All central universities including DU, BHU, JNU, AMU and many state and private universities accept CUET UG scores." },
-        { "q": "How many subjects can I choose in CUET?", "a": "Candidates can choose up to 6 subjects: 2 languages, 3 domain subjects, and 1 general test." }
+        {
+          "q": "How to apply for TANCET MBA Provisional Allotment 2026 - Download Seat Allotment Order at tn-mbamca.com?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
       ],
       "links": {
-        "apply": "https://cuet.nta.nic.in",
-        "notification": "#",
-        "official": "https://nta.ac.in"
+        "apply": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657",
+        "notification": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657",
+        "official": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657"
       }
     },
     {
-      "id": "jee-main-2027",
-      "title": "JEE Main 2027 Apply Online",
+      "id": "ts-lawcet-2026-phase-1-seat-allotment-result-check-result-la-5",
+      "title": "TS LAWCET 2026 Phase 1 Seat Allotment Result - Check Result @ lawcetadm.tgche.ac.in",
       "category": "admission",
       "exam": "state",
-      "date": "2026-07-18",
-      "applyStart": "15 July 2026",
-      "applyEnd": "15 August 2026",
-      "examDate": "January 2027",
-      "desc": "JEE Main 2027 Session-1 application form released by NTA for B.E./B.Tech and B.Arch admissions.",
-      "details": ["Papers: Paper-1 (BE/BTech), Paper-2 (BArch)", "Qualification: 12th with PCM", "Mode: Online CBT", "Used for: JEE Advanced eligibility"],
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: TS LAWCET 2026 Phase 1 Seat Allotment Result - Check Result @ lawcetadm.tgche.ac.in. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
       "faqs": [
-        { "q": "Who can apply for JEE Main 2027?", "a": "Candidates who passed 12th with Physics, Chemistry and Mathematics in 2025, 2026 or appearing in 2027 can apply." },
-        { "q": "Is JEE Main required for NITs and IIITs?", "a": "Yes, admission to NITs, IIITs and GFTIs is based on JEE Main rank, and top rankers qualify for JEE Advanced." }
+        {
+          "q": "How to apply for TS LAWCET 2026 Phase 1 Seat Allotment Result - Check Result @ lawcetadm.tgche.ac.in?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
       ],
       "links": {
-        "apply": "https://jeemain.nta.nic.in",
-        "notification": "#",
-        "official": "https://nta.ac.in"
+        "apply": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656",
+        "notification": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656",
+        "official": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656"
+      }
+    },
+    {
+      "id": "karnataka-pgcet-result-2026-check-result-online-cetonline-ka-6",
+      "title": "Karnataka PGCET Result 2026 - Check Result Online @ cetonline.karnataka.gov.in",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: Karnataka PGCET Result 2026 - Check Result Online @ cetonline.karnataka.gov.in. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for Karnataka PGCET Result 2026 - Check Result Online @ cetonline.karnataka.gov.in?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655",
+        "notification": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655",
+        "official": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655"
+      }
+    },
+    {
+      "id": "mumbai-university-result-2026-out-check-m-com-amp-msc-result-7",
+      "title": "Mumbai University Result 2026 Out - Check M.Com &amp; MSc Result Online at mumresults.in",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: Mumbai University Result 2026 Out - Check M.Com &amp; MSc Result Online at mumresults.in. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for Mumbai University Result 2026 Out - Check M.Com &amp; MSc Result Online at mumresults.in?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654",
+        "notification": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654",
+        "official": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654"
+      }
+    },
+    {
+      "id": "icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026--8",
+      "title": "ICDS Pathalgaon Anganwadi Worker/Assistant Recruitment 2026 - Apply Online",
+      "category": "latest-jobs",
+      "exam": "upsc",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: ICDS Pathalgaon Anganwadi Worker/Assistant Recruitment 2026 - Apply Online. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for ICDS Pathalgaon Anganwadi Worker/Assistant Recruitment 2026 - Apply Online?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653",
+        "notification": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653",
+        "official": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653"
+      }
+    },
+    {
+      "id": "aiims-non-faculty-recruitment-2026-apply-online-for-clinical-9",
+      "title": "AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts",
+      "category": "latest-jobs",
+      "exam": "teaching",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651",
+        "notification": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651",
+        "official": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651"
+      }
+    },
+    {
+      "id": "psssb-junior-engineer-merit-list-2026-out-download-je-civil--10",
+      "title": "PSSSB Junior Engineer Merit List 2026 Out - Download JE Civil &amp; Mechanical Sports Category Result PDF",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: PSSSB Junior Engineer Merit List 2026 Out - Download JE Civil &amp; Mechanical Sports Category Result PDF. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for PSSSB Junior Engineer Merit List 2026 Out - Download JE Civil &amp; Mechanical Sports Category Result PDF?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649",
+        "notification": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649",
+        "official": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649"
+      }
+    },
+    {
+      "id": "family-court-banda-counselor-recruitment-2026-apply-offline-11",
+      "title": "Family Court Banda Counselor Recruitment 2026 - Apply Offline",
+      "category": "latest-jobs",
+      "exam": "upsc",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: Family Court Banda Counselor Recruitment 2026 - Apply Offline. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for Family Court Banda Counselor Recruitment 2026 - Apply Offline?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648",
+        "notification": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648",
+        "official": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648"
+      }
+    },
+    {
+      "id": "aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--12",
+      "title": "AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts",
+      "category": "latest-jobs",
+      "exam": "teaching",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646",
+        "notification": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646",
+        "official": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646"
+      }
+    },
+    {
+      "id": "nhpc-apprentice-result-2026-out-check-provisionally-selected-13",
+      "title": "NHPC Apprentice Result 2026 Out - Check Provisionally Selected Candidates List PDF Download",
+      "category": "results",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: NHPC Apprentice Result 2026 Out - Check Provisionally Selected Candidates List PDF Download. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for NHPC Apprentice Result 2026 Out - Check Provisionally Selected Candidates List PDF Download?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644",
+        "notification": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644",
+        "official": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644"
+      }
+    },
+    {
+      "id": "bangalore-university-guest-faculty-recruitment-2026-apply-of-14",
+      "title": "Bangalore University Guest Faculty Recruitment 2026 - Apply Offline",
+      "category": "latest-jobs",
+      "exam": "teaching",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: Bangalore University Guest Faculty Recruitment 2026 - Apply Offline. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for Bangalore University Guest Faculty Recruitment 2026 - Apply Offline?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643",
+        "notification": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643",
+        "official": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643"
+      }
+    },
+    {
+      "id": "cau-project-assistant-recruitment-2026-walkin-15",
+      "title": "CAU Project Assistant Recruitment 2026 - Walkin",
+      "category": "latest-jobs",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: CAU Project Assistant Recruitment 2026 - Walkin. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for CAU Project Assistant Recruitment 2026 - Walkin?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/cau-project-assistant-recruitment-2026-walkin-3061053",
+        "notification": "https://www.freejobalert.com/articles/cau-project-assistant-recruitment-2026-walkin-3061053",
+        "official": "https://www.freejobalert.com/articles/cau-project-assistant-recruitment-2026-walkin-3061053"
+      }
+    },
+    {
+      "id": "chamarajanagar-district-court-recruitment-2026-apply-online--16",
+      "title": "Chamarajanagar District Court Recruitment 2026 - Apply Online for 25 Peon, Stenographer and More Posts",
+      "category": "latest-jobs",
+      "exam": "ssc",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: Chamarajanagar District Court Recruitment 2026 - Apply Online for 25 Peon, Stenographer and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for Chamarajanagar District Court Recruitment 2026 - Apply Online for 25 Peon, Stenographer and More Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/chamarajanagar-district-court-recruitment-2026-apply-online-for-25-peon-stenographer-and-more-posts-3061641",
+        "notification": "https://www.freejobalert.com/articles/chamarajanagar-district-court-recruitment-2026-apply-online-for-25-peon-stenographer-and-more-posts-3061641",
+        "official": "https://www.freejobalert.com/articles/chamarajanagar-district-court-recruitment-2026-apply-online-for-25-peon-stenographer-and-more-posts-3061641"
+      }
+    },
+    {
+      "id": "district-amp-sessions-judge-south-salmara-mankachar-recruitm-17",
+      "title": "District &amp; Sessions Judge South Salmara Mankachar Recruitment 2026 - Apply Offline for Senior Administrative Assistant and Bench Clerk Posts",
+      "category": "latest-jobs",
+      "exam": "bank",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: District &amp; Sessions Judge South Salmara Mankachar Recruitment 2026 - Apply Offline for Senior Administrative Assistant and Bench Clerk Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for District &amp; Sessions Judge South Salmara Mankachar Recruitment 2026 - Apply Offline for Senior Administrative Assistant and Bench Clerk Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/district-sessions-judge-south-salmara-mankachar-recruitment-2026-apply-offline-for-senior-administrative-assistant-and-bench-clerk-posts-3061640",
+        "notification": "https://www.freejobalert.com/articles/district-sessions-judge-south-salmara-mankachar-recruitment-2026-apply-offline-for-senior-administrative-assistant-and-bench-clerk-posts-3061640",
+        "official": "https://www.freejobalert.com/articles/district-sessions-judge-south-salmara-mankachar-recruitment-2026-apply-offline-for-senior-administrative-assistant-and-bench-clerk-posts-3061640"
+      }
+    },
+    {
+      "id": "keonjhar-district-court-recruitment-2026-walkin-for-peon-jun-18",
+      "title": "Keonjhar District Court Recruitment 2026 - Walkin for Peon, Junior Typist and More Posts",
+      "category": "latest-jobs",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: Keonjhar District Court Recruitment 2026 - Walkin for Peon, Junior Typist and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for Keonjhar District Court Recruitment 2026 - Walkin for Peon, Junior Typist and More Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/keonjhar-district-court-recruitment-2026-walkin-for-peon-junior-typist-and-more-posts-3061638",
+        "notification": "https://www.freejobalert.com/articles/keonjhar-district-court-recruitment-2026-walkin-for-peon-junior-typist-and-more-posts-3061638",
+        "official": "https://www.freejobalert.com/articles/keonjhar-district-court-recruitment-2026-walkin-for-peon-junior-typist-and-more-posts-3061638"
+      }
+    },
+    {
+      "id": "hprca-computer-teacher-dv-schedule-2026-out-download-documen-19",
+      "title": "HPRCA Computer Teacher DV Schedule 2026 Out - Download Document Verification Schedule PDF",
+      "category": "latest-jobs",
+      "exam": "teaching",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: HPRCA Computer Teacher DV Schedule 2026 Out - Download Document Verification Schedule PDF. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for HPRCA Computer Teacher DV Schedule 2026 Out - Download Document Verification Schedule PDF?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/hprca-computer-teacher-dv-schedule-2026-3061636",
+        "notification": "https://www.freejobalert.com/articles/hprca-computer-teacher-dv-schedule-2026-3061636",
+        "official": "https://www.freejobalert.com/articles/hprca-computer-teacher-dv-schedule-2026-3061636"
+      }
+    },
+    {
+      "id": "dlsa-sri-ganganagar-para-legal-volunteer-recruitment-2026-ap-20",
+      "title": "DLSA Sri Ganganagar Para Legal Volunteer Recruitment 2026 - Apply Offline for 29 Posts",
+      "category": "latest-jobs",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: DLSA Sri Ganganagar Para Legal Volunteer Recruitment 2026 - Apply Offline for 29 Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for DLSA Sri Ganganagar Para Legal Volunteer Recruitment 2026 - Apply Offline for 29 Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/dlsa-sri-ganganagar-para-legal-volunteer-recruitment-2026-apply-offline-for-29-posts-3061635",
+        "notification": "https://www.freejobalert.com/articles/dlsa-sri-ganganagar-para-legal-volunteer-recruitment-2026-apply-offline-for-29-posts-3061635",
+        "official": "https://www.freejobalert.com/articles/dlsa-sri-ganganagar-para-legal-volunteer-recruitment-2026-apply-offline-for-29-posts-3061635"
+      }
+    },
+    {
+      "id": "district-court-cuttack-recruitment-2026-apply-offline-for-28-21",
+      "title": "District Court Cuttack Recruitment 2026 - Apply Offline for 28 Junior Typist, Salaried Amin and More Posts",
+      "category": "latest-jobs",
+      "exam": "state",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: District Court Cuttack Recruitment 2026 - Apply Offline for 28 Junior Typist, Salaried Amin and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for District Court Cuttack Recruitment 2026 - Apply Offline for 28 Junior Typist, Salaried Amin and More Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/district-court-cuttack-recruitment-2026-apply-offline-for-28-junior-typist-salaried-amin-and-more-posts-3061633",
+        "notification": "https://www.freejobalert.com/articles/district-court-cuttack-recruitment-2026-apply-offline-for-28-junior-typist-salaried-amin-and-more-posts-3061633",
+        "official": "https://www.freejobalert.com/articles/district-court-cuttack-recruitment-2026-apply-offline-for-28-junior-typist-salaried-amin-and-more-posts-3061633"
+      }
+    },
+    {
+      "id": "district-court-balasore-recruitment-2026-apply-offline-for-4-22",
+      "title": "District Court Balasore Recruitment 2026 - Apply Offline for 48 Junior Clerk, Stenographer and More Posts",
+      "category": "latest-jobs",
+      "exam": "ssc",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: District Court Balasore Recruitment 2026 - Apply Offline for 48 Junior Clerk, Stenographer and More Posts. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for District Court Balasore Recruitment 2026 - Apply Offline for 48 Junior Clerk, Stenographer and More Posts?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/district-court-balasore-recruitment-2026-apply-offline-for-48-junior-clerk-stenographer-and-more-posts-3061631",
+        "notification": "https://www.freejobalert.com/articles/district-court-balasore-recruitment-2026-apply-offline-for-48-junior-clerk-stenographer-and-more-posts-3061631",
+        "official": "https://www.freejobalert.com/articles/district-court-balasore-recruitment-2026-apply-offline-for-48-junior-clerk-stenographer-and-more-posts-3061631"
+      }
+    },
+    {
+      "id": "hprca-teacher-answer-key-2026-out-download-chemistry-and-mus-23",
+      "title": "HPRCA Teacher Answer Key 2026 Out - Download Chemistry and Music Teacher PDF",
+      "category": "answer-key",
+      "exam": "teaching",
+      "date": "2026-08-05",
+      "applyStart": "05 August 2026",
+      "applyEnd": "—",
+      "examDate": "—",
+      "desc": "Latest sarkari notification: HPRCA Teacher Answer Key 2026 Out - Download Chemistry and Music Teacher PDF. Apply before the deadline.",
+      "details": [
+        "Posted: 05 August 2026",
+        "Source: FreeJobAlert (official links on post page)",
+        "Verify details on the official website before applying"
+      ],
+      "faqs": [
+        {
+          "q": "How to apply for HPRCA Teacher Answer Key 2026 Out - Download Chemistry and Music Teacher PDF?",
+          "a": "Click Apply Online on this page to open the official notification. Read the eligibility criteria carefully and complete your application before the last date."
+        },
+        {
+          "q": "Where can I find the official notification?",
+          "a": "The Download Notification button on this page links to the official announcement with full details including eligibility, fees, and selection process."
+        }
+      ],
+      "links": {
+        "apply": "https://www.freejobalert.com/articles/hprca-chemistry-and-music-teacher-answer-key-2026-3061629",
+        "notification": "https://www.freejobalert.com/articles/hprca-chemistry-and-music-teacher-answer-key-2026-3061629",
+        "official": "https://www.freejobalert.com/articles/hprca-chemistry-and-music-teacher-answer-key-2026-3061629"
       }
     }
   ]

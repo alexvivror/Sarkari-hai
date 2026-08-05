@@ -129,6 +129,15 @@ body {
   color: var(--text);
 }
 .card-title .material-symbols-outlined { color: var(--primary); font-size: 1.4rem; }
+.updated-badge {
+  display: inline-block;
+  background: #f0fdf4; color: #15803d;
+  border: 1px solid #bbf7d0;
+  font-size: 0.68rem; font-weight: 800;
+  padding: 3px 10px; border-radius: 999px;
+  margin-left: 8px; vertical-align: middle;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
 
 /* ---------- post table (the sarkari result row style) ---------- */
 .table-wrap { overflow-x: auto; border-radius: 10px; }
