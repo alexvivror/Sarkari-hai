@@ -27,10 +27,18 @@ const outDir = path.join(ROOT, "public");
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(path.join(outDir, "posts"), { recursive: true });
 
-/* copy static assets from src/ */
-for (const asset of ["style.css", "search.js", "manifest.json", "icon.svg", "sw.js"]) {
+/* copy static assets from src/ and root */
+for (const asset of ["style.css", "search.js", "manifest.json", "icon.svg", "sw.js", "app.js"]) {
   const src = path.join(ROOT, "src", asset);
-  if (fs.existsSync(src)) fs.copyFileSync(src, path.join(outDir, asset));
+  if (!fs.existsSync(src)) {
+    // Try root directory
+    const rootSrc = path.join(ROOT, asset);
+    if (fs.existsSync(rootSrc)) {
+      fs.copyFileSync(rootSrc, path.join(outDir, asset));
+    }
+  } else {
+    fs.copyFileSync(src, path.join(outDir, asset));
+  }
 }
 
 const byCat = Object.fromEntries(data.categories.map((c) => [c.slug, c]));
