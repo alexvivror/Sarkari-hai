@@ -1,0 +1,108 @@
+{
+  "updated": "2026-08-06T00:07:53.389Z",
+  "sources": [
+    {
+      "id": "freejobalert-rss",
+      "name": "FreeJobAlert RSS (aggregated, verified-filtered)",
+      "type": "rss",
+      "url": "https://www.freejobalert.com/feed/",
+      "official": "https://www.freejobalert.com",
+      "enabled": true,
+      "weight": 1,
+      "lastChecksum": "c9240412a817d3e6",
+      "lastChecked": "2026-08-06T00:07:51.745Z",
+      "lastStatus": "ok",
+      "lastSize": 96438
+    },
+    {
+      "id": "ssc-gov",
+      "name": "Staff Selection Commission — official",
+      "type": "page",
+      "url": "https://ssc.gov.in",
+      "official": "https://ssc.gov.in",
+      "enabled": true,
+      "weight": 2,
+      "lastChecksum": "16ec671c394894ee",
+      "lastChecked": "2026-08-06T00:07:52.075Z",
+      "lastStatus": "ok",
+      "lastSize": 80649
+    },
+    {
+      "id": "upsc-gov",
+      "name": "UPSC — official",
+      "type": "page",
+      "url": "https://upsc.gov.in",
+      "official": "https://upsc.gov.in",
+      "enabled": true,
+      "weight": 2,
+      "lastChecksum": "a44b60203bc05cc4",
+      "lastChecked": "2026-08-06T00:07:52.223Z",
+      "lastStatus": "ok",
+      "lastSize": 90063
+    },
+    {
+      "id": "ibps-in",
+      "name": "IBPS — official",
+      "type": "page",
+      "url": "https://www.ibps.in",
+      "official": "https://www.ibps.in",
+      "enabled": true,
+      "weight": 2,
+      "lastChecked": "2026-08-06T00:07:52.244Z",
+      "lastStatus": "error",
+      "lastError": "fetch failed"
+    },
+    {
+      "id": "rrb-indianrailways",
+      "name": "RRB Indian Railways — official",
+      "type": "page",
+      "url": "https://rrb.indianrailways.gov.in",
+      "official": "https://rrb.indianrailways.gov.in",
+      "enabled": true,
+      "weight": 2,
+      "lastChecksum": "64d2d9ac0cd3b366",
+      "lastChecked": "2026-08-06T00:07:52.397Z",
+      "lastStatus": "ok",
+      "lastSize": 65102
+    },
+    {
+      "id": "nta-nic",
+      "name": "NTA — official",
+      "type": "page",
+      "url": "https://nta.ac.in",
+      "official": "https://nta.ac.in",
+      "enabled": true,
+      "weight": 2,
+      "lastChecksum": "273e414adc1920e9",
+      "lastChecked": "2026-08-06T00:07:52.552Z",
+      "lastStatus": "ok",
+      "lastSize": 663621
+    },
+    {
+      "id": "isro-gov",
+      "name": "ISRO — official",
+      "type": "page",
+      "url": "https://www.isro.gov.in",
+      "official": "https://www.isro.gov.in",
+      "enabled": true,
+      "weight": 2,
+      "lastChecksum": "d1d950de627ac48a",
+      "lastChecked": "2026-08-06T00:07:52.615Z",
+      "lastStatus": "ok",
+      "lastSize": 318953
+    },
+    {
+      "id": "aiims-edu",
+      "name": "AIIMS — official",
+      "type": "page",
+      "url": "https://www.aiims.edu",
+      "official": "https://www.aiims.edu",
+      "enabled": true,
+      "weight": 2,
+      "lastChecksum": "6131c50dad09e953",
+      "lastChecked": "2026-08-06T00:07:53.389Z",
+      "lastStatus": "ok",
+      "lastSize": 225999
+    }
+  ]
+}

@@ -14,6 +14,7 @@ const { loadPosts } = require("../services/content");
 const { pageShell, websiteSchema, jobPostingSchema, faqSchema, breadcrumbSchema, sitemapXml, robotsTxt } = require("../services/seo");
 const { header, footer, postTable, catBoxes, freeTools, examTools, sidebar, toolSuggestions, appBanner } = require("../components/ui");
 const { esc, prettyToday } = require("../lib/utils");
+const { writeRss } = require("../services/notify");
 
 const data = loadPosts();
 const SITE = data.site.name;
@@ -404,4 +405,7 @@ const index = data.posts.map((p) => ({
 }));
 fs.writeFileSync(path.join(outDir, "index.json"), JSON.stringify(index));
 
-console.log(`✅ Built ${data.posts.length} posts + ${data.categories.length} categories + ${data.exams.length} exams + sitemap + search → public/`);
+/* ---------- RSS feed (subscriber notifications) ---------- */
+writeRss(data.posts, data.site, outDir);
+
+console.log(`✅ Built ${data.posts.length} posts + ${data.categories.length} categories + ${data.exams.length} exams + sitemap + search + RSS → public/`);

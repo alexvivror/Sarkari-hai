@@ -136,6 +136,6 @@ function purgeClosed(data) {
 module.exports = {
   DB_DIR, DATA_FILE, ARCHIVE_FILE,
   loadPosts, savePosts, loadArchive, saveArchive,
-  validatePost, checkCompleteness, missingFields, STANDARD_DOCUMENTS,
+  validatePost, checkCompleteness, missingFields, STANDARD_DOCUMENTS, REQUIRED_FIELDS,
   dedupPosts, purgeClosed,
 };
