@@ -187,16 +187,17 @@ function postCardGrid(posts, byCat, byExam) {
   return `<div class="job-grid">${posts.map((p) => postCard(p, byCat, byExam)).join("\n")}</div>`;
 }
 
-/* ---------- category boxes ---------- */
+/* ---------- category tiles (new gradient tile design) ---------- */
 function catBoxes(categories, posts) {
   return categories
     .map((c) => {
-      const items = posts.filter((p) => p.category === c.slug).slice(0, 5);
-      return `<div class="cat-box">
-        <h3><span class="material-symbols-outlined">${c.icon}</span> ${esc(c.label)} <small>${esc(c.hindi)}</small></h3>
-        <ul>${items.map((p) => `<li><a href="./posts/${p.id}.html">${esc(p.title)}</a></li>`).join("")}</ul>
-        <a class="more" href="./${c.slug}.html">View All →</a>
-      </div>`;
+      const count = posts.filter((p) => p.category === c.slug).length;
+      return `<a class="cat-tile" data-cat="${c.slug}" href="./${c.slug}.html">
+        <span class="tile-icon"><span class="material-symbols-outlined">${c.icon}</span></span>
+        <b>${esc(c.label)}</b>
+        <small>${esc(c.hindi)}</small>
+        <span class="tile-count">${count}</span>
+      </a>`;
     })
     .join("\n");
 }

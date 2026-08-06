@@ -91,6 +91,15 @@ const homeBody = `
     </div>
   </section>
   ${freeTools(tools)}
+  <section class="container">
+    <div class="section-head">
+      <h2><span class="material-symbols-outlined">apps</span> Explore Categories</h2>
+      <small>Jobs, results, admit cards & more</small>
+    </div>
+    <div class="cat-grid">
+      ${catBoxes(data.categories, data.posts)}
+    </div>
+  </section>
   <section class="container main-grid">
     <div class="content-col">
       <div class="card" id="latest">
@@ -99,9 +108,6 @@ const homeBody = `
         <p class="all-link"><a href="./all-recruitment.html">View all ${latest.length} posts in one page →</a></p>
       </div>
       <div class="ad-slot" data-ad="infeed"><span>Advertisement</span></div>
-      <div class="cat-grid">
-        ${catBoxes(data.categories, data.posts)}
-      </div>
     </div>
     ${sidebar(examChips, trending)}
   </section>
