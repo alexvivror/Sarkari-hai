@@ -64,7 +64,32 @@ const homeBody = `
       <span class="ticker-text">${esc(latest[0]?.title)} · ${esc(latest[1]?.title)} · ${esc(latest[2]?.title)}</span>
     </div>
   </section>
-  ${appBanner(SITE)}
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="hero-kicker"><span class="material-symbols-outlined">verified</span> Verified · Official · Updated Daily</span>
+        <h1>Every Sarkari Job.<br>One Trusted Place.</h1>
+        <p>Latest government jobs, results, admit cards &amp; answer keys — with official links only. Never miss a deadline.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>${data.posts.length}+</b><small>Live posts</small></div>
+          <div class="hero-stat"><b>${data.exams.length}</b><small>Exam hubs</small></div>
+          <div class="hero-stat"><b>100%</b><small>Official links</small></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3><span class="material-symbols-outlined">event_available</span> Upcoming Deadlines</h3>
+        <div class="hero-deadlines">
+          ${latest.filter((p) => p.applyEnd && p.applyEnd !== "—").slice(0, 3).map((p) => `
+            <a class="hero-deadline" href="./posts/${p.id}.html">
+              <span class="hd-date"><b>${esc(p.applyEnd.split(" ")[0])}</b><small>${esc(p.applyEnd.split(" ").slice(1).join(" "))}</small></span>
+              <span class="hd-title">${esc(p.title)}</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>`).join("")}
+        </div>
+        <a class="hero-all" href="./all-recruitment.html">View all posts <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
   ${freeTools(tools)}
   <section class="container main-grid">
     <div class="content-col">
