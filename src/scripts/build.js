@@ -13,7 +13,7 @@ const path = require("path");
 const { loadPosts } = require("../services/content");
 const { STANDARD_DOCUMENTS } = require("../services/content");
 const { pageShell, websiteSchema, jobPostingSchema, faqSchema, breadcrumbSchema, sitemapXml, robotsTxt } = require("../services/seo");
-const { header, footer, postTable, catBoxes, freeTools, examTools, sidebar, toolSuggestions, appBanner } = require("../components/ui");
+const { header, footer, postTable, postCardGrid, catBoxes, freeTools, examTools, sidebar, toolSuggestions, appBanner } = require("../components/ui");
 const { esc, prettyToday } = require("../lib/utils");
 const { writeRss } = require("../services/notify");
 
@@ -95,7 +95,7 @@ const homeBody = `
     <div class="content-col">
       <div class="card" id="latest">
         <h2 class="card-title"><span class="material-symbols-outlined">newspaper</span> Latest Jobs & Results <span class="updated-badge">Updated ${BUILT_PRETTY}</span></h2>
-        ${postTable(latest.slice(0, 10), byCat, byExam)}
+        ${postCardGrid(latest.slice(0, 10), byCat, byExam)}
         <p class="all-link"><a href="./all-recruitment.html">View all ${latest.length} posts in one page →</a></p>
       </div>
       <div class="ad-slot" data-ad="infeed"><span>Advertisement</span></div>
@@ -124,7 +124,7 @@ data.categories.forEach((cat) => {
   <nav class="crumbs"><a href="./">Home</a> <span>›</span> ${esc(cat.label)}</nav>
   <h1 class="page-h1"><span class="material-symbols-outlined">${cat.icon}</span> ${esc(cat.label)} <small>${esc(cat.hindi)}</small></h1>
   <p class="page-desc">${esc(cat.desc)}</p>
-  ${postTable(posts, byCat, byExam)}
+  ${postCardGrid(posts, byCat, byExam)}
 </main>`;
   fs.writeFileSync(path.join(outDir, `${cat.slug}.html`), shell({
     title: `${cat.label} 2026 — ${SITE} | ${esc(cat.desc)}`,
@@ -143,7 +143,7 @@ data.exams.forEach((exam) => {
   <nav class="crumbs"><a href="./">Home</a> <span>›</span> ${esc(exam.label)}</nav>
   <h1 class="page-h1"><span class="material-symbols-outlined">${exam.icon}</span> ${esc(exam.label)} Jobs & Results</h1>
   <p class="page-desc">Latest ${esc(exam.label)} recruitment, results, admit cards and answer keys.</p>
-  ${postTable(posts, byCat, byExam)}
+  ${postCardGrid(posts, byCat, byExam)}
 </main>`;
   fs.writeFileSync(path.join(outDir, `exam-${exam.slug}.html`), shell({
     title: `${exam.label} 2026 Jobs, Results & Admit Cards — ${SITE}`,
@@ -274,12 +274,12 @@ fs.writeFileSync(path.join(outDir, "all-recruitment.html"), shell({
   <h1 class="page-h1"><span class="material-symbols-outlined">lists</span> All Recruitment Posts <small>${allPosts.length} total</small></h1>
   <p class="page-desc">Every recruitment notification, result, admit card, answer key, syllabus and admission update — in one place. All apply links go to official government websites.</p>
   ${filterOptions}
-  <div id="posts-table">${postTable(allPosts, byCat, byExam)}</div>
+  <div id="posts-table">${postCardGrid(allPosts, byCat, byExam)}</div>
 </main>
 <script>
 (function(){
   var cat=document.getElementById("filter-cat"), ex=document.getElementById("filter-exam"), cnt=document.getElementById("filter-count");
-  var rows=document.querySelectorAll("#posts-table .post-row");
+  var rows=document.querySelectorAll("#posts-table .job-card");
   function apply(){
     var c=cat.value, e=ex.value, n=0;
     rows.forEach(function(r){

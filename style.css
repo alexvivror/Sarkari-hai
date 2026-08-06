@@ -1173,3 +1173,174 @@ html.dark .countdown-tag { background: #3b1216; color: #fca5a5; border-color: #7
     scroll-behavior: auto !important;
   }
 }
+
+/* ============================================================
+   DESIGN v4 — Job Card Grid (replaces table layout)
+   Clean, modern, card-based job listings
+   ============================================================ */
+
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 760px) {
+  .job-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.job-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.22s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.job-card::before {
+  content: "";
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--primary), #fb923c);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-border);
+}
+.job-card:hover::before { opacity: 1; }
+
+.job-card-top { display: flex; gap: 12px; align-items: flex-start; }
+.job-cat {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  border-radius: 13px;
+  flex-shrink: 0;
+  background: var(--primary-soft);
+  color: var(--primary-deep);
+}
+.job-cat .material-symbols-outlined { font-size: 1.35rem; }
+.job-cat.latest-jobs { background: var(--primary-soft); color: var(--primary-deep); }
+.job-cat.results { background: var(--accent-soft); color: var(--accent); }
+.job-cat.admit-card { background: var(--blue-soft); color: var(--blue); }
+.job-cat.answer-key { background: var(--violet-soft); color: var(--violet); }
+.job-cat.syllabus { background: var(--amber-soft); color: var(--amber); }
+.job-cat.admission { background: var(--pink-soft); color: var(--pink); }
+
+.job-card-head { min-width: 0; flex: 1; }
+.job-title {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.97rem;
+  line-height: 1.45;
+  letter-spacing: -0.2px;
+  margin-bottom: 8px;
+  transition: color 0.15s;
+}
+.job-title:hover { color: var(--primary-deep); }
+
+.job-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill {
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 800;
+  padding: 4px 11px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+.pill.latest-jobs { background: var(--primary-soft); color: var(--primary-deep); }
+.pill.results { background: var(--accent-soft); color: var(--accent); }
+.pill.admit-card { background: var(--blue-soft); color: var(--blue); }
+.pill.answer-key { background: var(--violet-soft); color: var(--violet); }
+.pill.syllabus { background: var(--amber-soft); color: var(--amber); }
+.pill.admission { background: var(--pink-soft); color: var(--pink); }
+.pill.exam { background: var(--surface-3); color: var(--text-2); }
+.pill.verified { background: var(--accent-soft); color: var(--accent); }
+.pill.deadline {
+  background: #fef2f2; color: #dc2626;
+  animation: pulseSoft 2s ease infinite;
+}
+html.dark .pill.deadline { background: #3b1216; color: #fca5a5; }
+
+.job-card-meta {
+  display: flex;
+  gap: 8px 16px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+}
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-2);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.meta-item .material-symbols-outlined { font-size: 0.95rem; color: var(--muted); }
+
+.job-card-foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+.job-dates { display: flex; gap: 14px; flex-wrap: wrap; }
+.date { display: flex; flex-direction: column; }
+.date small {
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+}
+.date b { font-size: 0.76rem; font-weight: 700; color: var(--text-2); line-height: 1.35; }
+
+.job-actions { display: flex; gap: 8px; }
+.btn-solid {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 11px;
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgba(249, 115, 22, 0.3);
+  transition: all 0.16s;
+}
+.btn-solid:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.btn-solid .material-symbols-outlined { font-size: 1rem; }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 11px;
+  text-decoration: none;
+  transition: all 0.16s;
+}
+.btn-ghost:hover { border-color: var(--primary); color: var(--primary-deep); }
