@@ -3,50 +3,71 @@
     "name": "Sarkari Hai",
     "domain": "https://alexvivror.github.io/Sarkari-hai",
     "tagline": "Latest Sarkari Jobs, Results, Admit Cards & Answer Keys",
-    "hindi": "सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की"
+    "hindi": "\u0938\u0930\u0915\u093e\u0930\u0940 \u0928\u094c\u0915\u0930\u0940, \u0930\u093f\u091c\u0932\u094d\u091f, \u090f\u0921\u092e\u093f\u091f \u0915\u093e\u0930\u094d\u0921 \u0914\u0930 \u0906\u0902\u0938\u0930 \u0915\u0940"
   },
   "categories": [
     {
       "slug": "latest-jobs",
       "label": "Latest Jobs",
-      "hindi": "नवीनतम नौकरियां",
+      "hindi": "\u0938\u0930\u0915\u093e\u0930\u0940 \u0928\u094c\u0915\u0930\u0940",
       "icon": "work",
-      "desc": "Fresh government job notifications"
+      "desc": "Daily central and state government vacancy notifications \u2014 Railway, SSC, UPSC, Banking, Police, Defence, Teaching and state-level (UPSSSC, MPESB). Covers eligibility (10th/12th pass, graduates, higher), application dates, fees, posts and Apply Online links."
     },
     {
       "slug": "results",
       "label": "Results",
-      "hindi": "रिजल्ट",
+      "hindi": "\u0930\u093f\u091c\u0932\u094d\u091f",
       "icon": "fact_check",
-      "desc": "Exam results declared"
+      "desc": "Latest exam results, scorecards, merit lists, category-wise cut-offs and marks for major exams and boards."
     },
     {
       "slug": "admit-card",
       "label": "Admit Card",
-      "hindi": "एडमिट कार्ड",
+      "hindi": "\u090f\u0921\u092e\u093f\u091f \u0915\u093e\u0930\u094d\u0921",
       "icon": "badge",
-      "desc": "Download hall tickets"
+      "desc": "Download links for hall tickets, exam city details, exam dates and related notices including postponements."
     },
     {
       "slug": "answer-key",
       "label": "Answer Key",
-      "hindi": "आंसर की",
+      "hindi": "\u0906\u0902\u0938\u0930 \u0915\u0940",
       "icon": "quiz",
-      "desc": "Official answer keys"
+      "desc": "Official and provisional answer keys with objection windows and exam analysis."
     },
     {
       "slug": "syllabus",
       "label": "Syllabus",
-      "hindi": "सिलेबस",
+      "hindi": "\u0938\u093f\u0932\u0947\u092c\u0938",
       "icon": "menu_book",
-      "desc": "Exam patterns & syllabus"
+      "desc": "Detailed syllabi and exam patterns for various recruitments and entrance exams."
     },
     {
       "slug": "admission",
-      "label": "Admission",
-      "hindi": "प्रवेश",
+      "label": "Admissions",
+      "hindi": "\u092a\u094d\u0930\u0935\u0947\u0936",
       "icon": "school",
-      "desc": "University & course admissions"
+      "desc": "Entrance exam updates, counselling and forms \u2014 CUET, NEET-related, university admissions, ITI, B.Ed and more."
+    },
+    {
+      "slug": "scholarship",
+      "label": "Scholarships",
+      "hindi": "\u091b\u093e\u0924\u094d\u0930\u0935\u0943\u0924\u094d\u0924\u093f",
+      "icon": "school",
+      "desc": "Scholarship notifications and online forms \u2014 UP Scholarship and other state/national schemes."
+    },
+    {
+      "slug": "certificate",
+      "label": "Certificates",
+      "hindi": "\u092a\u094d\u0930\u092e\u093e\u0923 \u092a\u0924\u094d\u0930",
+      "icon": "verified_user",
+      "desc": "Download links for e-certificates \u2014 CTET, HTET, UGC NET, CSIR NET and other certificates."
+    },
+    {
+      "slug": "other",
+      "label": "Other",
+      "hindi": "\u0905\u0928\u094d\u092f",
+      "icon": "category",
+      "desc": "Exam calendars, outsourcing/offline jobs, document verification notices and broader recruitment notifications from Defence, Police, Teaching and PSUs."
     }
   ],
   "exams": [
@@ -110,7 +131,7 @@
     {
       "id": "ts-lawcet-2026",
       "curated": true,
-      "title": "TS LAWCET 2026 Seat Allotment Result — Phase 1",
+      "title": "TS LAWCET 2026 Seat Allotment Result \u2014 Phase 1",
       "category": "admission",
       "exam": "state",
       "date": "2026-07-28",
@@ -172,7 +193,7 @@
     {
       "id": "neet-ug-admit-2027",
       "curated": true,
-      "title": "NEET UG 2027 Admit Card — Download Hall Ticket",
+      "title": "NEET UG 2027 Admit Card \u2014 Download Hall Ticket",
       "category": "admit-card",
       "exam": "state",
       "date": "2026-07-30",
@@ -203,7 +224,7 @@
     {
       "id": "hprca-answer-key-2026",
       "curated": true,
-      "title": "HPRCA Teacher Answer Key 2026 — Chemistry & Music",
+      "title": "HPRCA Teacher Answer Key 2026 \u2014 Chemistry & Music",
       "category": "answer-key",
       "exam": "teaching",
       "date": "2026-07-31",
@@ -234,7 +255,7 @@
     {
       "id": "nhpc-apprentice-result-2026",
       "curated": true,
-      "title": "NHPC Apprentice Result 2026 — Selected Candidates List",
+      "title": "NHPC Apprentice Result 2026 \u2014 Selected Candidates List",
       "category": "results",
       "exam": "state",
       "date": "2026-08-01",
@@ -265,7 +286,7 @@
     {
       "id": "mumbai-university-result-2026",
       "curated": true,
-      "title": "Mumbai University Result 2026 — M.Com & MSc",
+      "title": "Mumbai University Result 2026 \u2014 M.Com & MSc",
       "category": "results",
       "exam": "state",
       "date": "2026-08-02",
@@ -296,7 +317,7 @@
     {
       "id": "rssb-driver-result-2026",
       "curated": true,
-      "title": "RSSB Driver Result 2026 — Trade Test Selected List",
+      "title": "RSSB Driver Result 2026 \u2014 Trade Test Selected List",
       "category": "results",
       "exam": "state",
       "date": "2026-08-05",
@@ -306,7 +327,7 @@
       "examDate": "Result Declared",
       "official": "https://rssb.rajasthan.gov.in",
       "verified": true,
-      "desc": "RSSB Driver 2026 result declared — check the trade test selected candidates list PDF and download it for future reference.",
+      "desc": "RSSB Driver 2026 result declared \u2014 check the trade test selected candidates list PDF and download it for future reference.",
       "details": [
         "Trade test qualified candidates list released",
         "Download PDF from RSSB website",
@@ -327,7 +348,7 @@
     {
       "id": "karnataka-pgcet-result-2026",
       "curated": true,
-      "title": "Karnataka PGCET Result 2026 — Check Online",
+      "title": "Karnataka PGCET Result 2026 \u2014 Check Online",
       "category": "results",
       "exam": "state",
       "date": "2026-08-05",
@@ -358,14 +379,14 @@
     {
       "id": "rrb-je-2026",
       "curated": true,
-      "title": "RRB JE 04/2026 Recruitment — 4098 Junior Engineer Posts",
+      "title": "RRB JE 04/2026 Recruitment \u2014 4098 Junior Engineer Posts",
       "category": "latest-jobs",
       "exam": "railway",
       "date": "2026-08-05",
       "org": "Railway Recruitment Boards (RRBs), Ministry of Railways",
       "postName": "Junior Engineer (JE), Depot Material Superintendent (DMS) & Chemical and Metallurgical Assistant (CMA)",
       "vacancies": "4,098 Posts",
-      "salary": "Level-6 (7th CPC), Initial Pay ₹35,400/-",
+      "salary": "Level-6 (7th CPC), Initial Pay \u20b935,400/-",
       "mode": "Online only",
       "applyStart": "14 August 2026 (tentative)",
       "applyEnd": "13 September 2026 (tentative)",
@@ -373,13 +394,13 @@
       "ageLimit": "18 to 33 Years",
       "qualification": "Diploma/Degree in relevant Engineering / Chemistry / Metallurgy disciplines",
       "fee": "As per official notification",
-      "selection": "CBT → Document Verification → Medical Examination",
+      "selection": "CBT \u2192 Document Verification \u2192 Medical Examination",
       "official": "https://rrb.indianrailways.gov.in/",
       "verified": true,
       "desc": "Railway Recruitment Boards have released CEN No. 04/2026 for 4,098 Junior Engineer, Depot Material Superintendent and Chemical & Metallurgical Assistant posts. Apply online from 14 August to 13 September 2026.",
       "details": [
         "Advertisement: CEN No. 04/2026",
-        "Pay Level: Level-6 (7th CPC) with initial pay ₹35,400/-",
+        "Pay Level: Level-6 (7th CPC) with initial pay \u20b935,400/-",
         "Age relaxation as per Government rules for reserved categories",
         "Post-wise vacancy split: JE (4,098), DMS & CMA as per notification"
       ],
@@ -423,7 +444,7 @@
     {
       "id": "ibps-clerk-2026",
       "curated": true,
-      "title": "IBPS Clerk 2026 (CRP Clerk-XVI) — 11,403 Posts",
+      "title": "IBPS Clerk 2026 (CRP Clerk-XVI) \u2014 11,403 Posts",
       "category": "latest-jobs",
       "exam": "bank",
       "date": "2026-08-04",
@@ -437,15 +458,15 @@
       "examDate": "October 2026 (Prelims)",
       "ageLimit": "20 to 28 years (as on 01-08-2026)",
       "qualification": "Graduation in any discipline from a recognised university",
-      "fee": "₹850 (General/OBC) · ₹175 (SC/ST/PwBD/ESM)",
-      "selection": "Prelims → Mains → Local Language Proficiency Test",
+      "fee": "\u20b9850 (General/OBC) \u00b7 \u20b9175 (SC/ST/PwBD/ESM)",
+      "selection": "Prelims \u2192 Mains \u2192 Local Language Proficiency Test",
       "official": "https://www.ibps.in",
       "verified": true,
       "desc": "IBPS CRP Clerk-XVI notification released for 11,403 Customer Service Associate posts across 11 participating public sector banks. Apply online from 1 to 21 August 2026.",
       "details": [
         "Recruitment: CRP Clerk-XVI (2027-28)",
         "Participating: 11 Public Sector Banks",
-        "Prelims Exam: October 2026 · Mains: December 2026",
+        "Prelims Exam: October 2026 \u00b7 Mains: December 2026",
         "Provisional Allotment: March 2027"
       ],
       "sections": [
@@ -476,7 +497,7 @@
         },
         {
           "q": "What is the IBPS Clerk application fee?",
-          "a": "The fee is ₹850 for General/OBC candidates and ₹175 for SC/ST/PwBD/ESM/DESM candidates."
+          "a": "The fee is \u20b9850 for General/OBC candidates and \u20b9175 for SC/ST/PwBD/ESM/DESM candidates."
         }
       ],
       "links": {
@@ -488,7 +509,7 @@
     {
       "id": "isro-icrb-2026",
       "curated": true,
-      "title": "ISRO ICRB Recruitment 2026 — 244 Assistant, JPA, UDC & Stenographer",
+      "title": "ISRO ICRB Recruitment 2026 \u2014 244 Assistant, JPA, UDC & Stenographer",
       "category": "latest-jobs",
       "exam": "defence",
       "date": "2026-08-03",
@@ -503,13 +524,13 @@
       "ageLimit": "As per advertisement (age reckoning date 16-08-2026)",
       "qualification": "Bachelor's Degree / relevant qualification per post",
       "fee": "As per advertisement",
-      "selection": "Written Test → Skill Test (as applicable)",
+      "selection": "Written Test \u2192 Skill Test (as applicable)",
       "official": "https://www.isro.gov.in",
       "verified": true,
       "desc": "ISRO ICRB Advertisement No. ISRO:ICRB:01(A-JPA):2026 for 244 Assistant, JPA, UDC and Stenographer posts across ISRO centres. Apply online before 16 August 2026.",
       "details": [
-        "Assistant: 113 posts · JPA: 81 · UDC: 22 · Stenographer: 10",
-        "Assistant (Autonomous Institutes): 17 · JPA (Autonomous): 1",
+        "Assistant: 113 posts \u00b7 JPA: 81 \u00b7 UDC: 22 \u00b7 Stenographer: 10",
+        "Assistant (Autonomous Institutes): 17 \u00b7 JPA (Autonomous): 1",
         "Zones: Ahmedabad, Bengaluru, Hassan, Hyderabad, Sriharikota, Thiruvananthapuram, New Delhi",
         "Written test answer key published within 3 working days"
       ],
@@ -547,12 +568,12 @@
     {
       "id": "ntpc-deputy-manager-2026",
       "curated": true,
-      "title": "NTPC Deputy Manager 2026 — 135 Posts (Electrical, Mechanical, C&I)",
+      "title": "NTPC Deputy Manager 2026 \u2014 135 Posts (Electrical, Mechanical, C&I)",
       "category": "latest-jobs",
       "exam": "state",
       "date": "2026-08-05",
       "org": "NTPC Limited (Govt of India Enterprise)",
-      "postName": "Deputy Manager — E4 Level (Electrical, Mechanical, C&I)",
+      "postName": "Deputy Manager \u2014 E4 Level (Electrical, Mechanical, C&I)",
       "vacancies": "135 Posts",
       "salary": "E4 Level (NTPC pay scale)",
       "mode": "Online only",
@@ -562,13 +583,13 @@
       "ageLimit": "As per E4 level norms (with experience)",
       "qualification": "Engineering qualification with relevant post-qualification experience",
       "fee": "As per official notification",
-      "selection": "Shortlisting → Interview / Assessment",
+      "selection": "Shortlisting \u2192 Interview / Assessment",
       "official": "https://ntpc.co.in/",
       "verified": true,
-      "desc": "NTPC Advertisement No. 10/26 for 135 Deputy Manager posts at E4 level in Electrical (40), Mechanical (55) and Control & Instrumentation (40) disciplines. Apply 6–20 August 2026.",
+      "desc": "NTPC Advertisement No. 10/26 for 135 Deputy Manager posts at E4 level in Electrical (40), Mechanical (55) and Control & Instrumentation (40) disciplines. Apply 6\u201320 August 2026.",
       "details": [
         "Advertisement: 10/26",
-        "Deputy Manager (Electrical): 40 · Mechanical: 55 · C&I: 40",
+        "Deputy Manager (Electrical): 40 \u00b7 Mechanical: 55 \u00b7 C&I: 40",
         "For experienced engineering professionals",
         "Job location: Across NTPC locations in India"
       ],
@@ -604,7 +625,7 @@
     {
       "id": "aiims-non-faculty-2026",
       "curated": true,
-      "title": "AIIMS Non-Faculty Recruitment 2026 — Clinical Psychologist, MO & More",
+      "title": "AIIMS Non-Faculty Recruitment 2026 \u2014 Clinical Psychologist, MO & More",
       "category": "latest-jobs",
       "exam": "state",
       "date": "2026-08-04",
@@ -680,8 +701,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -711,8 +732,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -742,8 +763,8 @@
       "exam": "ntpc",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -773,8 +794,8 @@
       "exam": "railway",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: RRB JE 04/2026 Recruitment 2026 Notification Out - Apply Online for 4098 Junior Engineer Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -804,8 +825,8 @@
       "exam": "bank",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: IBPS Clerk Recruitment 2026 (CRP CSA-XVI) Notification Out - Apply Online 11403 Posts from August 1. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -835,8 +856,8 @@
       "exam": "isro",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: ISRO ICRB Recruitment 2026 Notification Out - Apply Online for 244 Assistant, JPA, UDC &amp; Stenographer Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -866,8 +887,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS NORCET 11 2026 Notification Out: 2218 Nursing Officer Recruitment, Apply Online from 24 July. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -897,8 +918,8 @@
       "exam": "railway",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: RRB ALP CBT 2 Answer Key 2026 Out  - Download Response Sheet &amp; Raise Objection. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -928,8 +949,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Delhi Project Technical Support  II Recruitment 2026 - Apply Online. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -959,8 +980,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Jodhpur Project Technical Support Recruitment 2026 - Walkin. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -990,8 +1011,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Nuclear Medicine Technologist Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -1021,8 +1042,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Nagpur Project Research Scientist III Recruitment 2026 - Apply Online. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -1044,6 +1065,219 @@
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
       }
+    },
+    {
+      "id": "up-scholarship-2026-27",
+      "title": "UP Scholarship 2026-27 \u2014 Online Application (Pre-Matric, Post-Matric, Top Class)",
+      "category": "scholarship",
+      "exam": "state",
+      "curated": true,
+      "verified": true,
+      "org": "Social Welfare Department, Government of Uttar Pradesh",
+      "postName": "Pre-Matric / Post-Matric / Top Class Scholarships",
+      "vacancies": "Open (all eligible students)",
+      "salary": "Scholarship amount as per scheme",
+      "mode": "Online only",
+      "applyStart": "July 2026 (expected)",
+      "applyEnd": "November 2026 (expected)",
+      "examDate": "\u2014",
+      "ageLimit": "As per scheme",
+      "qualification": "Class 9-12 (Pre-Matric) / Graduation & above (Post-Matric) / Class 9-10 (Top Class)",
+      "fee": "Nil (free application)",
+      "selection": "Merit-cum-means as per scheme guidelines",
+      "documents": [
+        "Aadhaar card",
+        "Bank account details (DCF)",
+        "Income certificate",
+        "Previous year marksheet",
+        "Category certificate (if applicable)",
+        "Passport-size photo"
+      ],
+      "desc": "UP Scholarship 2026-27 online applications for Pre-Matric, Post-Matric and Top Class scholarships. Apply on the official National Scholarship Portal (scholarships.gov.in).",
+      "official": "https://scholarships.gov.in/",
+      "details": [
+        "Portal: National Scholarship Portal (NSP) \u2014 official government portal",
+        "Covers Pre-Matric (Class 9-10), Post-Matric (Class 11 onwards) and Top Class schemes",
+        "Scholarships are merit-cum-means based as per scheme guidelines",
+        "Fresh applications open every year after state notification; renewal for continuing students"
+      ],
+      "sections": [
+        {
+          "h2": "Scholarship Schemes Covered",
+          "paras": [
+            "The UP Scholarship portal handles multiple schemes: Pre-Matric for Class 9-10, Post-Matric for Class 11 and above, and Top Class for Class 9-10 in top institutions."
+          ],
+          "list": [
+            "Pre-Matric Scholarship (Class 9-10)",
+            "Post-Matric Scholarship (Class 11 onwards)",
+            "Top Class Scholarship (Class 9-10)",
+            "Renewal for previous beneficiaries"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where do I apply for UP Scholarship 2026-27?",
+          "a": "Apply online at the official National Scholarship Portal: scholarships.gov.in. There is no offline application."
+        },
+        {
+          "q": "Is the application fee charged?",
+          "a": "No. The scholarship application is free of cost. Beware of agents asking for money."
+        },
+        {
+          "q": "What documents are required?",
+          "a": "Aadhaar, bank account details, income certificate, previous marksheet, category certificate (if applicable) and photo are typically required."
+        },
+        {
+          "q": "When does the application window open?",
+          "a": "The window opens after the state notification each year, typically around July-August. Check the portal for the exact schedule."
+        }
+      ],
+      "links": {
+        "apply": "https://scholarships.gov.in/",
+        "notification": "https://scholarships.gov.in/",
+        "official": "https://scholarships.gov.in/"
+      },
+      "date": "2026-08-06"
+    },
+    {
+      "id": "ctet-certificate-2026",
+      "title": "CTET Certificate 2026 \u2014 Download e-Certificate & Marksheet",
+      "category": "certificate",
+      "exam": "teaching",
+      "curated": true,
+      "verified": true,
+      "org": "Central Board of Secondary Education (CBSE)",
+      "postName": "CTET e-Certificate & Marksheet",
+      "vacancies": "\u2014",
+      "salary": "\u2014",
+      "mode": "Online download",
+      "applyStart": "\u2014",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
+      "ageLimit": "\u2014",
+      "qualification": "CTET qualified candidates",
+      "fee": "Nil (download free)",
+      "selection": "CTET exam pass",
+      "documents": [
+        "CTET application number",
+        "Date of birth",
+        "Registered mobile number"
+      ],
+      "desc": "Download your CTET e-Certificate and marksheet from the official CBSE CTET portal (ctet.nic.in). CTET certificate is valid for 7 years for teaching eligibility.",
+      "official": "https://ctet.nic.in/",
+      "details": [
+        "Official portal: ctet.nic.in (CBSE)",
+        "e-Certificate and marksheet available for download for qualified candidates",
+        "Certificate valid for 7 years from date of declaration",
+        "Login required with application number and date of birth"
+      ],
+      "sections": [
+        {
+          "h2": "How to Download",
+          "paras": [
+            "Qualified candidates can download their e-certificate from the official CTET portal."
+          ],
+          "list": [
+            "Visit ctet.nic.in",
+            "Click on 'Download e-Certificate / Marksheet'",
+            "Enter application number and date of birth",
+            "Download and save the PDF"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where do I download my CTET certificate?",
+          "a": "From the official CBSE CTET portal: ctet.nic.in. Look for the e-Certificate download section."
+        },
+        {
+          "q": "How long is the CTET certificate valid?",
+          "a": "The CTET certificate is valid for 7 years from the date of declaration of result."
+        },
+        {
+          "q": "Is there a fee to download?",
+          "a": "No, downloading the e-certificate is free."
+        }
+      ],
+      "links": {
+        "apply": "https://ctet.nic.in/",
+        "notification": "https://ctet.nic.in/",
+        "official": "https://ctet.nic.in/"
+      },
+      "date": "2026-08-06"
+    },
+    {
+      "id": "ssc-document-verification-2026",
+      "title": "SSC Document Verification 2026 \u2014 Notice for Qualified Candidates",
+      "category": "other",
+      "exam": "ssc",
+      "curated": true,
+      "verified": true,
+      "org": "Staff Selection Commission (SSC)",
+      "postName": "Document Verification for various SSC exams",
+      "vacancies": "\u2014",
+      "salary": "\u2014",
+      "mode": "As per SSC notice",
+      "applyStart": "\u2014",
+      "applyEnd": "\u2014",
+      "examDate": "As per SSC schedule",
+      "ageLimit": "\u2014",
+      "qualification": "Qualified in respective SSC exam (CGL/CHSL/MTS/CPO)",
+      "fee": "\u2014",
+      "selection": "Document verification after exam",
+      "documents": [
+        "Educational certificates",
+        "Category certificate (if applicable)",
+        "Photo ID proof",
+        "Marksheets",
+        "Experience certificates (if required)",
+        "Recent photographs"
+      ],
+      "desc": "SSC document verification notices for qualified candidates of SSC CGL, CHSL, MTS and CPO exams. Check the official SSC portal (ssc.gov.in) for your region's schedule.",
+      "official": "https://ssc.gov.in/",
+      "details": [
+        "Official portal: ssc.gov.in",
+        "Document verification is the final stage after qualifying the exam",
+        "Region-wise schedules published on the official SSC website",
+        "Carry all original documents + photocopies as listed in the notice"
+      ],
+      "sections": [
+        {
+          "h2": "Documents to Carry",
+          "paras": [
+            "Candidates must bring original documents along with self-attested photocopies for verification."
+          ],
+          "list": [
+            "Matriculation / equivalent certificates",
+            "Graduation / post-graduation marksheets",
+            "Category certificate (SC/ST/OBC/EWS)",
+            "Photo ID proof (Aadhaar/PAN/Voter ID)",
+            "Passport-size photographs",
+            "Discharge certificate (for ex-servicemen, if applicable)"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Where are SSC document verification notices published?",
+          "a": "On the official SSC website (ssc.gov.in) under the respective region (North/West/East/KMPR etc.)."
+        },
+        {
+          "q": "What if I miss my document verification date?",
+          "a": "Contact your SSC regional office immediately. Missed verification usually leads to cancellation of candidature."
+        },
+        {
+          "q": "Are photocopies required?",
+          "a": "Yes, carry original documents with self-attested photocopies as mentioned in the notice."
+        }
+      ],
+      "links": {
+        "apply": "https://ssc.gov.in/",
+        "notification": "https://ssc.gov.in/",
+        "official": "https://ssc.gov.in/"
+      },
+      "date": "2026-08-06"
     }
   ]
 }

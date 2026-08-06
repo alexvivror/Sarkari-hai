@@ -478,5 +478,25 @@
     },
     "archivedAt": "2026-08-06T03:27:40.908Z",
     "reason": "closed-after-final-result"
+  },
+  {
+    "id": "zz-test-closed",
+    "title": "ZZ Test Closed 2026 Final Result Declared",
+    "category": "latest-jobs",
+    "exam": "ssc",
+    "date": "2026-01-01",
+    "applyStart": "01 January 2026",
+    "applyEnd": "15 January 2026",
+    "examDate": "Final Result Declared",
+    "desc": "test",
+    "details": [],
+    "faqs": [],
+    "links": {
+      "apply": "https://ssc.gov.in",
+      "notification": "https://ssc.gov.in",
+      "official": "https://ssc.gov.in"
+    },
+    "archivedAt": "2026-08-06T04:46:25.623Z",
+    "reason": "closed-after-final-result"
   }
 ]
