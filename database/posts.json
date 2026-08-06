@@ -3,69 +3,69 @@
     "name": "Sarkari Hai",
     "domain": "https://alexvivror.github.io/Sarkari-hai",
     "tagline": "Latest Sarkari Jobs, Results, Admit Cards & Answer Keys",
-    "hindi": "सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और आंसर की"
+    "hindi": "\u0938\u0930\u0915\u093e\u0930\u0940 \u0928\u094c\u0915\u0930\u0940, \u0930\u093f\u091c\u0932\u094d\u091f, \u090f\u0921\u092e\u093f\u091f \u0915\u093e\u0930\u094d\u0921 \u0914\u0930 \u0906\u0902\u0938\u0930 \u0915\u0940"
   },
   "categories": [
     {
       "slug": "latest-jobs",
       "label": "Latest Jobs",
-      "hindi": "सरकारी नौकरी",
+      "hindi": "\u0938\u0930\u0915\u093e\u0930\u0940 \u0928\u094c\u0915\u0930\u0940",
       "icon": "work",
-      "desc": "Daily central and state government vacancy notifications — Railway, SSC, UPSC, Banking, Police, Defence, Teaching and state-level (UPSSSC, MPESB). Covers eligibility (10th/12th pass, graduates, higher), application dates, fees, posts and Apply Online links."
+      "desc": "Daily central and state government vacancy notifications \u2014 Railway, SSC, UPSC, Banking, Police, Defence, Teaching and state-level (UPSSSC, MPESB). Covers eligibility (10th/12th pass, graduates, higher), application dates, fees, posts and Apply Online links."
     },
     {
       "slug": "results",
       "label": "Results",
-      "hindi": "रिजल्ट",
+      "hindi": "\u0930\u093f\u091c\u0932\u094d\u091f",
       "icon": "fact_check",
       "desc": "Latest exam results, scorecards, merit lists, category-wise cut-offs and marks for major exams and boards."
     },
     {
       "slug": "admit-card",
       "label": "Admit Card",
-      "hindi": "एडमिट कार्ड",
+      "hindi": "\u090f\u0921\u092e\u093f\u091f \u0915\u093e\u0930\u094d\u0921",
       "icon": "badge",
       "desc": "Download links for hall tickets, exam city details, exam dates and related notices including postponements."
     },
     {
       "slug": "answer-key",
       "label": "Answer Key",
-      "hindi": "आंसर की",
+      "hindi": "\u0906\u0902\u0938\u0930 \u0915\u0940",
       "icon": "quiz",
       "desc": "Official and provisional answer keys with objection windows and exam analysis."
     },
     {
       "slug": "syllabus",
       "label": "Syllabus",
-      "hindi": "सिलेबस",
+      "hindi": "\u0938\u093f\u0932\u0947\u092c\u0938",
       "icon": "menu_book",
       "desc": "Detailed syllabi and exam patterns for various recruitments and entrance exams."
     },
     {
       "slug": "admission",
       "label": "Admissions",
-      "hindi": "प्रवेश",
+      "hindi": "\u092a\u094d\u0930\u0935\u0947\u0936",
       "icon": "school",
-      "desc": "Entrance exam updates, counselling and forms — CUET, NEET-related, university admissions, ITI, B.Ed and more."
+      "desc": "Entrance exam updates, counselling and forms \u2014 CUET, NEET-related, university admissions, ITI, B.Ed and more."
     },
     {
       "slug": "scholarship",
       "label": "Scholarships",
-      "hindi": "छात्रवृत्ति",
+      "hindi": "\u091b\u093e\u0924\u094d\u0930\u0935\u0943\u0924\u094d\u0924\u093f",
       "icon": "school",
-      "desc": "Scholarship notifications and online forms — UP Scholarship and other state/national schemes."
+      "desc": "Scholarship notifications and online forms \u2014 UP Scholarship and other state/national schemes."
     },
     {
       "slug": "certificate",
       "label": "Certificates",
-      "hindi": "प्रमाण पत्र",
+      "hindi": "\u092a\u094d\u0930\u092e\u093e\u0923 \u092a\u0924\u094d\u0930",
       "icon": "verified_user",
-      "desc": "Download links for e-certificates — CTET, HTET, UGC NET, CSIR NET and other certificates."
+      "desc": "Download links for e-certificates \u2014 CTET, HTET, UGC NET, CSIR NET and other certificates."
     },
     {
       "slug": "other",
       "label": "Other",
-      "hindi": "अन्य",
+      "hindi": "\u0905\u0928\u094d\u092f",
       "icon": "category",
       "desc": "Exam calendars, outsourcing/offline jobs, document verification notices and broader recruitment notifications from Defence, Police, Teaching and PSUs."
     }
@@ -131,7 +131,7 @@
     {
       "id": "ts-lawcet-2026",
       "curated": true,
-      "title": "TS LAWCET 2026 Seat Allotment Result — Phase 1",
+      "title": "TS LAWCET 2026 Seat Allotment Result \u2014 Phase 1",
       "category": "admission",
       "exam": "state",
       "date": "2026-07-28",
@@ -157,7 +157,8 @@
         "apply": "https://lawcetadm.tgche.ac.in",
         "notification": "https://lawcetadm.tgche.ac.in",
         "official": "https://lawcetadm.tgche.ac.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "tn-mbamca-allotment-2026",
@@ -188,12 +189,13 @@
         "apply": "https://tn-mbamca.com",
         "notification": "https://tn-mbamca.com",
         "official": "https://tn-mbamca.com"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "neet-ug-admit-2027",
       "curated": true,
-      "title": "NEET UG 2027 Admit Card — Download Hall Ticket",
+      "title": "NEET UG 2027 Admit Card \u2014 Download Hall Ticket",
       "category": "admit-card",
       "exam": "state",
       "date": "2026-07-30",
@@ -219,12 +221,13 @@
         "apply": "https://neet.nta.nic.in",
         "notification": "https://neet.nta.nic.in",
         "official": "https://neet.nta.nic.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "hprca-answer-key-2026",
       "curated": true,
-      "title": "HPRCA Teacher Answer Key 2026 — Chemistry & Music",
+      "title": "HPRCA Teacher Answer Key 2026 \u2014 Chemistry & Music",
       "category": "answer-key",
       "exam": "teaching",
       "date": "2026-07-31",
@@ -250,12 +253,13 @@
         "apply": "https://hprca.hp.gov.in",
         "notification": "https://hprca.hp.gov.in",
         "official": "https://hprca.hp.gov.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "nhpc-apprentice-result-2026",
       "curated": true,
-      "title": "NHPC Apprentice Result 2026 — Selected Candidates List",
+      "title": "NHPC Apprentice Result 2026 \u2014 Selected Candidates List",
       "category": "results",
       "exam": "state",
       "date": "2026-08-01",
@@ -281,12 +285,13 @@
         "apply": "https://www.nhpcindia.com",
         "notification": "https://www.nhpcindia.com",
         "official": "https://www.nhpcindia.com"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "mumbai-university-result-2026",
       "curated": true,
-      "title": "Mumbai University Result 2026 — M.Com & MSc",
+      "title": "Mumbai University Result 2026 \u2014 M.Com & MSc",
       "category": "results",
       "exam": "state",
       "date": "2026-08-02",
@@ -312,12 +317,13 @@
         "apply": "https://mumresults.in",
         "notification": "https://mumresults.in",
         "official": "https://mumresults.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "rssb-driver-result-2026",
       "curated": true,
-      "title": "RSSB Driver Result 2026 — Trade Test Selected List",
+      "title": "RSSB Driver Result 2026 \u2014 Trade Test Selected List",
       "category": "results",
       "exam": "state",
       "date": "2026-08-05",
@@ -327,7 +333,7 @@
       "examDate": "Result Declared",
       "official": "https://rssb.rajasthan.gov.in",
       "verified": true,
-      "desc": "RSSB Driver 2026 result declared — check the trade test selected candidates list PDF and download it for future reference.",
+      "desc": "RSSB Driver 2026 result declared \u2014 check the trade test selected candidates list PDF and download it for future reference.",
       "details": [
         "Trade test qualified candidates list released",
         "Download PDF from RSSB website",
@@ -343,12 +349,13 @@
         "apply": "https://rssb.rajasthan.gov.in",
         "notification": "https://rssb.rajasthan.gov.in",
         "official": "https://rssb.rajasthan.gov.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "karnataka-pgcet-result-2026",
       "curated": true,
-      "title": "Karnataka PGCET Result 2026 — Check Online",
+      "title": "Karnataka PGCET Result 2026 \u2014 Check Online",
       "category": "results",
       "exam": "state",
       "date": "2026-08-05",
@@ -374,19 +381,20 @@
         "apply": "https://cetonline.karnataka.gov.in",
         "notification": "https://cetonline.karnataka.gov.in",
         "official": "https://cetonline.karnataka.gov.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "rrb-je-2026",
       "curated": true,
-      "title": "RRB JE 04/2026 Recruitment — 4098 Junior Engineer Posts",
+      "title": "RRB JE 04/2026 Recruitment \u2014 4098 Junior Engineer Posts",
       "category": "latest-jobs",
       "exam": "railway",
       "date": "2026-08-05",
       "org": "Railway Recruitment Boards (RRBs), Ministry of Railways",
       "postName": "Junior Engineer (JE), Depot Material Superintendent (DMS) & Chemical and Metallurgical Assistant (CMA)",
       "vacancies": "4,098 Posts",
-      "salary": "Level-6 (7th CPC), Initial Pay ₹35,400/-",
+      "salary": "Level-6 (7th CPC), Initial Pay \u20b935,400/-",
       "mode": "Online only",
       "applyStart": "14 August 2026 (tentative)",
       "applyEnd": "13 September 2026 (tentative)",
@@ -394,13 +402,13 @@
       "ageLimit": "18 to 33 Years",
       "qualification": "Diploma/Degree in relevant Engineering / Chemistry / Metallurgy disciplines",
       "fee": "As per official notification",
-      "selection": "CBT → Document Verification → Medical Examination",
+      "selection": "CBT \u2192 Document Verification \u2192 Medical Examination",
       "official": "https://rrb.indianrailways.gov.in/",
       "verified": true,
       "desc": "Railway Recruitment Boards have released CEN No. 04/2026 for 4,098 Junior Engineer, Depot Material Superintendent and Chemical & Metallurgical Assistant posts. Apply online from 14 August to 13 September 2026.",
       "details": [
         "Advertisement: CEN No. 04/2026",
-        "Pay Level: Level-6 (7th CPC) with initial pay ₹35,400/-",
+        "Pay Level: Level-6 (7th CPC) with initial pay \u20b935,400/-",
         "Age relaxation as per Government rules for reserved categories",
         "Post-wise vacancy split: JE (4,098), DMS & CMA as per notification"
       ],
@@ -439,12 +447,13 @@
         "apply": "https://rrb.indianrailways.gov.in/",
         "notification": "https://rrb.indianrailways.gov.in/",
         "official": "https://rrb.indianrailways.gov.in/"
-      }
+      },
+      "status": "expected"
     },
     {
       "id": "ibps-clerk-2026",
       "curated": true,
-      "title": "IBPS Clerk 2026 (CRP Clerk-XVI) — 11,403 Posts",
+      "title": "IBPS Clerk 2026 (CRP Clerk-XVI) \u2014 11,403 Posts",
       "category": "latest-jobs",
       "exam": "bank",
       "date": "2026-08-04",
@@ -458,15 +467,15 @@
       "examDate": "October 2026 (Prelims)",
       "ageLimit": "20 to 28 years (as on 01-08-2026)",
       "qualification": "Graduation in any discipline from a recognised university",
-      "fee": "₹850 (General/OBC) · ₹175 (SC/ST/PwBD/ESM)",
-      "selection": "Prelims → Mains → Local Language Proficiency Test",
+      "fee": "\u20b9850 (General/OBC) \u00b7 \u20b9175 (SC/ST/PwBD/ESM)",
+      "selection": "Prelims \u2192 Mains \u2192 Local Language Proficiency Test",
       "official": "https://www.ibps.in",
       "verified": true,
       "desc": "IBPS CRP Clerk-XVI notification released for 11,403 Customer Service Associate posts across 11 participating public sector banks. Apply online from 1 to 21 August 2026.",
       "details": [
         "Recruitment: CRP Clerk-XVI (2027-28)",
         "Participating: 11 Public Sector Banks",
-        "Prelims Exam: October 2026 · Mains: December 2026",
+        "Prelims Exam: October 2026 \u00b7 Mains: December 2026",
         "Provisional Allotment: March 2027"
       ],
       "sections": [
@@ -497,19 +506,20 @@
         },
         {
           "q": "What is the IBPS Clerk application fee?",
-          "a": "The fee is ₹850 for General/OBC candidates and ₹175 for SC/ST/PwBD/ESM/DESM candidates."
+          "a": "The fee is \u20b9850 for General/OBC candidates and \u20b9175 for SC/ST/PwBD/ESM/DESM candidates."
         }
       ],
       "links": {
         "apply": "https://ibpsreg.ibps.in/csaxvijul26/",
         "notification": "https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf",
         "official": "https://www.ibps.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "isro-icrb-2026",
       "curated": true,
-      "title": "ISRO ICRB Recruitment 2026 — 244 Assistant, JPA, UDC & Stenographer",
+      "title": "ISRO ICRB Recruitment 2026 \u2014 244 Assistant, JPA, UDC & Stenographer",
       "category": "latest-jobs",
       "exam": "defence",
       "date": "2026-08-03",
@@ -524,13 +534,13 @@
       "ageLimit": "As per advertisement (age reckoning date 16-08-2026)",
       "qualification": "Bachelor's Degree / relevant qualification per post",
       "fee": "As per advertisement",
-      "selection": "Written Test → Skill Test (as applicable)",
+      "selection": "Written Test \u2192 Skill Test (as applicable)",
       "official": "https://www.isro.gov.in",
       "verified": true,
       "desc": "ISRO ICRB Advertisement No. ISRO:ICRB:01(A-JPA):2026 for 244 Assistant, JPA, UDC and Stenographer posts across ISRO centres. Apply online before 16 August 2026.",
       "details": [
-        "Assistant: 113 posts · JPA: 81 · UDC: 22 · Stenographer: 10",
-        "Assistant (Autonomous Institutes): 17 · JPA (Autonomous): 1",
+        "Assistant: 113 posts \u00b7 JPA: 81 \u00b7 UDC: 22 \u00b7 Stenographer: 10",
+        "Assistant (Autonomous Institutes): 17 \u00b7 JPA (Autonomous): 1",
         "Zones: Ahmedabad, Bengaluru, Hassan, Hyderabad, Sriharikota, Thiruvananthapuram, New Delhi",
         "Written test answer key published within 3 working days"
       ],
@@ -563,17 +573,18 @@
         "apply": "https://www.isro.gov.in/Careers.html",
         "notification": "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/July/Bilingual%20Advertisement_Asst_JPA_UDC_Steno_ICRB_2026_27072026.pdf",
         "official": "https://www.isro.gov.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "ntpc-deputy-manager-2026",
       "curated": true,
-      "title": "NTPC Deputy Manager 2026 — 135 Posts (Electrical, Mechanical, C&I)",
+      "title": "NTPC Deputy Manager 2026 \u2014 135 Posts (Electrical, Mechanical, C&I)",
       "category": "latest-jobs",
       "exam": "state",
       "date": "2026-08-05",
       "org": "NTPC Limited (Govt of India Enterprise)",
-      "postName": "Deputy Manager — E4 Level (Electrical, Mechanical, C&I)",
+      "postName": "Deputy Manager \u2014 E4 Level (Electrical, Mechanical, C&I)",
       "vacancies": "135 Posts",
       "salary": "E4 Level (NTPC pay scale)",
       "mode": "Online only",
@@ -583,13 +594,13 @@
       "ageLimit": "As per E4 level norms (with experience)",
       "qualification": "Engineering qualification with relevant post-qualification experience",
       "fee": "As per official notification",
-      "selection": "Shortlisting → Interview / Assessment",
+      "selection": "Shortlisting \u2192 Interview / Assessment",
       "official": "https://ntpc.co.in/",
       "verified": true,
-      "desc": "NTPC Advertisement No. 10/26 for 135 Deputy Manager posts at E4 level in Electrical (40), Mechanical (55) and Control & Instrumentation (40) disciplines. Apply 6–20 August 2026.",
+      "desc": "NTPC Advertisement No. 10/26 for 135 Deputy Manager posts at E4 level in Electrical (40), Mechanical (55) and Control & Instrumentation (40) disciplines. Apply 6\u201320 August 2026.",
       "details": [
         "Advertisement: 10/26",
-        "Deputy Manager (Electrical): 40 · Mechanical: 55 · C&I: 40",
+        "Deputy Manager (Electrical): 40 \u00b7 Mechanical: 55 \u00b7 C&I: 40",
         "For experienced engineering professionals",
         "Job location: Across NTPC locations in India"
       ],
@@ -620,12 +631,13 @@
         "apply": "https://ntpc.co.in/",
         "notification": "https://ntpc.co.in/",
         "official": "https://ntpc.co.in/"
-      }
+      },
+      "status": "expected"
     },
     {
       "id": "aiims-non-faculty-2026",
       "curated": true,
-      "title": "AIIMS Non-Faculty Recruitment 2026 — Clinical Psychologist, MO & More",
+      "title": "AIIMS Non-Faculty Recruitment 2026 \u2014 Clinical Psychologist, MO & More",
       "category": "latest-jobs",
       "exam": "state",
       "date": "2026-08-04",
@@ -657,7 +669,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "expected"
     },
     {
       "id": "iit-delhi-research-scientist-2026",
@@ -692,7 +705,8 @@
         "apply": "https://www.iitd.ac.in",
         "notification": "https://www.iitd.ac.in",
         "official": "https://www.iitd.ac.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-non-faculty-recruitment-2026-apply-online-for-clinical-9",
@@ -701,8 +715,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -723,7 +737,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--12",
@@ -732,8 +747,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -754,7 +769,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "ntpc-deputy-manager-recruitment-2026-apply-online-for-135-po-24",
@@ -763,8 +779,8 @@
       "exam": "ntpc",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: NTPC Deputy Manager Recruitment 2026 - Apply Online for 135 Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -785,7 +801,8 @@
         "apply": "https://ntpc.co.in/",
         "notification": "https://ntpc.co.in/",
         "official": "https://ntpc.co.in/"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "rrb-je-04-2026-recruitment-2026-notification-out-apply-onlin-26",
@@ -794,8 +811,8 @@
       "exam": "railway",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: RRB JE 04/2026 Recruitment 2026 Notification Out - Apply Online for 4098 Junior Engineer Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -816,7 +833,8 @@
         "apply": "https://rrb.indianrailways.gov.in/",
         "notification": "https://rrb.indianrailways.gov.in/",
         "official": "https://rrb.indianrailways.gov.in/"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "ibps-clerk-recruitment-2026-crp-csa-xvi-notification-out-app-28",
@@ -825,8 +843,8 @@
       "exam": "bank",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: IBPS Clerk Recruitment 2026 (CRP CSA-XVI) Notification Out - Apply Online 11403 Posts from August 1. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -847,7 +865,8 @@
         "apply": "https://www.ibps.in",
         "notification": "https://www.ibps.in",
         "official": "https://www.ibps.in"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "isro-icrb-recruitment-2026-notification-out-apply-online-for-29",
@@ -856,8 +875,8 @@
       "exam": "isro",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: ISRO ICRB Recruitment 2026 Notification Out - Apply Online for 244 Assistant, JPA, UDC &amp; Stenographer Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -878,7 +897,8 @@
         "apply": "https://www.isro.gov.in/Careers.html",
         "notification": "https://www.isro.gov.in/Careers.html",
         "official": "https://www.isro.gov.in/Careers.html"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-norcet-11-2026-notification-out-2218-nursing-officer-r-30",
@@ -887,8 +907,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS NORCET 11 2026 Notification Out: 2218 Nursing Officer Recruitment, Apply Online from 24 July. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -909,7 +929,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "rrb-alp-cbt-2-answer-key-2026-out-download-response-sheet-am-52",
@@ -918,8 +939,8 @@
       "exam": "railway",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: RRB ALP CBT 2 Answer Key 2026 Out  - Download Response Sheet &amp; Raise Objection. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -940,7 +961,8 @@
         "apply": "https://rrb.indianrailways.gov.in/",
         "notification": "https://rrb.indianrailways.gov.in/",
         "official": "https://rrb.indianrailways.gov.in/"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-delhi-project-technical-support-ii-recruitment-2026-ap-71",
@@ -949,8 +971,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Delhi Project Technical Support  II Recruitment 2026 - Apply Online. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -971,7 +993,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-jodhpur-project-technical-support-recruitment-2026-wal-85",
@@ -980,8 +1003,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Jodhpur Project Technical Support Recruitment 2026 - Walkin. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -1002,7 +1025,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-mangalagiri-non-faculty-recruitment-2026-apply-online--88",
@@ -1011,8 +1035,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Nuclear Medicine Technologist Posts. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -1033,7 +1057,8 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "aiims-nagpur-project-research-scientist-iii-recruitment-2026-93",
@@ -1042,8 +1067,8 @@
       "exam": "aiims",
       "date": "2026-08-05",
       "applyStart": "05 August 2026",
-      "applyEnd": "—",
-      "examDate": "—",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
       "desc": "Latest sarkari notification: AIIMS Nagpur Project Research Scientist III Recruitment 2026 - Apply Online. Apply before the deadline.",
       "details": [
         "Posted: 05 August 2026",
@@ -1064,11 +1089,12 @@
         "apply": "https://www.aiims.edu",
         "notification": "https://www.aiims.edu",
         "official": "https://www.aiims.edu"
-      }
+      },
+      "status": "confirmed"
     },
     {
       "id": "up-scholarship-2026-27",
-      "title": "UP Scholarship 2026-27 — Online Application (Pre-Matric, Post-Matric, Top Class)",
+      "title": "UP Scholarship 2026-27 \u2014 Online Application (Pre-Matric, Post-Matric, Top Class)",
       "category": "scholarship",
       "exam": "state",
       "curated": true,
@@ -1080,7 +1106,7 @@
       "mode": "Online only",
       "applyStart": "July 2026 (expected)",
       "applyEnd": "November 2026 (expected)",
-      "examDate": "—",
+      "examDate": "\u2014",
       "ageLimit": "As per scheme",
       "qualification": "Class 9-12 (Pre-Matric) / Graduation & above (Post-Matric) / Class 9-10 (Top Class)",
       "fee": "Nil (free application)",
@@ -1096,7 +1122,7 @@
       "desc": "UP Scholarship 2026-27 online applications for Pre-Matric, Post-Matric and Top Class scholarships. Apply on the official National Scholarship Portal (scholarships.gov.in).",
       "official": "https://scholarships.gov.in/",
       "details": [
-        "Portal: National Scholarship Portal (NSP) — official government portal",
+        "Portal: National Scholarship Portal (NSP) \u2014 official government portal",
         "Covers Pre-Matric (Class 9-10), Post-Matric (Class 11 onwards) and Top Class schemes",
         "Scholarships are merit-cum-means based as per scheme guidelines",
         "Fresh applications open every year after state notification; renewal for continuing students"
@@ -1138,24 +1164,25 @@
         "notification": "https://scholarships.gov.in/",
         "official": "https://scholarships.gov.in/"
       },
-      "date": "2026-08-06"
+      "date": "2026-08-06",
+      "status": "expected"
     },
     {
       "id": "ctet-certificate-2026",
-      "title": "CTET Certificate 2026 — Download e-Certificate & Marksheet",
+      "title": "CTET Certificate 2026 \u2014 Download e-Certificate & Marksheet",
       "category": "certificate",
       "exam": "teaching",
       "curated": true,
       "verified": true,
       "org": "Central Board of Secondary Education (CBSE)",
       "postName": "CTET e-Certificate & Marksheet",
-      "vacancies": "—",
-      "salary": "—",
+      "vacancies": "\u2014",
+      "salary": "\u2014",
       "mode": "Online download",
-      "applyStart": "—",
-      "applyEnd": "—",
-      "examDate": "—",
-      "ageLimit": "—",
+      "applyStart": "\u2014",
+      "applyEnd": "\u2014",
+      "examDate": "\u2014",
+      "ageLimit": "\u2014",
       "qualification": "CTET qualified candidates",
       "fee": "Nil (download free)",
       "selection": "CTET exam pass",
@@ -1205,26 +1232,27 @@
         "notification": "https://ctet.nic.in/",
         "official": "https://ctet.nic.in/"
       },
-      "date": "2026-08-06"
+      "date": "2026-08-06",
+      "status": "confirmed"
     },
     {
       "id": "ssc-document-verification-2026",
-      "title": "SSC Document Verification 2026 — Notice for Qualified Candidates",
+      "title": "SSC Document Verification 2026 \u2014 Notice for Qualified Candidates",
       "category": "other",
       "exam": "ssc",
       "curated": true,
       "verified": true,
       "org": "Staff Selection Commission (SSC)",
       "postName": "Document Verification for various SSC exams",
-      "vacancies": "—",
-      "salary": "—",
+      "vacancies": "\u2014",
+      "salary": "\u2014",
       "mode": "As per SSC notice",
-      "applyStart": "—",
-      "applyEnd": "—",
+      "applyStart": "\u2014",
+      "applyEnd": "\u2014",
       "examDate": "As per SSC schedule",
-      "ageLimit": "—",
+      "ageLimit": "\u2014",
       "qualification": "Qualified in respective SSC exam (CGL/CHSL/MTS/CPO)",
-      "fee": "—",
+      "fee": "\u2014",
       "selection": "Document verification after exam",
       "documents": [
         "Educational certificates",
@@ -1277,7 +1305,8 @@
         "notification": "https://ssc.gov.in/",
         "official": "https://ssc.gov.in/"
       },
-      "date": "2026-08-06"
+      "date": "2026-08-06",
+      "status": "expected"
     }
   ]
 }

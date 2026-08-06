@@ -186,11 +186,13 @@ data.posts.forEach((p) => {
       <span class="chip-sm">${esc(exam.label)}</span>
       <span class="chip-sm">${esc(p.date)}</span>
       ${p.verified ? '<span class="chip-sm verified-badge" title="Verified against official notification">✔ Verified</span>' : ""}
+      ${p.status === "expected" ? '<span class="chip-sm expected-badge" title="Some dates are tentative/expected — always verify on the official site before applying">! Expected</span>' : '<span class="chip-sm confirmed-badge" title="Confirmed against official notification">✓ Confirmed</span>'}
       <span class="chip-sm source-badge" title="All apply links point to official government websites"><span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:-2px">verified_user</span> Official links only</span>
       <span class="chip-sm date-checked" title="Last checked against the official source">✓ Date-checked: ${esc(p.date)}</span>
     </div>
     <h1 class="page-h1">${esc(p.title)}</h1>
     <p class="page-desc">${esc(p.desc)}</p>
+    ${p.status === "expected" ? `<div class="verify-notice"><span class="material-symbols-outlined">info</span><span><b>Important:</b> Some dates shown are tentative/expected. Always confirm the exact schedule on the official website before applying.</span></div>` : ""}
 
     <div class="quick-stats">
       ${p.vacancies ? `<div class="qs"><span class="material-symbols-outlined">groups</span><b>${esc(p.vacancies)}</b><small>Vacancies</small></div>` : ""}
@@ -339,11 +341,15 @@ const STATIC_PAGES = [
       <ul class="detail-list">
         <li><span class="material-symbols-outlined">check_circle</span> Publish latest sarkari job notifications after verification</li>
         <li><span class="material-symbols-outlined">check_circle</span> Provide exam results and admit card download links</li>
-        <li><span class="material-symbols-outlined">check_circle</span> Share answer keys and syllabus for upcoming exams</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Share answer keys, syllabus and exam patterns</li>
         <li><span class="material-symbols-outlined">check_circle</span> Link ONLY to official government websites for every application</li>
       </ul>
-      <h2 class="sub-h">Our promise</h2>
-      <p class="page-desc">We only link to official government websites (.gov.in, .nic.in) for applications. We do not collect or store any personal information. The site is free for all users. Unverified information is never published.</p>
+      <h2 class="sub-h">How we verify information</h2>
+      <p class="page-desc">Every post carries a "Verified" badge and a date-checked timestamp. Posts with tentative dates are clearly marked "Expected". We never invent details — anything we cannot confirm against an official notification is not published. Our automated system checks official sources hourly and removes closed vacancies after final results are declared.</p>
+      <h2 class="sub-h">Important: fake domains warning</h2>
+      <p class="page-desc">Many look-alike websites use names similar to popular job portals to confuse users. Always check that you are on the real official website. Our official apply links always point to <b>.gov.in</b>, <b>.nic.in</b> or other verified government domains. If a site asks for money or personal banking details to "process" a government application, it is a scam — government applications are never processed by third parties for a fee.</p>
+      <h2 class="sub-h">Correction policy</h2>
+      <p class="page-desc">We correct errors promptly. If you find outdated or incorrect information, use the "Report it" link on the post page or contact us — we verify and fix it within 24 hours.</p>
       <h2 class="sub-h">Contact</h2>
       <p class="page-desc">Questions or suggestions? Visit our <a href="./contact.html" style="color:var(--primary);font-weight:700">Contact page</a>.</p>`,
   },
@@ -351,11 +357,15 @@ const STATIC_PAGES = [
     slug: "contact", title: "Contact Us",
     meta: `Contact ${SITE} — send feedback, suggestions or report issues.`,
     content: `<p class="page-desc">Have a question, feedback, or found something incorrect? Reach out and we will fix it quickly.</p>
-      <p class="page-desc">For official information, always visit the government website listed on the relevant post page.</p>
       <div class="quick-stats">
-        <div class="qs"><span class="material-symbols-outlined">alternate_email</span><b>Email</b><small>support@sarkari-hai.in</small></div>
+        <div class="qs"><span class="material-symbols-outlined">alternate_email</span><b>Email</b><small>feedback@sarkari-hai.in</small></div>
         <div class="qs"><span class="material-symbols-outlined">send</span><b>Telegram</b><small>@sarkarihai</small></div>
-      </div>`,
+        <div class="qs"><span class="material-symbols-outlined">bug_report</span><b>Report error</b><small>Use the link on any post</small></div>
+      </div>
+      <h2 class="sub-h">Correction requests</h2>
+      <p class="page-desc">Found wrong dates, fees or links? Email us with the post name and the correct official information (with the official page link). We verify against the official source and update within 24 hours.</p>
+      <h2 class="sub-h">Official information only</h2>
+      <p class="page-desc">For exam-specific queries, always check the official website linked on the relevant post page — we cannot answer for recruitment authorities and never process applications on their behalf.</p>`,
   },
   {
     slug: "privacy", title: "Privacy Policy",

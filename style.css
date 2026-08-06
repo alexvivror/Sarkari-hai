@@ -530,6 +530,22 @@ html.dark .countdown-tag { background: #3b1216; color: #fca5a5; border-color: #7
 .chip-sm.verified-badge { background: var(--accent-soft); color: var(--accent); }
 .chip-sm.source-badge { background: var(--primary-soft); color: var(--primary-deep); }
 .chip-sm.date-checked { background: var(--blue-soft); color: var(--blue); }
+.chip-sm.expected-badge { background: var(--amber-soft); color: var(--amber); border: 1px solid #fde68a; }
+.chip-sm.confirmed-badge { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-border); }
+.verify-notice {
+  display: flex; align-items: flex-start; gap: 8px;
+  background: var(--amber-soft);
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin: 12px 0;
+  font-size: 0.82rem;
+  color: var(--amber);
+  font-weight: 600;
+}
+.verify-notice .material-symbols-outlined { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+html.dark .chip-sm.expected-badge { background: #2e2310; color: #fbbf24; border-color: #5c3a1e; }
+html.dark .chip-sm.confirmed-badge { background: #0c2b21; color: #6ee7b7; }
 
 .post-dates .dates { display: block; font-size: 0.78rem; color: var(--muted); }
 .post-dates .dates b { color: var(--text-2); }
