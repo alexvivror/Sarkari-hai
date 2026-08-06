@@ -603,6 +603,38 @@ html.dark .filter-field select option { background: var(--surface); color: var(-
 html.dark .sugg-item { background: #182338; }
 html.dark .sugg-item:hover { background: #2a1a10; }
 
+/* ============ SAVED JOBS / SHARE / REPORT / PRINT ============ */
+.act-btn { display: inline-flex; align-items: center; gap: 6px; }
+.act-btn.saved { background: #fef3c7; color: #92400e; border-color: #f59e0b; }
+.saved-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 14px; border-bottom: 1px solid var(--border);
+  text-decoration: none; color: var(--text);
+  transition: background 0.15s;
+}
+.saved-item:last-child { border-bottom: none; }
+.saved-item:hover { background: var(--surface-2); }
+.saved-item b { font-size: 0.9rem; }
+.saved-item small { display: block; color: var(--muted); font-size: 0.75rem; margin-top: 2px; }
+.saved-item .material-symbols-outlined { color: var(--primary); }
+.report-error {
+  display: flex; align-items: center; gap: 6px;
+  color: var(--muted); font-size: 0.78rem; margin-top: 10px;
+}
+.report-error .material-symbols-outlined { font-size: 1rem; color: var(--muted); }
+.report-error a { color: var(--primary-dark); font-weight: 700; }
+
+/* print-friendly */
+@media print {
+  .header, .footer, .sidebar, .back-top, .action-bar, .report-error,
+  .ad-slot, .ticker, .tools-strip, .exam-tools, .related, .searchbar, .dark-toggle, .crumbs { display: none !important; }
+  body { background: #fff !important; }
+  .card, .post-detail { box-shadow: none !important; border: none !important; }
+  .page, .container { max-width: 100% !important; padding: 0 !important; }
+  .detail-table td, .post-table td { font-size: 11pt !important; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+}
+
 /* ============ FOOTER ============ */
 .footer {
   background: var(--footer-bg); color: var(--footer-text);

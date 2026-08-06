@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defence 2026 Jobs, Results &amp; Admit Cards — Sarkari Hai</title>
-  <meta name="description" content="Latest Defence 2026 recruitment, results, admit cards and answer keys with official links on Sarkari Hai.">
+  <title>Saved Jobs — Sarkari Hai</title>
+  <meta name="description" content="Your saved sarkari jobs and bookmarks — stored privately on your device.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://alexvivror.github.io/Sarkari-hai/exam-defence.html">
+  <link rel="canonical" href="https://alexvivror.github.io/Sarkari-hai/saved-jobs.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sarkari Hai">
-  <meta property="og:title" content="Defence 2026 Jobs, Results &amp; Admit Cards — Sarkari Hai">
-  <meta property="og:description" content="Latest Defence 2026 recruitment, results, admit cards and answer keys with official links on Sarkari Hai.">
-  <meta property="og:url" content="https://alexvivror.github.io/Sarkari-hai/exam-defence.html">
+  <meta property="og:title" content="Saved Jobs — Sarkari Hai">
+  <meta property="og:description" content="Your saved sarkari jobs and bookmarks — stored privately on your device.">
+  <meta property="og:url" content="https://alexvivror.github.io/Sarkari-hai/saved-jobs.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Defence 2026 Jobs, Results &amp; Admit Cards — Sarkari Hai">
-  <meta name="twitter:description" content="Latest Defence 2026 recruitment, results, admit cards and answer keys with official links on Sarkari Hai.">
+  <meta name="twitter:title" content="Saved Jobs — Sarkari Hai">
+  <meta name="twitter:description" content="Your saved sarkari jobs and bookmarks — stored privately on your device.">
   <meta name="theme-color" content="#f97316">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Defence 2026","url":"https://alexvivror.github.io/Sarkari-hai/exam-defence.html"}</script>
+  
 </head>
 <body>
   
@@ -42,34 +42,25 @@
     </form>
   </header>
 <main class="container page">
-  <nav class="crumbs"><a href="./">Home</a> <span>›</span> Defence</nav>
-  <h1 class="page-h1"><span class="material-symbols-outlined">shield</span> Defence Jobs & Results</h1>
-  <p class="page-desc">Latest Defence recruitment, results, admit cards and answer keys.</p>
-  <div class="table-wrap"><table class="post-table">
-    <thead><tr><th>Post Name</th><th>Important Dates</th><th>Links</th></tr></thead>
-    <tbody><tr class="post-row cat-latest-jobs exam-defence">
-    <td class="post-name">
-      <a href="./posts/isro-icrb-2026.html" class="post-title">ISRO ICRB Recruitment 2026 — 244 Assistant, JPA, UDC &amp; Stenographer</a>
-      <span class="official-tag" title="Links to official government website">✔ Official</span>
-      <span class="countdown-tag">10d left</span>
-      <span class="post-meta">
-        <span class="chip-sm latest-jobs">Latest Jobs</span>
-        <span class="chip-sm">Defence</span>
-        <span class="chip-sm">Written Test (answer key within 3 working days)</span>
-      </span>
-    </td>
-    <td class="post-dates">
-      <span class="dates"><b>Start:</b> 27 July 2026</span>
-      <span class="dates"><b>End:</b> 16 August 2026 (11:55 PM)</span>
-    </td>
-    <td class="post-actions">
-      <a class="act-btn primary" href="https://www.isro.gov.in/Careers.html" target="_blank" rel="noopener nofollow">Apply Online</a>
-      <a class="act-btn" href="https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/July/Bilingual%20Advertisement_Asst_JPA_UDC_Steno_ICRB_2026_27072026.pdf" rel="noopener nofollow">Notification</a>
-      <a class="act-btn ghost" href="https://www.isro.gov.in" target="_blank" rel="noopener nofollow">Official Site</a>
-    </td>
-  </tr></tbody>
-  </table></div>
+  <nav class="crumbs"><a href="./">Home</a> <span>›</span> Saved Jobs</nav>
+  <h1 class="page-h1"><span class="material-symbols-outlined">bookmarks</span> Saved Jobs</h1>
+  <p class="page-desc">Jobs you saved are stored on this device (no account needed). Tap the bookmark on any job to save it here.</p>
+  <div id="saved-list" class="card"><p style="color:var(--muted);padding:14px">Loading your saved jobs…</p></div>
 </main>
+<script>
+(function(){
+  var saved=window.shSaved?window.shSaved():[];
+  var box=document.getElementById("saved-list");
+  if(!saved.length){box.innerHTML='<p style="color:var(--muted);padding:14px">No saved jobs yet — tap the bookmark icon on any job page.</p>';return;}
+  fetch("./index.json").then(function(r){return r.json();}).then(function(idx){
+    var map={};idx.forEach(function(p){map[p.id]=p;});
+    var items=saved.filter(function(id){return map[id];});
+    box.innerHTML=items.length?items.map(function(p){
+      return '<a class="saved-item" href="./posts/'+p.id+'.html"><div><b>'+p.title+'</b><small>'+p.cat+' · '+p.exam+' · '+p.examDate+'</small></div><span class="material-symbols-outlined">arrow_forward</span></a>';
+    }).join(""):'<p style="color:var(--muted);padding:14px">No saved jobs found.</p>';
+  }).catch(function(){box.innerHTML='<p style="color:var(--muted);padding:14px">Could not load saved jobs.</p>';});
+})();
+</script>
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">

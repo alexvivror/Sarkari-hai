@@ -1,0 +1,19 @@
+{
+  "name": "Sarkari Hai — Government Jobs Portal",
+  "short_name": "Sarkari Hai",
+  "description": "Latest sarkari jobs, results, admit cards & answer keys — verified official links only.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f97316",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

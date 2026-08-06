@@ -27,7 +27,7 @@ fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(path.join(outDir, "posts"), { recursive: true });
 
 /* copy static assets from src/ */
-for (const asset of ["style.css", "search.js"]) {
+for (const asset of ["style.css", "search.js", "manifest.json", "icon.svg", "sw.js"]) {
   const src = path.join(ROOT, "src", asset);
   if (fs.existsSync(src)) fs.copyFileSync(src, path.join(outDir, asset));
 }
@@ -180,7 +180,10 @@ data.posts.forEach((p) => {
       <a class="act-btn primary big" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">launch</span> Apply Online</a>
       ${p.links.notification && p.links.notification !== "#" ? `<a class="act-btn big" href="${esc(p.links.notification)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">description</span> Download Notification</a>` : ""}
       ${p.links.official ? `<a class="act-btn ghost big" href="${esc(p.links.official)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">language</span> Official Website</a>` : ""}
+      <button class="act-btn ghost big" data-save="${p.id}" onclick="shToggleSave('${p.id}')" aria-label="Save job"><span class="material-symbols-outlined">bookmark_add</span> Save</button>
+      <button class="act-btn ghost big" onclick="window.open('https://wa.me/?text='+encodeURIComponent('${esc(p.title)} — ' + location.href),'_blank')" aria-label="Share on WhatsApp"><span class="material-symbols-outlined">share</span> Share</button>
     </div>
+    <p class="report-error"><span class="material-symbols-outlined">flag</span> Spot an error? <a href="mailto:feedback@sarkari-hai.in?subject=Error: ${esc(p.title)}">Report it</a> — we verify and fix quickly.</p>
     <div class="ad-slot" data-ad="post"><span>Advertisement</span></div>
 
     <h2 class="sub-h">Post Details</h2>
@@ -380,6 +383,37 @@ fs.writeFileSync(path.join(outDir, "search.html"), shell({
   schema: [],
 }));
 
+/* ---------- saved jobs page (bookmarks from localStorage) ---------- */
+const savedPageBody = header(SITE) + `
+<main class="container page">
+  <nav class="crumbs"><a href="./">Home</a> <span>›</span> Saved Jobs</nav>
+  <h1 class="page-h1"><span class="material-symbols-outlined">bookmarks</span> Saved Jobs</h1>
+  <p class="page-desc">Jobs you saved are stored on this device (no account needed). Tap the bookmark on any job to save it here.</p>
+  <div id="saved-list" class="card"><p style="color:var(--muted);padding:14px">Loading your saved jobs…</p></div>
+</main>
+<script>
+(function(){
+  var saved=window.shSaved?window.shSaved():[];
+  var box=document.getElementById("saved-list");
+  if(!saved.length){box.innerHTML='<p style="color:var(--muted);padding:14px">No saved jobs yet — tap the bookmark icon on any job page.</p>';return;}
+  fetch("./index.json").then(function(r){return r.json();}).then(function(idx){
+    var map={};idx.forEach(function(p){map[p.id]=p;});
+    var items=saved.filter(function(id){return map[id];});
+    box.innerHTML=items.length?items.map(function(p){
+      return '<a class="saved-item" href="./posts/'+p.id+'.html"><div><b>'+p.title+'</b><small>'+p.cat+' · '+p.exam+' · '+p.examDate+'</small></div><span class="material-symbols-outlined">arrow_forward</span></a>';
+    }).join(""):'<p style="color:var(--muted);padding:14px">No saved jobs found.</p>';
+  }).catch(function(){box.innerHTML='<p style="color:var(--muted);padding:14px">Could not load saved jobs.</p>';});
+})();
+</script>` + footer(SITE, data);
+
+fs.writeFileSync(path.join(outDir, "saved-jobs.html"), shell({
+  title: `Saved Jobs — ${SITE}`,
+  metaDesc: `Your saved sarkari jobs and bookmarks — stored privately on your device.`,
+  canonical: `${DOMAIN}/saved-jobs.html`,
+  body: savedPageBody,
+  schema: [],
+}));
+
 /* ---------- sitemap + robots ---------- */
 const urls = [
   `${DOMAIN}/`,
@@ -388,6 +422,7 @@ const urls = [
   ...data.categories.map((c) => `${DOMAIN}/${c.slug}.html`),
   ...data.exams.map((e) => `${DOMAIN}/exam-${e.slug}.html`),
   ...data.posts.map((p) => `${DOMAIN}/posts/${p.id}.html`),
+  `${DOMAIN}/saved-jobs.html`,
   ...STATIC_PAGES.map((pg) => `${DOMAIN}/${pg.slug}.html`),
 ];
 fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemapXml(urls));

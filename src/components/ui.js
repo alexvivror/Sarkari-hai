@@ -15,6 +15,7 @@ function header(SITE, active) {
     ["Jobs", "./latest-jobs.html"],
     ["Results", "./results.html"],
     ["Admit Card", "./admit-card.html"],
+    ["Saved", "./saved-jobs.html"],
   ];
   return `
   <header class="header">
@@ -86,6 +87,29 @@ function footer(SITE, data) {
         else apply(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches);
         dt.addEventListener("click",function(){apply(!document.documentElement.classList.contains("dark"));});
       }
+      // PWA install + offline
+      if("serviceWorker" in navigator){
+        window.addEventListener("load",function(){
+          navigator.serviceWorker.register("./sw.js").catch(function(){});
+        });
+      }
+      // install prompt
+      var deferredPrompt=null;
+      window.addEventListener("beforeinstallprompt",function(e){
+        e.preventDefault(); deferredPrompt=e;
+        var btn=document.getElementById("installBtn");
+        if(btn) btn.style.display="inline-flex";
+      });
+      // saved jobs (localStorage bookmarks)
+      window.shSaved=function(){try{return JSON.parse(localStorage.getItem("sh-saved")||"[]");}catch(e){return [];}};
+      window.shToggleSave=function(id){
+        var s=window.shSaved(),i=s.indexOf(id);
+        if(i>=0)s.splice(i,1);else s.push(id);
+        try{localStorage.setItem("sh-saved",JSON.stringify(s));}catch(e){}
+        var b=document.querySelector('[data-save="'+id+'"]');
+        if(b){b.classList.toggle("saved",i<0);b.querySelector("span").textContent=i<0?"bookmark_added":"bookmark_add";}
+        return i<0;
+      };
     })();
   </script>`;
 }
@@ -274,7 +298,7 @@ function sidebar(examChips, trendingChips) {
    prefilled with the exam's criteria via URL params. */
 function toolSuggestions(p) {
   const sugg = [];
-  const age = String(p.ageLimit || "").match(/(\d{1,2})\s*(?:to|–|-)\s*(\d{1,2})/i);
+  const age = String(p.ageLimit || "").match(/(\d{1,2})\s*(?:to|–|-)\s*(\d{1,2})\s*(?:years?|yrs)/i);
   if (age) {
     sugg.push({
       icon: "cake",
