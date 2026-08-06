@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Detail — Sarkari Hai</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alexvivror.github.io/Sarkari-hai/posts/post-detail.html">
+  <meta property="og:title" content="Post Detail — Sarkari Hai">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+  <header class="header"><div class="header-inner"><a href="../" class="brand"><span class="brand-mark">स</span><span>Sarkari Hai</span></a><nav class="nav"><a href="../">Home</a><a href="../all-recruitment.html">All Posts</a><a href="../latest-jobs.html">Jobs</a><a href="../results.html">Results</a><a href="../admit-card.html">Admit Card</a><a href="../answer-key.html">Answer Key</a><a href="../syllabus.html">Syllabus</a><a href="../admission.html">Admission</a><a href="../scholarship.html">Scholarship</a><a href="../certificate.html">Certificate</a><a href="../other.html">Other</a></nav><button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode"><span class="material-symbols-outlined" id="darkIcon">dark_mode</span></button></div><form class="searchbar" action="../search.html" method="get" role="search"><span class="material-symbols-outlined">search</span><input type="search" name="q" placeholder="Search..." aria-label="Search"><button type="submit" class="search-btn">Search</button></form></header>
+  <main>
+    <article class="post-detail" id="post-detail">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a><span class="material-symbols-outlined">chevron_right</span>
+          <a href="../all-recruitment.html">All Posts</a><span class="material-symbols-outlined">chevron_right</span>
+          <span id="breadcrumb-title">Post Title</span>
+        </nav>
+        
+        <header class="post-header">
+          <div class="post-meta-top">
+            <span class="post-category" id="post-category"></span>
+            <span class="post-exam" id="post-exam"></span>
+            <span class="pill verified" id="verified-badge" style="display:none;">✓ Verified</span>
+          </div>
+          <h1 id="post-title"></h1>
+          <div class="post-meta-bottom">
+            <div class="meta-item"><span class="material-symbols-outlined">event</span><span>Apply End: <strong id="post-apply-end">—</strong></span></div>
+            <div class="meta-item"><span class="material-symbols-outlined">event</span><span>Exam Date: <strong id="post-exam-date">—</strong></span></div>
+            <div class="meta-item"><span class="material-symbols-outlined">people</span><span>Vacancies: <strong id="post-vacancies">—</strong></span></div>
+            <div class="meta-item"><span class="material-symbols-outlined">school</span><span>Qualification: <strong id="post-qualification">—</strong></span></div>
+          </div>
+        </header>
+
+        <div class="post-actions">
+          <a href="#" id="apply-link" class="btn-solid" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">login</span>Apply Online</a>
+          <a href="#" id="official-link" class="btn-ghost" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">verified</span>Official Notification</a>
+          <button class="btn-ghost" id="bookmark-btn"><span class="material-symbols-outlined">bookmark</span>Save</button>
+          <button class="btn-ghost" id="share-btn"><span class="material-symbols-outlined">share</span>Share</button>
+        </div>
+
+        <section class="post-content">
+          <h2>Overview</h2>
+          <div id="post-overview"></div>
+          
+          <h2>Eligibility Criteria</h2>
+          <div id="post-eligibility"></div>
+          
+          <h2>Selection Process</h2>
+          <div id="post-selection"></div>
+          
+          <h2>How to Apply</h2>
+          <div id="post-howtoapply"></div>
+          
+          <h2>Important Links</h2>
+          <div id="post-links"></div>
+        </section>
+
+        <!-- AI Tools Section -->
+        <section class="exam-tools-section" id="exam-tools-section">
+          <h2><span class="material-symbols-outlined">smart_toy</span> AI Tools for This Exam</h2>
+          <div class="exam-tools-grid" id="exam-tools-grid">
+            <button class="tool-card" data-tool="resume" data-exam="">
+              <span class="tool-icon material-symbols-outlined">description</span>
+              <div><strong>Resume Builder</strong><br><small>ATS-friendly resume for this exam</small></div>
+            </button>
+            <button class="tool-card" data-tool="cover-letter" data-exam="">
+              <span class="tool-icon material-symbols-outlined">mail</span>
+              <div><strong>Cover Letter</strong><br><small>Tailored cover letter</small></div>
+            </button>
+            <button class="tool-card" data-tool="interview" data-exam="">
+              <span class="tool-icon material-symbols-outlined">record_voice_over</span>
+              <div><strong>Interview Prep</strong><br><small>Mock questions for this exam</small></div>
+            </button>
+            <button class="tool-card" data-tool="study-plan" data-exam="">
+              <span class="tool-icon material-symbols-outlined">schedule</span>
+              <div><strong>Study Plan</strong><br><small>Personalized schedule</small></div>
+            </button>
+          </div>
+        </section>
+
+        <!-- Documents Checklist -->
+        <section class="documents-section">
+          <h2><span class="material-symbols-outlined">checklist</span> Documents Checklist</h2>
+          <div class="doc-checklist" id="doc-checklist"></div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div class="footer-brand"><span class="brand-mark">स</span><span>Sarkari Hai</span><p>Your trusted AI-powered government job portal. Verified listings, official links only.</p></div><nav class="footer-nav"><h4>Quick Links</h4><ul><li><a href="../latest-jobs.html">Latest Jobs</a></li><li><a href="../results.html">Results</a></li><li><a href="../admit-card.html">Admit Card</a></li><li><a href="../answer-key.html">Answer Key</a></li><li><a href="../syllabus.html">Syllabus</a></li></ul></nav><nav class="footer-nav"><h4>Tools</h4><ul><li><a href="#resume">Resume Builder</a></li><li><a href="#interview">Interview Prep</a></li><li><a href="#study-plan">Study Plan</a></li><li><a href="#job-matcher">Job Matcher</a></li></ul></nav><nav class="footer-nav"><h4>Connect</h4><ul><li><a href="#">Telegram</a></li><li><a href="#">WhatsApp</a></li><li><a href="#">Email</a></li></ul></nav></div><div class="footer-bottom"><p>&copy; 2026 Sarkari Hai. All rights reserved. | <a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../disclaimer.html">Disclaimer</a></p></div></footer>
+  <script src="../app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const postId = params.get('id');
+      if (!postId) {
+        // Try to get from URL path
+        const pathParts = window.location.pathname.split('/');
+        const fileName = pathParts[pathParts.length - 1];
+        const match = fileName.match(/(.+)\.html$/);
+        if (match) {
+          loadPost(match[1]);
+        }
+      } else {
+        loadPost(postId);
+      }
+    });
+
+    async function loadPost(id) {
+      const waitForApp = setInterval(() => {
+        if (window.App && window.App.posts.length) {
+          clearInterval(waitForApp);
+          const post = window.App.posts.find(p => p.id === id);
+          if (post) {
+            renderPostDetail(post);
+          } else {
+            document.getElementById('post-title').textContent = 'Post not found';
+          }
+        }
+      }, 100);
+    }
+
+    function renderPostDetail(post) {
+      document.title = `${post.title} — Sarkari Hai`;
+      document.getElementById('breadcrumb-title').textContent = post.title;
+      document.getElementById('post-title').textContent = post.title;
+      document.getElementById('post-category').textContent = window.App.getCategoryInfo(post.category).label;
+      document.getElementById('post-exam').textContent = window.App.getExamInfo(post.exam).label;
+      document.getElementById('post-apply-end').textContent = window.App.formatDate(post.applyEnd);
+      document.getElementById('post-exam-date').textContent = window.App.formatDate(post.examDate);
+      document.getElementById('post-vacancies').textContent = post.vacancies || '—';
+      document.getElementById('post-qualification').textContent = post.qualification || '—';
+      
+      if (post.verified) {
+        document.getElementById('verified-badge').style.display = 'inline-block';
+      }
+      
+      document.getElementById('apply-link').href = post.links?.apply || '#';
+      document.getElementById('official-link').href = post.links?.official || '#';
+      
+      // Overview
+      document.getElementById('post-overview').innerHTML = `
+        <p><strong>${post.title}</strong> is a recruitment drive by ${window.App.getExamInfo(post.exam).label} for ${post.vacancies || 'multiple'} vacancies. 
+        The application process is ${post.applyEnd ? `open until ${window.App.formatDate(post.applyEnd)}` : 'currently open'}.</p>
+        <p><strong>Organization:</strong> ${window.App.getExamInfo(post.exam).label}</p>
+        <p><strong>Category:</strong> ${window.App.getCategoryInfo(post.category).label}</p>
+        ${post.examDate ? `<p><strong>Exam Date:</strong> ${window.App.formatDate(post.examDate)}</p>` : ''}
+      `;
+      
+      // Eligibility
+      document.getElementById('post-eligibility').innerHTML = `
+        <p><strong>Educational Qualification:</strong> ${post.qualification || 'As per official notification'}</p>
+        <p><strong>Age Limit:</strong> As per government norms (see official notification for details)</p>
+        <p><strong>Nationality:</strong> Indian</p>
+      `;
+      
+      // Selection
+      document.getElementById('post-selection').innerHTML = `
+        <ol>
+          <li>Written Examination (CBT/Offline)</li>
+          <li>Skill Test / Physical Test (if applicable)</li>
+          <li>Document Verification</li>
+          <li>Medical Examination</li>
+        </ol>
+        <p>Exact selection process varies by post. Refer to official notification.</p>
+      `;
+      
+      // How to apply
+      document.getElementById('post-howtoapply').innerHTML = `
+        <ol>
+          <li>Visit the official website: <a href="${post.links?.official}" target="_blank" rel="noopener">${post.links?.official}</a></li>
+          <li>Register/Login with your credentials</li>
+          <li>Fill the application form with accurate details</li>
+          <li>Upload required documents (photo, signature, certificates)</li>
+          <li>Pay the application fee online</li>
+          <li>Submit and take printout for future reference</li>
+        </ol>
+      `;
+      
+      // Links
+      let linksHtml = '<ul>';
+      if (post.links?.apply) linksHtml += `<li><a href="${post.links.apply}" target="_blank" rel="noopener">Apply Online</a></li>`;
+      if (post.links?.official) linksHtml += `<li><a href="${post.links.official}" target="_blank" rel="noopener">Official Notification</a></li>`;
+      if (post.links?.notification) linksHtml += `<li><a href="${post.links.notification}" target="_blank" rel="noopener">Detailed Notification</a></li>`;
+      linksHtml += '</ul>';
+      document.getElementById('post-links').innerHTML = linksHtml;
+      
+      // Exam tools - set exam context
+      document.querySelectorAll('#exam-tools-grid .tool-card').forEach(btn => {
+        btn.dataset.exam = post.exam;
+        btn.addEventListener('click', () => window.App.openTool(btn.dataset.tool));
+      });
+      
+      // Documents checklist
+      const standardDocs = [
+        { name: 'Photo (Recent, Passport Size)', required: true, format: 'JPG, 20-50 KB' },
+        { name: 'Signature', required: true, format: 'JPG, 10-20 KB' },
+        { name: '10th Certificate/Marksheet', required: true, format: 'PDF, up to 500 KB' },
+        { name: '12th Certificate/Marksheet', required: true, format: 'PDF, up to 500 KB' },
+        { name: 'Graduation Certificate/Marksheet', required: true, format: 'PDF, up to 500 KB' },
+        { name: 'Category Certificate (SC/ST/OBC/EWS)', required: false, format: 'PDF, up to 500 KB' },
+        { name: 'PwD Certificate (if applicable)', required: false, format: 'PDF, up to 500 KB' },
+        { name: 'Domicile Certificate', required: false, format: 'PDF, up to 500 KB' },
+        { name: 'ID Proof (Aadhaar/PAN/Voter ID)', required: true, format: 'PDF/JPG, up to 500 KB' },
+      ];
+      
+      document.getElementById('doc-checklist').innerHTML = standardDocs.map((doc, i) => `
+        <label class="doc-item">
+          <input type="checkbox" id="doc-${i}" data-doc="${doc.name}">
+          <div class="doc-info">
+            <strong>${doc.name}</strong>
+            <small>${doc.required ? 'Required' : 'Optional'} • ${doc.format}</small>
+          </div>
+        </label>
+      `).join('');
+      
+      // Load saved checklist progress
+      const saved = localStorage.getItem(`sh-docs-${post.id}`);
+      if (saved) {
+        try {
+          const checked = JSON.parse(saved);
+          checked.forEach(idx => {
+            const cb = document.getElementById(`doc-${idx}`);
+            if (cb) cb.checked = true;
+          });
+        } catch (e) {}
+      }
+      
+      // Save checklist progress
+      document.querySelectorAll('#doc-checklist input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const checked = Array.from(document.querySelectorAll('#doc-checklist input[type="checkbox"]:checked'))
+            .map(cb => parseInt(cb.id.split('-')[1]));
+          localStorage.setItem(`sh-docs-${post.id}`, JSON.stringify(checked));
+        });
+      });
+    }
+  </script>
+</body>
+</html>
