@@ -198,7 +198,13 @@ data.posts.forEach((p) => {
     </div>
     <h1 class="page-h1">${esc(p.title)}</h1>
     <p class="page-desc">${esc(p.desc)}</p>
-    ${p.status === "expected" ? `<div class="verify-notice"><span class="material-symbols-outlined">info</span><span><b>Important:</b> Some dates shown are tentative/expected. Always confirm the exact schedule on the official website before applying.</span></div>` : ""}
+    ${p.status === "expected" ? `<div class="verify-notice" role="note">
+      <span class="vn-icon"><span class="material-symbols-outlined">info</span></span>
+      <div>
+        <b>Important</b>
+        <p>Some dates shown are tentative/expected. Always confirm the exact schedule on the official website before applying.</p>
+      </div>
+    </div>` : ""}
 
     <div class="quick-stats">
       ${p.vacancies ? `<div class="qs"><span class="material-symbols-outlined">groups</span><b>${esc(p.vacancies)}</b><small>Vacancies</small></div>` : ""}

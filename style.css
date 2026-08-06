@@ -101,8 +101,25 @@ body {
   text-rendering: optimizeLegibility;
 }
 h1, h2, h3, h4, .brand, .job-title { font-family: var(--font-display); }
+h1, h2 { text-wrap: balance; }
 img, svg { max-width: 100%; display: block; }
 a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #ffdd00;
+  outline-offset: 2px;
+}
+/* link states (GOV.UK: 4 distinct states) */
+.content-col a:not(.btn-solid):not(.btn-ghost):not(.pill):not(.chip):not(.job-title):not(.cat-tile):not(.section-link):not(.tool-mini):not(.mini):not(.hero-deadline):not(.sugg-item):not(.channel),
+.post-detail a:not(.btn-solid):not(.btn-ghost):not(.pill):not(.chip):not(.act-btn):not(.sugg-item),
+.page-desc a {
+  color: var(--primary-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.content-col a:not(.btn-solid):not(.btn-ghost):not(.pill):not(.chip):not(.job-title):not(.cat-tile):not(.section-link):not(.tool-mini):not(.mini):not(.hero-deadline):not(.sugg-item):not(.channel):visited,
+.post-detail a:not(.btn-solid):not(.btn-ghost):not(.pill):not(.chip):not(.act-btn):not(.sugg-item):visited {
+  color: #6d28d9;
+}
 button { font-family: inherit; cursor: pointer; }
 input, select, textarea { font-family: inherit; }
 ::selection { background: rgba(242, 116, 13, .2); }
@@ -337,8 +354,11 @@ input, select, textarea { font-family: inherit; }
   padding: 18px;
   display: flex; flex-direction: column; gap: 12px;
   transition: all .18s;
+  position: relative;
 }
 .job-card:hover { border-color: var(--border-strong); box-shadow: var(--sh-3); transform: translateY(-2px); }
+/* whole card is clickable (NN/g stretched-link pattern) */
+.job-title::after { content: ""; position: absolute; inset: 0; }
 .job-card-top { display: flex; gap: 12px; align-items: flex-start; }
 .job-cat {
   display: inline-flex; align-items: center; justify-content: center;
@@ -548,12 +568,19 @@ input, select, textarea { font-family: inherit; }
 .chip-sm.expected-badge { background: var(--warn-soft); color: var(--warn); }
 .chip-sm.confirmed-badge { background: var(--ok-soft); color: var(--ok); }
 .verify-notice {
-  display: flex; align-items: flex-start; gap: 8px;
-  background: var(--warn-soft); border: 1px solid #f3d9ac;
-  border-radius: var(--r-sm); padding: 12px 14px; margin: 12px 0;
-  font-size: .82rem; color: var(--warn); font-weight: 500;
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--warn-soft); border-left: 5px solid var(--warn);
+  border-radius: var(--r-sm); padding: 14px 16px; margin: 14px 0;
+  font-size: .86rem; color: var(--text-2);
 }
-.verify-notice .material-symbols-outlined { font-size: 1.05rem; flex-shrink: 0; }
+.verify-notice .vn-icon {
+  background: var(--warn); color: #fff;
+  border-radius: 8px; padding: 4px; flex-shrink: 0;
+  display: inline-flex;
+}
+.verify-notice .vn-icon .material-symbols-outlined { font-size: 1.1rem; }
+.verify-notice b { display: block; font-weight: 700; color: var(--warn); margin-bottom: 2px; }
+.verify-notice p { color: var(--text-2); font-size: .84rem; line-height: 1.5; }
 
 .quick-stats {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
