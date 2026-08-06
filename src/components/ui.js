@@ -142,7 +142,7 @@ function postRow(p, byCat, byExam) {
   </tr>`;
 }
 
-/* ---------- post card (new design: card-based job listing) ---------- */
+/* ---------- post card (clean LinkedIn-style card) ---------- */
 function postCard(p, byCat, byExam) {
   const cat = byCat[p.category];
   const exam = byExam[p.exam];
@@ -156,31 +156,22 @@ function postCard(p, byCat, byExam) {
       <span class="job-cat ${p.category}"><span class="material-symbols-outlined">${cat.icon}</span></span>
       <div class="job-card-head">
         <a href="./posts/${p.id}.html" class="job-title">${esc(p.title)}</a>
+        <div class="job-sub">${esc(exam.label)} <span class="dot">·</span> ${esc(cat.label)}</div>
         <div class="job-chips">
           ${isNew ? '<span class="pill new">New</span>' : ""}
-          <span class="pill ${p.category}">${esc(cat.label)}</span>
-          <span class="pill exam">${esc(exam.label)}</span>
           ${off ? '<span class="pill verified">✓ Verified</span>' : ""}
-          ${p.status === "expected" ? '<span class="pill expected">! Expected</span>' : ""}
-          ${deadline ? `<span class="pill deadline">${days === 0 ? "Last day!" : days + "d left"}</span>` : ""}
+          ${p.status === "expected" ? '<span class="pill expected">Expected</span>' : ""}
+          ${deadline ? `<span class="pill deadline">${days === 0 ? "Last day!" : days + " days left"}</span>` : ""}
         </div>
       </div>
     </div>
-    <div class="job-card-meta">
-      ${p.vacancies && p.vacancies !== "—" ? `<span class="meta-item"><span class="material-symbols-outlined">groups</span>${esc(p.vacancies)}</span>` : ""}
-      ${p.salary && p.salary !== "—" ? `<span class="meta-item"><span class="material-symbols-outlined">payments</span>${esc(p.salary)}</span>` : ""}
-      ${p.qualification && p.qualification !== "—" ? `<span class="meta-item"><span class="material-symbols-outlined">school</span>${esc(p.qualification)}</span>` : ""}
-    </div>
     <div class="job-card-foot">
-      <div class="job-dates">
-        ${p.applyEnd && p.applyEnd !== "—" ? `<span class="date primary-date"><small>Last date</small><b>${esc(p.applyEnd)}</b></span>` : ""}
-        ${p.applyStart && p.applyStart !== "—" ? `<span class="date"><small>Start</small><b>${esc(p.applyStart)}</b></span>` : ""}
-        ${p.examDate && p.examDate !== "—" ? `<span class="date"><small>Exam</small><b>${esc(p.examDate)}</b></span>` : ""}
-        <span class="date"><small>Updated</small><b>${esc(p.date)}</b></span>
+      <div class="job-date">
+        <span class="jd-label">Last date</span>
+        <span class="jd-value">${esc(p.applyEnd || "—")}</span>
       </div>
       <div class="job-actions">
-        <a class="btn-solid" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">launch</span> Apply</a>
-        <a class="btn-ghost" href="./posts/${p.id}.html">Details</a>
+        <a class="btn-solid" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow">Apply</a>
       </div>
     </div>
   </article>`;
