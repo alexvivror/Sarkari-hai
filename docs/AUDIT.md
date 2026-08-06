@@ -1,6 +1,6 @@
-# Quality Audit Report — 2026-08-05
+# Quality Audit Report — 2026-08-06
 
-**Pages scored:** 52 · **Average score:** 96/100 · **Below threshold (70):** 0
+**Pages scored:** 59 · **Average score:** 96/100 · **Below threshold (70):** 0
 
 ## Lowest-scoring pages (top 10)
 
@@ -10,12 +10,12 @@
 | contact.html | 93 | JSON-LD schema missing; no official gov links on page; placeholder links (#) |
 | disclaimer.html | 93 | JSON-LD schema missing; no official gov links on page; placeholder links (#) |
 | privacy.html | 93 | JSON-LD schema missing; no official gov links on page; placeholder links (#) |
+| saved-jobs.html | 93 | JSON-LD schema missing; no official gov links on page; placeholder links (#) |
 | search.html | 93 | JSON-LD schema missing; no official gov links on page; placeholder links (#) |
 | admission.html | 95 | no official gov links on page; placeholder links (#) |
 | exam-aiims.html | 95 | no official gov links on page; placeholder links (#) |
 | exam-bank.html | 95 | no official gov links on page; placeholder links (#) |
 | exam-calendar.html | 95 | no official gov links on page; placeholder links (#) |
-| exam-ntpc.html | 95 | no official gov links on page; placeholder links (#) |
 
 ✅ All pages above quality threshold.
 
