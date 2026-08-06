@@ -123,7 +123,15 @@ async function main() {
   );
   const ssh = process.env.GIT_SSH_CMD || "ssh -i /opt/data/home/.ssh/id_ed25519 -o UserKnownHostsFile=/opt/data/.ssh/known_hosts";
   const stamp = new Date().toISOString().slice(0, 16);
-  execSync(`cd "${repoDir}" && git config user.email "alexvivror@gmail.com" && git config user.name "Piyush Kumar" && git add -A && git commit -m "Hourly sync ${stamp}: +${autoPublish.length} new / ${review.length} review" --allow-empty`, {
+
+  /* ONLY push if something actually changed — an empty commit every hour
+     cancels the in-flight GitHub Pages deploy and keeps the live site stale. */
+  const changedCount = execSync(`cd "${repoDir}" && git status --porcelain | wc -l`, { encoding: "utf8" }).trim();
+  if (Number(changedCount) === 0) {
+    log("No changes — skipping push (avoids cancelling the live deploy)");
+    return;
+  }
+  execSync(`cd "${repoDir}" && git config user.email "alexvivror@gmail.com" && git config user.name "Piyush Kumar" && git add -A && git commit -m "Hourly sync ${stamp}: +${autoPublish.length} new / ${review.length} review"`, {
     env: { ...process.env, GIT_SSH_COMMAND: ssh }, stdio: "inherit",
   });
   execSync(`cd "${repoDir}" && git push origin main`, { env: { ...process.env, GIT_SSH_COMMAND: ssh }, stdio: "inherit" });

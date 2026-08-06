@@ -61,7 +61,12 @@ const NO_PUSH = process.argv.includes("--no-push");
 
     const ssh = process.env.GIT_SSH_CMD || "ssh -i /opt/data/home/.ssh/id_ed25519 -o UserKnownHostsFile=/opt/data/.ssh/known_hosts";
     const stamp = new Date().toISOString().slice(0, 10);
-    execSync(`cd "${repoDir}" && git config user.email "alexvivror@gmail.com" && git config user.name "Piyush Kumar" && git add -A && git commit -m "Daily update: latest sarkari notifications ${stamp}" --allow-empty`, {
+    const changedCount = execSync(`cd "${repoDir}" && git status --porcelain | wc -l`, { encoding: "utf8" }).trim();
+    if (Number(changedCount) === 0) {
+      log("No changes — skipping push (avoids cancelling the live deploy)");
+      return;
+    }
+    execSync(`cd "${repoDir}" && git config user.email "alexvivror@gmail.com" && git config user.name "Piyush Kumar" && git add -A && git commit -m "Daily update: latest sarkari notifications ${stamp}"`, {
       env: { ...process.env, GIT_SSH_COMMAND: ssh },
       stdio: "inherit",
     });
