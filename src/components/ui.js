@@ -142,7 +142,7 @@ function postRow(p, byCat, byExam) {
   </tr>`;
 }
 
-/* ---------- post card (clean LinkedIn-style card) ---------- */
+/* ---------- post card (detailed LinkedIn-style card with all job info) ---------- */
 function postCard(p, byCat, byExam) {
   const cat = byCat[p.category];
   const exam = byExam[p.exam];
@@ -150,6 +150,25 @@ function postCard(p, byCat, byExam) {
   const days = daysRemaining(p.applyEnd);
   const deadline = days !== null && days >= 0;
   const isNew = p.date && p.date >= new Date(Date.now() - 3 * 86400000).toISOString().slice(0, 10);
+
+  // Build detail rows
+  const details = [];
+  if (p.vacancies && p.vacancies !== "—") details.push({icon: "groups", label: "Vacancies", value: esc(p.vacancies)});
+  if (p.qualification && p.qualification !== "—") details.push({icon: "school", label: "Qualification", value: esc(p.qualification)});
+  if (p.salary && p.salary !== "—") details.push({icon: "payments", label: "Salary", value: esc(p.salary)});
+  if (p.ageLimit && p.ageLimit !== "—") details.push({icon: "person", label: "Age Limit", value: esc(p.ageLimit)});
+  if (p.examDate && p.examDate !== "—") details.push({icon: "event", label: "Exam Date", value: esc(p.examDate)});
+  if (p.mode && p.mode !== "—") details.push({icon: "computer", label: "Mode", value: esc(p.mode)});
+  if (p.fee && p.fee !== "—") details.push({icon: "receipt", label: "Fee", value: esc(p.fee)});
+
+  const detailRows = details.map(d => `
+    <div class="detail-row">
+      <span class="material-symbols-outlined detail-icon">${d.icon}</span>
+      <span class="detail-label">${d.label}</span>
+      <span class="detail-value">${d.value}</span>
+    </div>
+  `).join("");
+
   return `
   <article class="job-card cat-${p.category} exam-${p.exam}">
     <div class="job-card-top">
@@ -165,13 +184,16 @@ function postCard(p, byCat, byExam) {
         </div>
       </div>
     </div>
+    ${detailRows ? `<div class="job-card-details">${detailRows}</div>` : ""}
     <div class="job-card-foot">
       <div class="job-date">
         <span class="jd-label">Last date</span>
         <span class="jd-value">${esc(p.applyEnd || "—")}</span>
       </div>
       <div class="job-actions">
-        <a class="btn-solid" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow">Apply</a>
+        <a class="btn-solid" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">launch</span> Apply</a>
+        ${p.links.notification && p.links.notification !== "#" ? `<a class="btn-ghost" href="${esc(p.links.notification)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">description</span> Notification</a>` : ""}
+        ${p.links.official ? `<a class="btn-ghost" href="${esc(p.links.official)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">language</span> Official</a>` : ""}
       </div>
     </div>
   </article>`;
