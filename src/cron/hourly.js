@@ -20,7 +20,7 @@ const { checkAllSources } = require("../services/sources");
 const { fetchRss, buildVerifiedPosts } = require("../services/fetch");
 const { extractPostDetails } = require("../services/extractor");
 const { loadPosts, savePosts, dedupPosts, purgeClosed, STANDARD_DOCUMENTS, checkCompleteness } = require("../services/content");
-const { classify, loadReview } = require("../services/verifier");
+const { classify, loadReview, saveReview } = require("../services/verifier");
 const { record } = require("../services/auditlog");
 const { writeRss, notifyTelegram } = require("../services/notify");
 const { norm, log, logErr } = require("../lib/utils");
@@ -86,6 +86,40 @@ async function main() {
     const { saveReview } = require("../services/verifier");
     const q = loadReview();
     saveReview([...q, ...needsReview.map((p) => ({ ...p, addedAt: new Date().toISOString() }))]);
+  }
+
+  /* ---- 5b. self-clean review queue: drop stale / duplicate / wrong-board items ---- */
+  try {
+    const q = loadReview();
+    const posts = (data.posts || []).map((p) => norm(p.title));
+    const today = new Date().toISOString().slice(0, 10);
+    const months = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+    const parseDate = (s) => {
+      if (!s || s === "—") return null;
+      const m = String(s).match(/(\d{1,2})\s*[-\/]\s*(\d{1,2})\s*[-\/]\s*(\d{4})/);
+      if (m) return new Date(+m[3], +m[2] - 1, +m[1]);
+      const m2 = String(s).match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+      if (m2 && months[m2[2].slice(0, 3).toLowerCase()]) return new Date(+m2[3], months[m2[2].slice(0, 3).toLowerCase()] - 1, +m2[1]);
+      return null;
+    };
+    const before = q.length;
+    const seen = new Set();
+    const kept = q.filter((it) => {
+      const t = norm(it.title);
+      if (seen.has(t) || posts.includes(t)) return false;
+      seen.add(t);
+      const end = parseDate(it.applyEnd);
+      if (end && end < new Date(today + "T00:00:00")) return false;
+      const link = ((it.links || {}).apply || (it.links || {}).notification || "").toLowerCase();
+      if (t.includes("htet") && link.includes("ctet.nic.in")) return false; // wrong board
+      return true;
+    });
+    if (kept.length < before) {
+      saveReview(kept);
+      log(`Review queue self-clean: ${before} → ${kept.length} (removed stale/dupes/wrong-board)`);
+    }
+  } catch (e) {
+    logErr("Review self-clean failed:", e.message);
   }
 
   // keep ALL existing posts (curated + previously auto-published);
