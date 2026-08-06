@@ -293,53 +293,110 @@ function sidebar(examChips, trendingChips) {
     </aside>`;
 }
 
-/* ---------- exam-tool suggestions (per-post, criteria-driven) ---------- */
-/* Analyzes a post's requirements and suggests the relevant tool(s),
-   prefilled with the exam's criteria via URL params. */
+/* ---------- exam-tool suggestions (bottom CTA, form-filling) ---------- */
+/* Analyzes a post's requirements and suggests the exact tools needed
+   to FILL THE APPLICATION FORM for that exam: photo, signature,
+   age (prefilled), marks %, documents checklist, fee. */
 function toolSuggestions(p) {
   const sugg = [];
   const age = String(p.ageLimit || "").match(/(\d{1,2})\s*(?:to|–|-)\s*(\d{1,2})\s*(?:years?|yrs)/i);
+
+  /* photo + signature — needed for EVERY application form */
+  sugg.push({
+    icon: "portrait",
+    title: "Photo Resizer",
+    why: "Passport-size photo for the application form (upload size limits)",
+    href: "https://alexvivror.github.io/New/",
+    tag: "Required for all forms",
+  });
+  sugg.push({
+    icon: "draw",
+    title: "Signature Resizer",
+    why: "Scanned signature for the form — must match upload specs",
+    href: "https://alexvivror.github.io/New/",
+  });
   if (age) {
     sugg.push({
       icon: "cake",
       title: "Age Limit Checker",
-      why: `This exam needs age ${age[1]}–${age[2]} years — check if you qualify`,
+      why: `Form needs age ${age[1]}–${age[2]} years — check yours before applying`,
       href: `./#exam-tools?min=${age[1]}&max=${age[2]}`,
+      tag: "Prefilled for this exam",
     });
   }
   if (/cgpa|percentage|%|graduation/i.test(String(p.qualification || ""))) {
     sugg.push({
       icon: "percent",
       title: "Marks Percentage",
-      why: "This exam has a minimum percentage eligibility — calculate yours",
-      href: "./#exam-tools",
-    });
-    sugg.push({
-      icon: "school",
-      title: "CGPA → Percentage",
-      why: "Convert your CGPA to percentage for this eligibility check",
+      why: "Form asks for your % marks — calculate exactly",
       href: "./#exam-tools",
     });
   }
-  if (p.fee && p.fee !== "—") {
+  if (p.fee && p.fee !== "—" && !/as per|advertisement/i.test(String(p.fee))) {
     sugg.push({
       icon: "payments",
-      title: "Application Fee",
-      why: `This exam charges ${p.fee} — plan your application budget`,
-      href: "./#exam-tools",
+      title: "Fee & Payment",
+      why: `Form requires ${p.fee} — pay only via official portal`,
+      href: `./#exam-tools?fee=${p.fee.replace(/[^\d]/g, "")}`,
     });
   }
   if (sugg.length === 0) return "";
   return `
-  <section class="card sugg-card">
-    <h2 class="sub-h"><span class="material-symbols-outlined">recommend</span> Tools you may need for this exam</h2>
+  <section class="sugg-bottom">
+    <div class="sugg-head">
+      <span class="sugg-icon"><span class="material-symbols-outlined">edit_note</span></span>
+      <div>
+        <h2>Ready to fill the application form?</h2>
+        <p>Everything you need to complete ${esc(String(p.title).slice(0, 60))} — in one place</p>
+      </div>
+    </div>
     <div class="sugg-grid">
       ${sugg.map((s) => `<a class="sugg-item" href="${s.href}">
         <span class="material-symbols-outlined">${s.icon}</span>
         <div><b>${esc(s.title)}</b><small>${esc(s.why)}</small></div>
+        ${s.tag ? `<span class="sugg-tag">${esc(s.tag)}</span>` : ""}
+        <span class="sugg-arrow"><span class="material-symbols-outlined">arrow_forward</span></span>
       </a>`).join("\n")}
     </div>
-  </section>`;
+    ${p.documents && p.documents.length ? `
+    <details class="sugg-docs">
+      <summary><span class="material-symbols-outlined">checklist</span> Keep these documents ready before filling the form</summary>
+      <ul class="doc-checklist">
+        ${p.documents.map((d) => `<li><label><input type="checkbox" data-doc="${esc(d)}"> <span>${esc(d)}</span></label></li>`).join("\n")}
+      </ul>
+      <p class="doc-note">Progress is saved on this device. Tick items as you gather them.</p>
+    </details>` : ""}
+  </section>
+  <script>
+    (function(){
+      var boxes=document.querySelectorAll(".doc-checklist input[type=checkbox]");
+      if(!boxes.length)return;
+      var KEY="sh-docs-${p.id}";
+      var saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||"{}");}catch(e){}
+      boxes.forEach(function(b,i){
+        var v=b.getAttribute("data-doc");
+        if(saved[v])b.checked=true;
+        b.addEventListener("change",function(){
+          saved[v]=b.checked;
+          try{localStorage.setItem(KEY,JSON.stringify(saved));}catch(e){}
+          var n=document.querySelectorAll(".doc-checklist input:checked").length;
+          var all=document.querySelectorAll(".doc-checklist input").length;
+          var bar=document.getElementById("doc-progress");
+          if(bar)bar.style.width=(n/all*100)+"%";
+        });
+      });
+      var wrap=document.querySelector(".doc-checklist");
+      if(wrap){
+        var bar=document.createElement("div");
+        bar.className="doc-progress-track";
+        bar.innerHTML='<div class="doc-progress" id="doc-progress"></div>';
+        wrap.parentNode.insertBefore(bar,wrap);
+        var n=document.querySelectorAll(".doc-checklist input:checked").length;
+        var all=document.querySelectorAll(".doc-checklist input").length;
+        document.getElementById("doc-progress").style.width=(n/all*100)+"%";
+      }
+    })();
+  </script>`;
 }
 function appBanner() {
   return "";

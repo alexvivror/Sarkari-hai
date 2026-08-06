@@ -11,6 +11,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { loadPosts } = require("../services/content");
+const { STANDARD_DOCUMENTS } = require("../services/content");
 const { pageShell, websiteSchema, jobPostingSchema, faqSchema, breadcrumbSchema, sitemapXml, robotsTxt } = require("../services/seo");
 const { header, footer, postTable, catBoxes, freeTools, examTools, sidebar, toolSuggestions, appBanner } = require("../components/ui");
 const { esc, prettyToday } = require("../lib/utils");
@@ -194,12 +195,12 @@ data.posts.forEach((p) => {
     <h2 class="sub-h">Frequently Asked Questions</h2>
     ${(p.faqs || []).map((f) => `<div class="faq-item"><h3>${esc(f.q)}</h3><p>${esc(f.a)}</p></div>`).join("")}
   </article>
-  ${toolSuggestions(p)}
   ${related.length ? `
   <section class="related">
     <h2 class="sub-h">Related Posts</h2>
     <div class="mini-list">${related.map((r) => `<a class="mini" href="./posts/${r.id}.html"><span class="material-symbols-outlined">${byCat[r.category].icon}</span><div><b>${esc(r.title)}</b><small>${esc(r.examDate)}</small></div></a>`).join("")}</div>
   </section>` : ""}
+  ${toolSuggestions({ ...p, documents: p.documents || STANDARD_DOCUMENTS })}
 </main>`;
 
   fs.writeFileSync(path.join(outDir, "posts", `${p.id}.html`), shell({

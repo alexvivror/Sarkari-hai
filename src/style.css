@@ -572,25 +572,49 @@ html.dark .filter-field select option { background: var(--surface); color: var(-
 .etool .btn { margin-top: 4px; }
 .etool .result { margin-top: 10px; }
 
-/* ============ TOOL SUGGESTIONS (per-post) ============ */
-.sugg-card { margin-top: 20px; }
+/* ============ TOOL SUGGESTIONS (bottom form-filling section) ============ */
+.sugg-bottom {
+  margin: 22px 0 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.sugg-head {
+  display: flex; align-items: center; gap: 14px;
+  background: linear-gradient(120deg, #f97316, #ea580c);
+  color: #fff;
+  padding: clamp(16px, 3vw, 22px);
+}
+.sugg-icon {
+  background: rgba(255,255,255,0.18);
+  border-radius: 14px;
+  padding: 10px;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+.sugg-icon .material-symbols-outlined { font-size: 1.7rem; color: #fff; }
+.sugg-head h2 { font-size: clamp(1rem, 3vw, 1.2rem); font-weight: 800; }
+.sugg-head p { color: #ffe4cc; font-size: 0.8rem; margin-top: 2px; }
 .sugg-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 10px;
-  margin-top: 10px;
+  padding: 14px;
 }
 .sugg-item {
-  display: flex; align-items: center; gap: 12px;
+  display: flex; align-items: center; gap: 11px;
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 12px;
   text-decoration: none; color: var(--text);
   transition: all 0.15s;
+  position: relative;
 }
-.sugg-item:hover { border-color: var(--primary); transform: translateY(-2px); background: var(--primary-soft); }
-.sugg-item .material-symbols-outlined {
+.sugg-item:hover { border-color: var(--primary); transform: translateY(-2px); background: var(--primary-soft); box-shadow: var(--shadow); }
+.sugg-item > .material-symbols-outlined {
   color: var(--primary);
   background: var(--primary-soft);
   border-radius: 9px;
@@ -600,8 +624,44 @@ html.dark .filter-field select option { background: var(--surface); color: var(-
 }
 .sugg-item b { display: block; font-size: 0.86rem; }
 .sugg-item small { color: var(--muted); font-size: 0.72rem; line-height: 1.35; display: block; }
+.sugg-tag {
+  position: absolute; top: -7px; right: 10px;
+  background: var(--accent); color: #fff;
+  font-size: 0.6rem; font-weight: 800;
+  padding: 2px 8px; border-radius: 999px;
+  white-space: nowrap;
+}
+.sugg-arrow { margin-left: auto; color: var(--muted); flex-shrink: 0; }
+.sugg-arrow .material-symbols-outlined { font-size: 1.1rem; }
+.sugg-item:hover .sugg-arrow { color: var(--primary); }
+
+/* documents checklist */
+.sugg-docs {
+  border-top: 1px dashed var(--border);
+  padding: 12px 16px;
+  margin: 0 14px 14px;
+}
+.sugg-docs summary {
+  cursor: pointer;
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 800; font-size: 0.88rem;
+  color: var(--text);
+  list-style: none;
+}
+.sugg-docs summary::-webkit-details-marker { display: none; }
+.sugg-docs summary .material-symbols-outlined { color: var(--primary); }
+.doc-checklist { list-style: none; margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px; }
+.doc-checklist li { font-size: 0.82rem; color: var(--muted); }
+.doc-checklist label { display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 4px 0; }
+.doc-checklist input { accent-color: var(--accent); width: 15px; height: 15px; }
+.doc-checklist input:checked + span { color: var(--accent); text-decoration: line-through; }
+.doc-note { font-size: 0.72rem; color: var(--muted); margin-top: 8px; }
+.doc-progress-track { height: 5px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin: 10px 0 2px; }
+.doc-progress { height: 100%; background: linear-gradient(90deg, var(--accent), #34d399); width: 0; transition: width 0.3s; }
 html.dark .sugg-item { background: #182338; }
 html.dark .sugg-item:hover { background: #2a1a10; }
+html.dark .sugg-tag { background: #065f46; }
+html.dark .doc-checklist input:checked + span { color: #6ee7b7; }
 
 /* ============ SAVED JOBS / SHARE / REPORT / PRINT ============ */
 .act-btn { display: inline-flex; align-items: center; gap: 6px; }
