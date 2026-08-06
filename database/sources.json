@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T13:00:45.479Z",
+  "updated": "2026-08-06T14:00:56.049Z",
   "sources": [
     {
       "id": "freejobalert-rss",
@@ -9,10 +9,10 @@
       "official": "https://www.freejobalert.com",
       "enabled": true,
       "weight": 1,
-      "lastChecksum": "95c8bacf92367bb9",
-      "lastChecked": "2026-08-06T13:00:42.565Z",
+      "lastChecksum": "6bcd328c2c26d9c0",
+      "lastChecked": "2026-08-06T14:00:52.412Z",
       "lastStatus": "ok",
-      "lastSize": 97676
+      "lastSize": 97781
     },
     {
       "id": "ssc-gov",
@@ -23,7 +23,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "16ec671c394894ee",
-      "lastChecked": "2026-08-06T13:00:42.859Z",
+      "lastChecked": "2026-08-06T14:00:52.785Z",
       "lastStatus": "ok",
       "lastSize": 80649
     },
@@ -35,10 +35,10 @@
       "official": "https://upsc.gov.in",
       "enabled": true,
       "weight": 2,
-      "lastChecksum": "8af7c4c8e7243aae",
-      "lastChecked": "2026-08-06T13:00:43.058Z",
+      "lastChecksum": "34a5c9b90a655e3d",
+      "lastChecked": "2026-08-06T14:00:53.009Z",
       "lastStatus": "ok",
-      "lastSize": 88316
+      "lastSize": 88313
     },
     {
       "id": "ibps-in",
@@ -48,7 +48,7 @@
       "official": "https://www.ibps.in",
       "enabled": true,
       "weight": 2,
-      "lastChecked": "2026-08-06T13:00:43.100Z",
+      "lastChecked": "2026-08-06T14:00:53.061Z",
       "lastStatus": "error",
       "lastError": "fetch failed"
     },
@@ -61,7 +61,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "64d2d9ac0cd3b366",
-      "lastChecked": "2026-08-06T13:00:43.296Z",
+      "lastChecked": "2026-08-06T14:00:53.289Z",
       "lastStatus": "ok",
       "lastSize": 65102
     },
@@ -74,7 +74,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "273e414adc1920e9",
-      "lastChecked": "2026-08-06T13:00:44.634Z",
+      "lastChecked": "2026-08-06T14:00:55.249Z",
       "lastStatus": "ok",
       "lastSize": 663621
     },
@@ -86,10 +86,10 @@
       "official": "https://www.isro.gov.in",
       "enabled": true,
       "weight": 2,
-      "lastChecksum": "d1d950de627ac48a",
-      "lastChecked": "2026-08-06T13:00:44.774Z",
+      "lastChecksum": "11077aebac62be6f",
+      "lastChecked": "2026-08-06T14:00:55.383Z",
       "lastStatus": "ok",
-      "lastSize": 318953
+      "lastSize": 317938
     },
     {
       "id": "aiims-edu",
@@ -99,10 +99,10 @@
       "official": "https://www.aiims.edu",
       "enabled": true,
       "weight": 2,
-      "lastChecksum": "2df06801bb77654c",
-      "lastChecked": "2026-08-06T13:00:45.479Z",
+      "lastChecksum": "26072143d54076a2",
+      "lastChecked": "2026-08-06T14:00:56.048Z",
       "lastStatus": "ok",
-      "lastSize": 226003
+      "lastSize": 226019
     }
   ]
 }
