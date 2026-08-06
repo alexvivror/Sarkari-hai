@@ -425,37 +425,6 @@ input, select, textarea { font-family: inherit; }
   text-decoration: none; transition: background .15s;
 }
 .btn-solid:hover { background: var(--primary-hover); }
-.btn-ghost {
-  display: inline-flex; align-items: center; gap: 5px;
-  background: var(--surface); border: 1px solid var(--border);
-  color: var(--text); font-size: .84rem; font-weight: 500;
-  padding: 10px 14px; border-radius: 9px;
-  text-decoration: none; transition: all .15s;
-}
-.btn-ghost:hover { border-color: var(--border-strong); color: var(--text); }
-
-/* ============================================================
-   JOB CARD DETAILS — detailed info rows
-   ============================================================ */
-.job-card-details {
-  display: flex; flex-wrap: wrap; gap: 8px;
-  padding: 12px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  margin: 0 -20px; /* negative margin to extend full width */
-  padding-left: 20px; padding-right: 20px;
-}
-.detail-row {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: .78rem; color: var(--text-2);
-  background: var(--surface-2);
-  padding: 6px 10px; border-radius: 8px;
-  transition: all .15s;
-}
-.detail-row:hover { background: var(--surface-3); }
-.detail-icon { font-size: .9rem; color: var(--primary); flex-shrink: 0; }
-.detail-label { font-weight: 500; color: var(--muted); }
-.detail-value { font-weight: 600; color: var(--text); }
 
 /* ============================================================
    CARDS / CONTAINERS
