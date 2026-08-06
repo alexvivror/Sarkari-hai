@@ -68,7 +68,7 @@ const homeBody = `
     <div class="container hero-inner">
       <div class="hero-text">
         <span class="hero-kicker"><span class="material-symbols-outlined">verified</span> Verified · Official · Updated Daily</span>
-        <h1>Every Sarkari Job.<br>One Trusted Place.</h1>
+        <h1>Every Sarkari Job.<br>One <span class="grad">Trusted</span> Place.</h1>
         <p>Latest government jobs, results, admit cards &amp; answer keys — with official links only. Never miss a deadline.</p>
         <div class="hero-stats">
           <div class="hero-stat"><b>${data.posts.length}+</b><small>Live posts</small></div>
