@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T09:00:27.394Z",
+  "updated": "2026-08-06T10:00:33.492Z",
   "sources": [
     {
       "id": "freejobalert-rss",
@@ -9,10 +9,10 @@
       "official": "https://www.freejobalert.com",
       "enabled": true,
       "weight": 1,
-      "lastChecksum": "db5dbea3750fec3e",
-      "lastChecked": "2026-08-06T09:00:24.910Z",
+      "lastChecksum": "2211b313f79f7fb3",
+      "lastChecked": "2026-08-06T10:00:31.683Z",
       "lastStatus": "ok",
-      "lastSize": 97749
+      "lastSize": 97920
     },
     {
       "id": "ssc-gov",
@@ -23,7 +23,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "16ec671c394894ee",
-      "lastChecked": "2026-08-06T09:00:25.513Z",
+      "lastChecked": "2026-08-06T10:00:32.107Z",
       "lastStatus": "ok",
       "lastSize": 80649
     },
@@ -35,10 +35,10 @@
       "official": "https://upsc.gov.in",
       "enabled": true,
       "weight": 2,
-      "lastChecksum": "acae1943bd7be3ba",
-      "lastChecked": "2026-08-06T09:00:25.924Z",
+      "lastChecksum": "f5396c8c6607715e",
+      "lastChecked": "2026-08-06T10:00:32.317Z",
       "lastStatus": "ok",
-      "lastSize": 89537
+      "lastSize": 89545
     },
     {
       "id": "ibps-in",
@@ -48,7 +48,7 @@
       "official": "https://www.ibps.in",
       "enabled": true,
       "weight": 2,
-      "lastChecked": "2026-08-06T09:00:25.970Z",
+      "lastChecked": "2026-08-06T10:00:32.360Z",
       "lastStatus": "error",
       "lastError": "fetch failed"
     },
@@ -61,7 +61,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "64d2d9ac0cd3b366",
-      "lastChecked": "2026-08-06T09:00:26.412Z",
+      "lastChecked": "2026-08-06T10:00:32.591Z",
       "lastStatus": "ok",
       "lastSize": 65102
     },
@@ -74,7 +74,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "273e414adc1920e9",
-      "lastChecked": "2026-08-06T09:00:26.705Z",
+      "lastChecked": "2026-08-06T10:00:32.774Z",
       "lastStatus": "ok",
       "lastSize": 663621
     },
@@ -87,7 +87,7 @@
       "enabled": true,
       "weight": 2,
       "lastChecksum": "d1d950de627ac48a",
-      "lastChecked": "2026-08-06T09:00:26.786Z",
+      "lastChecked": "2026-08-06T10:00:32.870Z",
       "lastStatus": "ok",
       "lastSize": 318953
     },
@@ -99,10 +99,10 @@
       "official": "https://www.aiims.edu",
       "enabled": true,
       "weight": 2,
-      "lastChecksum": "f1bef781c480154a",
-      "lastChecked": "2026-08-06T09:00:27.394Z",
+      "lastChecksum": "74ae33aaafc61db1",
+      "lastChecked": "2026-08-06T10:00:33.491Z",
       "lastStatus": "ok",
-      "lastSize": 225999
+      "lastSize": 226017
     }
   ]
 }
