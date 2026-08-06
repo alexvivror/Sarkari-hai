@@ -529,6 +529,13 @@ input, select, textarea { font-family: inherit; }
 .pill.admission { background: var(--pink-soft); color: var(--pink); }
 .pill.exam { background: var(--surface-3); color: var(--text-2); }
 .pill.verified { background: var(--accent-soft); color: var(--accent); }
+.pill.expected { background: var(--amber-soft); color: var(--amber); border: 1px solid var(--amber-border); }
+.pill.new {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(249,115,22,.35);
+  animation: pulseSoft 2s ease infinite;
+}
 .pill.deadline {
   background: #fef2f2; color: #dc2626;
   animation: pulseSoft 2s ease infinite;
@@ -560,6 +567,13 @@ html.dark .pill.deadline { background: #3b1216; color: #fca5a5; }
   text-transform: uppercase; letter-spacing: .5px; color: var(--muted);
 }
 .date b { font-size: .75rem; font-weight: 700; color: var(--text-2); line-height: 1.35; }
+.date.primary-date b {
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border-radius: 7px;
+  padding: 3px 8px;
+  font-weight: 800;
+}
 .job-actions { display: flex; gap: 8px; }
 .btn-solid {
   display: inline-flex; align-items: center; gap: 5px;

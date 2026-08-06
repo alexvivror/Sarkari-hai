@@ -149,6 +149,7 @@ function postCard(p, byCat, byExam) {
   const off = isOfficial(p.links?.apply);
   const days = daysRemaining(p.applyEnd);
   const deadline = days !== null && days >= 0;
+  const isNew = p.date && p.date >= new Date(Date.now() - 3 * 86400000).toISOString().slice(0, 10);
   return `
   <article class="job-card cat-${p.category} exam-${p.exam}">
     <div class="job-card-top">
@@ -156,9 +157,11 @@ function postCard(p, byCat, byExam) {
       <div class="job-card-head">
         <a href="./posts/${p.id}.html" class="job-title">${esc(p.title)}</a>
         <div class="job-chips">
+          ${isNew ? '<span class="pill new">New</span>' : ""}
           <span class="pill ${p.category}">${esc(cat.label)}</span>
           <span class="pill exam">${esc(exam.label)}</span>
           ${off ? '<span class="pill verified">✓ Verified</span>' : ""}
+          ${p.status === "expected" ? '<span class="pill expected">! Expected</span>' : ""}
           ${deadline ? `<span class="pill deadline">${days === 0 ? "Last day!" : days + "d left"}</span>` : ""}
         </div>
       </div>
@@ -170,9 +173,10 @@ function postCard(p, byCat, byExam) {
     </div>
     <div class="job-card-foot">
       <div class="job-dates">
+        ${p.applyEnd && p.applyEnd !== "—" ? `<span class="date primary-date"><small>Last date</small><b>${esc(p.applyEnd)}</b></span>` : ""}
         ${p.applyStart && p.applyStart !== "—" ? `<span class="date"><small>Start</small><b>${esc(p.applyStart)}</b></span>` : ""}
-        ${p.applyEnd && p.applyEnd !== "—" ? `<span class="date"><small>Last date</small><b>${esc(p.applyEnd)}</b></span>` : ""}
         ${p.examDate && p.examDate !== "—" ? `<span class="date"><small>Exam</small><b>${esc(p.examDate)}</b></span>` : ""}
+        <span class="date"><small>Updated</small><b>${esc(p.date)}</b></span>
       </div>
       <div class="job-actions">
         <a class="btn-solid" href="${esc(p.links.apply)}" target="_blank" rel="noopener nofollow"><span class="material-symbols-outlined">launch</span> Apply</a>
